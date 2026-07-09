@@ -7,10 +7,8 @@ This repository accompanies the survey **A Survey on Post-training of Multimodal
 As illustrated in the framework below, the post-training pipeline begins with a pre-trained multimodal substrate composed of a vision encoder and an LLM decoder. It then progressively refines the model through supervised instruction tuning, reasoning-oriented tuning, alignment tuning, and safety-oriented tuning, while being continuously improved through high-quality multimodal data, human or AI feedback, evaluation, and red-teaming loops. This organization reflects the central thesis of the survey: robust MLLMs emerge from an iterative interaction between multimodal data, feedback signals, optimization algorithms, and evaluation protocols.
 
 <p align="center">
-  <img src="framework.png" width="92%" alt="Post-training framework for multimodal large language models">
+  <img src="assets/framework.png" width="92%" alt="Post-training framework for MLLMs">
 </p>
-
-<p align="center"><em>Post-training pipeline for MLLMs: from a pre-trained multimodal model to an aligned, capable, and safe multimodal assistant.</em></p>
 
 ---
 
@@ -277,6 +275,8 @@ If this repository or the associated survey is useful for your research, please 
 ## &#128196; License
 
 This repository is intended for academic research and open-source literature organization. Copyright of the listed papers, codebases, datasets, and models belongs to their respective authors and publishers. Please follow the license terms of each linked resource.
+
+
 
 
 

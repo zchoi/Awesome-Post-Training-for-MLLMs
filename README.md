@@ -27,12 +27,14 @@ As illustrated in the framework below, the post-training pipeline begins with a 
 
 # &#128214; Papers
 
+<a id="multimodal-instruction-tuning"></a>
 ## &#129302; Multimodal Instruction Tuning
 
 Multimodal instruction tuning constitutes one of the earliest and most fundamental post-training paradigms for MLLMs. Its primary objective is to transform broad visual-language representations into instruction-following behavior by training on multimodal instruction-response data. This paradigm establishes the interface between user intent, multimodal input, and model output, thereby enabling MLLMs to respond to image-, video-, audio-, or interleaved multimodal prompts in a task-oriented manner.
 
 The development of this line of research begins with representative systems such as LLaVA, MiniGPT-4, InstructBLIP, and mPLUG-Owl, which demonstrate the effectiveness of combining a visual encoder, a large language model, and curated instruction data. Subsequent studies extend this recipe toward higher-resolution perception, multi-image and video understanding, mobile deployment, visual prompt comprehension, data selection, mixture-of-experts adaptation, and generalized multimodal task transfer.
 
+<a id="multimodal-instruction-tuning-papers"></a>
 ### Multimodal Instruction Tuning Papers
 
 | # | Paper | Type | Venue | Resources |
@@ -105,10 +107,12 @@ The development of this line of research begins with representative systems such
 
 ---
 
+<a id="multimodal-alignment-learning"></a>
 ## &#127942; Multimodal Alignment Learning
 
 Multimodal alignment learning aims to make MLLM outputs consistent with human preferences, factual evidence, safety requirements, and cross-modal semantic constraints. Compared with text-only alignment, multimodal alignment must additionally address visual hallucination, fine-grained localization errors, temporal inconsistency in videos, modality conflicts, and heterogeneous feedback granularity. The literature can be organized into three major paradigms: reinforcement learning from human feedback, reinforcement learning from AI feedback, and direct preference optimization.
 
+<a id="multimodal-rlhf"></a>
 ### Multimodal RLHF
 
 Multimodal RLHF introduces human feedback or human-derived reward signals to guide MLLMs toward more factual, helpful, and preference-aligned behavior. Existing methods construct reward models at different levels of granularity, including pair-level, span-level, step-level, and mixed-level feedback. Optimization procedures such as PPO, DDPO, process reward modeling, best-of-N sampling, reject sampling, and multi-objective reinforcement learning are used to improve alignment over image and video contexts.
@@ -123,6 +127,7 @@ Multimodal RLHF introduces human feedback or human-derived reward signals to gui
 | 6 | [Seed1.5-VL Technical Report](https://arxiv.org/pdf/2505.07062) | Article | arXiv ![arXiv](https://img.shields.io/badge/arXiv-Paper-red) | [Paper](https://arxiv.org/pdf/2505.07062) / [Code](https://github.com/ByteDance-Seed/Seed1.5-VL) / [Project](https://seed.bytedance.com/en/tech/seed1_5_vl) |
 | 7 | [MiMo-VL Technical Report](https://arxiv.org/pdf/2506.03569) | Article | arXiv ![arXiv](https://img.shields.io/badge/arXiv-Paper-red) | [Paper](https://arxiv.org/pdf/2506.03569) / [Code](https://github.com/XiaomiMiMo/MiMo-VL) |
 
+<a id="multimodal-rlaif"></a>
 ### Multimodal RLAIF
 
 Multimodal RLAIF reduces the cost and scalability limitations of human feedback by using stronger models, automatic evaluators, or structured AI feedback as supervisory signals. This paradigm is particularly valuable for video understanding, large-scale preference construction, and iterative alignment settings. Representative work explores context-aware reward modeling, open-source AI feedback, preference distillation, and iterative refinement for improving trustworthiness and alignment quality.
@@ -133,6 +138,7 @@ Multimodal RLAIF reduces the cost and scalability limitations of human feedback 
 | 2 | [RLAIF-V: Open-Source AI Feedback Leads to Super GPT-4V Trustworthiness](https://arxiv.org/pdf/2405.17220) | Article | arXiv ![arXiv](https://img.shields.io/badge/arXiv-Paper-red) | [Paper](https://arxiv.org/pdf/2405.17220) / [Code](https://github.com/RLHF-V/RLAIF-V) |
 | 3 | [SILKIE: Preference Distillation for Large Visual Language Models](https://arxiv.org/pdf/2312.10665) | Article | arXiv ![arXiv](https://img.shields.io/badge/arXiv-Paper-red) | [Paper](https://arxiv.org/pdf/2312.10665) / [Code](https://github.com/vlf-silkie/VLFeedback) / [Project](https://vlf-silkie.github.io/) |
 
+<a id="multimodal-direct-preference-optimization"></a>
 ### Multimodal Direct Preference Optimization
 
 Multimodal Direct Preference Optimization directly optimizes model policies from preference data without relying on an explicitly trained reward model. This family of methods is especially useful for mitigating multimodal hallucination, object-level inconsistency, modality-level conflict, and response-level preference errors. Recent work further extends DPO toward conditional preference objectives, vision-guided preference construction, difficulty-aware sampling, uncertainty-aware exploration, and on-policy data generation.
@@ -157,10 +163,12 @@ Multimodal Direct Preference Optimization directly optimizes model policies from
 
 ---
 
+<a id="multimodal-reasoning-enhancement"></a>
 ## &#128640; Multimodal Reasoning Enhancement
 
 Multimodal reasoning enhancement focuses on strengthening the ability of MLLMs to solve complex tasks that require visual evidence, symbolic reasoning, spatial-temporal understanding, tool use, grounding, and multi-step inference. This research direction has rapidly expanded with the emergence of R1-style reinforcement learning, visually grounded reasoning, self-evolving training loops, and distillation-based capability transfer.
 
+<a id="r1-based-multimodal-reasoning"></a>
 ### R1-based Multimodal Reasoning
 
 R1-based multimodal reasoning adapts reinforcement learning strategies inspired by R1-style reasoning models to vision-language and omni-modal settings. These methods typically optimize verifiable objectives such as answer correctness, reasoning format, visual grounding, or process-level reward. By reducing dependence on manually annotated reasoning traces, they provide a scalable route for improving mathematical reasoning, chart understanding, video reasoning, retrieval, and general multimodal problem solving.
@@ -180,6 +188,7 @@ R1-based multimodal reasoning adapts reinforcement learning strategies inspired 
 | 11 | [R1-Omni: Explainable Omni-Multimodal Emotion Recognition with Reinforcement Learning](https://arxiv.org/abs/2503.05379) | Article | arXiv ![arXiv](https://img.shields.io/badge/arXiv-Paper-red) | [Paper](https://arxiv.org/abs/2503.05379) / [Code](https://github.com/HumanMLLM/R1-Omni) |
 | 12 | [Retrv-R1: A Reasoning-Driven MLLM Framework for Universal and Efficient Multimodal Retrieval](https://arxiv.org/abs/2510.02745) | Article | arXiv ![arXiv](https://img.shields.io/badge/arXiv-Paper-red) | [Paper](https://arxiv.org/abs/2510.02745) / [Code](https://lanyunzhu.site/RetrvR1/) / [Project](https://lanyunzhu.site/RetrvR1/) |
 
+<a id="thinking-with-images"></a>
 ### Thinking with Images
 
 Thinking with Images emphasizes explicit use of visual evidence during the reasoning process. Instead of compressing images into implicit context alone, these methods encourage models to reason over regions, points, crops, visual tools, latent visual structures, or grounded intermediate representations. This paradigm is crucial for tasks that require localization, visual planning, fine-grained perception, and tool-augmented multimodal reasoning.
@@ -195,6 +204,7 @@ Thinking with Images emphasizes explicit use of visual evidence during the reaso
 | 7 | [Visual Planning: Let's Think Only with Images](https://arxiv.org/abs/2505.11409) | Article | arXiv ![arXiv](https://img.shields.io/badge/arXiv-Paper-red) | [Paper](https://arxiv.org/abs/2505.11409) / [Code](https://github.com/yix8/VisualPlanning) |
 | 8 | [LanteRn: Latent Visual Structured Reasoning](https://arxiv.org/abs/2603.25629) | Article | arXiv ![arXiv](https://img.shields.io/badge/arXiv-Paper-red) | [Paper](https://arxiv.org/abs/2603.25629) / [Code](https://github.com/GuilhermeViveiros/LantErn) / [HF](https://huggingface.co/AGViveiros/LanteRn-3B-RL) |
 
+<a id="multimodal-self-evolving"></a>
 ### Multimodal Self-Evolving
 
 Multimodal self-evolving methods study how MLLMs can improve through iterative loops of self-generated data, self-correction, critique, reflection, or unsupervised post-training. Rather than relying exclusively on static supervised datasets, these methods treat the model as both a learner and a data or feedback generator. This closed-loop formulation is particularly relevant for data-scarce, dynamically changing, or open-ended multimodal tasks.
@@ -208,6 +218,7 @@ Multimodal self-evolving methods study how MLLMs can improve through iterative l
 | 5 | [MM-UPT: Unsupervised Post-Training for Multi-Modal LLM Reasoning via GRPO](https://arxiv.org/abs/2505.22453) | Article | arXiv ![arXiv](https://img.shields.io/badge/arXiv-Paper-red) | [Paper](https://arxiv.org/abs/2505.22453) / [Code](https://github.com/waltonfuture/MM-UPT) / [HF](https://huggingface.co/WaltonFuture/Qwen2.5-VL-7B-MM-UPT-MMR1) |
 | 6 | [LLaVA-Critic-R1: Your Critic Model is Secretly a Strong Policy Model](https://arxiv.org/abs/2509.00676) | Article | arXiv ![arXiv](https://img.shields.io/badge/arXiv-Paper-red) | [Paper](https://arxiv.org/abs/2509.00676) / [Code](https://github.com/LLaVA-VL/LLaVA-NeXT) |
 
+<a id="multimodal-distillation"></a>
 ### Multimodal Distillation
 
 Multimodal distillation transfers capabilities from stronger teacher models, preference models, or on-policy trajectories into smaller, more efficient, or more specialized student models. Beyond conventional compression, this paradigm also supports capability alignment: the student model is expected to preserve fine-grained visual perception, temporal grounding, multimodal reasoning, and cross-modal response quality. Recent work highlights on-policy distillation as an important mechanism for combining efficiency with robust multimodal capability transfer.
@@ -226,30 +237,36 @@ Multimodal distillation transfers capabilities from stronger teacher models, pre
 
 ---
 
+<a id="multimodal-domain-adaptation"></a>
 ## &#129517; Multimodal Domain Adaptation
 
 This section is reserved for domain-oriented post-training methods that adapt MLLMs to specialized multimodal scenarios, including medical reasoning, legal and financial analysis, education, graphical user interfaces, embodied intelligence, autonomous driving, scientific discovery, and other high-stakes application domains.
 
 ---
 
+<a id="multimodal-scalable-training"></a>
 ## &#9881;&#65039; Multimodal Scalable Training
 
 This section organizes scalable post-training strategies that improve efficiency, modularity, and computational feasibility when adapting MLLMs across model scales, modalities, data regimes, and deployment constraints.
 
+<a id="lora-based-methods"></a>
 ### LoRA-based Methods
 
 This subsection covers parameter-efficient adaptation strategies based on LoRA, QLoRA, mixture-of-LoRA, conditional low-rank routing, and related low-rank update mechanisms for multimodal post-training.
 
+<a id="moe-based-methods"></a>
 ### MoE-based Methods
 
 This subsection covers mixture-of-experts architectures, expert routing, sparse activation, modular specialization, and expert-level knowledge transfer in scalable multimodal post-training.
 
+<a id="compute-efficient-methods"></a>
 ### Compute-efficient Methods
 
 This subsection covers efficient visual processing, visual token compression, long-context optimization, high-resolution perception, and training or inference strategies designed to reduce computational overhead while preserving multimodal capability.
 
 ---
 
+<a id="multimodal-benchmarks"></a>
 ## &#128202; Multimodal Benchmarks
 
 This section organizes benchmarks, evaluation protocols, and capability taxonomies for assessing post-trained MLLMs. Relevant evaluation dimensions include instruction following, hallucination, safety, reasoning, grounding, OCR, chart understanding, multi-image interaction, video understanding, agentic behavior, embodied tasks, and domain-specific reliability.
@@ -275,6 +292,7 @@ If this repository or the associated survey is useful for your research, please 
 ## &#128196; License
 
 This repository is intended for academic research and open-source literature organization. Copyright of the listed papers, codebases, datasets, and models belongs to their respective authors and publishers. Please follow the license terms of each linked resource.
+
 
 
 

@@ -18,7 +18,7 @@ As illustrated in the framework below, the post-training pipeline begins with a 
 | [&#129302; Multimodal Instruction Tuning](#multimodal-instruction-tuning) | [Representative Papers](#multimodal-instruction-tuning-papers) |
 | [&#127942; Multimodal Alignment Learning](#multimodal-alignment-learning) | [Multimodal RLHF](#multimodal-rlhf), [Multimodal RLAIF](#multimodal-rlaif), [Multimodal Direct Preference Optimization](#multimodal-direct-preference-optimization) |
 | [&#128640; Multimodal Reasoning Enhancement](#multimodal-reasoning-enhancement) | [R1-based Multimodal Reasoning](#r1-based-multimodal-reasoning), [Thinking with Images](#thinking-with-images), [Multimodal Self-Evolving](#multimodal-self-evolving), [Multimodal Distillation](#multimodal-distillation) |
-| [&#129517; Multimodal Domain Adaptation](#multimodal-domain-adaptation) | Domain-oriented post-training for specialized multimodal scenarios |
+| [&#129517; Multimodal Domain Adaptation](#multimodal-domain-adaptation) | [Domain-oriented post-training for specialized multimodal scenarios](#multimodal-domain-adaptation) |
 | [&#9881;&#65039; Multimodal Scalable Training](#multimodal-scalable-training) | [LoRA-based Methods](#lora-based-methods), [MoE-based Methods](#moe-based-methods), [Compute-efficient Methods](#compute-efficient-methods) |
 | [&#128202; Multimodal Benchmarks](#multimodal-benchmarks) | [Instruction Tuning Benchmarks](#instruction-tuning-benchmarks), [Alignment Learning Benchmarks](#alignment-learning-benchmarks), [Reasoning Enhancement Benchmarks](#reasoning-enhancement-benchmarks), [Domain Adaptation Benchmarks](#domain-adaptation-benchmarks) |
 

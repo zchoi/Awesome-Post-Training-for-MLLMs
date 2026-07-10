@@ -1,5 +1,4 @@
 # Awesome Post-Training for Multimodal Large Language Models
-
 > A rigorous and systematically organized survey repository on post-training methodologies for **Multimodal Large Language Models (MLLMs)**, covering instruction tuning, alignment learning, reasoning enhancement, domain adaptation, scalable training, and multimodal evaluation.
 
 This repository accompanies the survey **A Survey on Post-training of Multimodal Large Language Models** and provides a structured literature map for understanding how post-training transforms pre-trained MLLMs into aligned, capable, and safe multimodal assistants. Following the survey's behavior-shaping perspective, MLLM post-training is not merely a downstream optimization stage; it is a systematic process that calibrates broad cross-modal representations toward reliable instruction following, preference alignment, complex reasoning, domain-aware adaptation, and scalable multimodal learning.
@@ -228,36 +227,160 @@ Multimodal distillation transfers capabilities from stronger teacher models, pre
 <a id="multimodal-domain-adaptation"></a>
 ## &#129517; Multimodal Domain Adaptation
 
-This section is reserved for domain-oriented post-training methods that adapt MLLMs to specialized multimodal scenarios, including medical reasoning, legal and financial analysis, education, graphical user interfaces, embodied intelligence, autonomous driving, scientific discovery, and other high-stakes application domains.
+Domain adaptation studies how pre-trained MLLMs can be specialized to domains with distinct input distributions, task protocols, and reliability requirements. Unlike general instruction tuning or alignment, domain adaptation often requires the model to absorb domain-specific evidence formats, output structures, action spaces, and evaluation criteria. Representative application domains include graphical user interfaces (GUI), document and chart understanding, high-resolution vision (HRV), medical imaging and clinical reasoning, remote sensing, and food analysis. These methods show that domain adaptation for MLLMs must jointly consider data distribution, visual granularity, task interface, and domain-specific reliability.
+
+### Domain Adaptation Papers
+
+| # | Method | Domain | Input | Adapted Capability | Resources |
+|---:|---|---|---|---|---|
+| 1 | [Mobile-Agent](https://arxiv.org/pdf/2401.16158) | GUI | Screenshot, Instruction | Perception + Action | [Paper](https://arxiv.org/pdf/2401.16158) / [Code](https://github.com/X-PLUG/MobileAgent) |
+| 2 | [GUI-R1](https://arxiv.org/pdf/2503.11664) | GUI | Screenshot, Trajectory | Reason + Action | [Paper](https://arxiv.org/pdf/2503.11664) / [Code](https://github.com/Showlab/GUI-R1) |
+| 3 | [mPLUG-DocOwl1.5](https://arxiv.org/pdf/2406.14832) | Document | Document, Chart | Layout + Reason | [Paper](https://arxiv.org/pdf/2406.14832) / [Code](https://github.com/X-PLUG/mPLUG-DocOwl) |
+| 4 | [LLaVA-UHD](https://arxiv.org/pdf/2403.11703) | HRV | High-Resolution Image | Perception | [Paper](https://arxiv.org/pdf/2403.11703) / [Code](https://github.com/thunlp/LLaVA-UHD) |
+| 5 | [Med-Gemini](https://arxiv.org/pdf/2402.12721) | Medical | Medical Image, EHR | Clinical Reasoning | [Paper](https://arxiv.org/pdf/2402.12721) |
+| 6 | [AdaMLLM](https://arxiv.org/pdf/2407.03104) | Medical, Food, Remote Sensing | Image | Efficiency | [Paper](https://arxiv.org/pdf/2407.03104) / [Code](https://github.com/thunlp/AdaMLLM) / [Project](https://adamllm.github.io/) |
 
 ---
 
 <a id="multimodal-scalable-training"></a>
 ## &#9881;&#65039; Multimodal Scalable Training
 
-This section organizes scalable post-training strategies that improve efficiency, modularity, and computational feasibility when adapting MLLMs across model scales, modalities, data regimes, and deployment constraints.
+This section organizes scalable post-training strategies that improve efficiency, modularity, and computational feasibility when adapting MLLMs across model scales, modalities, data regimes, and deployment constraints. Scalable training encompasses three complementary directions: parameter-efficient adaptation via low-rank updates (LoRA-based), capacity expansion via sparse mixture-of-experts architectures (MoE-based), and compute-efficient visual processing including token compression and long-context optimization.
 
 <a id="lora-based-methods"></a>
 ### LoRA-based Methods
 
-This subsection covers parameter-efficient adaptation strategies based on LoRA, QLoRA, mixture-of-LoRA, conditional low-rank routing, and related low-rank update mechanisms for multimodal post-training.
+Low-Rank Adaptation (LoRA) provides a simple and widely used strategy for efficient MLLM post-training. Instead of updating the entire LLM backbone, LoRA-style methods freeze most pretrained parameters and insert lightweight trainable low-rank matrices into selected layers. This is especially attractive for MLLMs because visual instruction tuning, video adaptation, and domain-specific tuning often require repeated adaptation over different data sources. Recent extensions further explore mixture-style routing, continual learning, and multimodal-specific low-rank configurations.
+
+| # | Method | Base Model | Trainable Params. | Rank | # GPUs | Resources |
+|---:|---|---|---|---|---|---|
+| 1 | [LLaVA-MoLE](https://arxiv.org/pdf/2406.04329) | Vicuna-7B-v1.5 | 0.3B / 7B | 32 | 64 × A100 | [Paper](https://arxiv.org/pdf/2406.04329) / [Code](https://github.com/lingchen03/LLaVA-MoLE) |
+| 2 | [MixLoRA](https://arxiv.org/pdf/2405.16339) | Vicuna-7B v1.3 | ~10M / 7B | 4 | 4 × A100 | [Paper](https://arxiv.org/pdf/2405.16339) / [Code](https://github.com/TencentARC/MixLoRA) |
+| 3 | [MokA](https://arxiv.org/pdf/2406.09610) | LLaMA2 | ~0.1B / 7B | 4 | 8 † | [Paper](https://arxiv.org/pdf/2406.09610) / [Code](https://github.com/ZhangYuanhan-AI/MokA) / [Project](https://moka-ml.github.io/) |
+| 4 | [LiLoRA](https://arxiv.org/pdf/2410.07293) | LLaVA-1.5-7B | ~0.25B / 7B | 128 / 64 | 4 † | [Paper](https://arxiv.org/pdf/2410.07293) / [Code](https://github.com/bupt-ai-cv/LiLoRA) |
+
+† indicates the GPU number is inferred from the official training script rather than explicitly reported in the paper.
 
 <a id="moe-based-methods"></a>
 ### MoE-based Methods
 
-This subsection covers mixture-of-experts architectures, expert routing, sparse activation, modular specialization, and expert-level knowledge transfer in scalable multimodal post-training.
+Mixture-of-Experts (MoE) adaptation improves efficiency by activating only a subset of parameters for each input token or task. For MLLMs, MoE is particularly useful because different modalities, domains, and reasoning patterns may require different expert knowledge, while dense activation of all parameters is often unnecessary. Existing methods follow two directions: sparse expert backbones that expand total capacity while keeping activated computation relatively small, and expert extension that adds new experts to pretrained MoE models for new modalities or tasks while preserving the original backbone.
+
+| # | Method | # Experts | Act. Experts | Act. Params | Total Params | Tuned Component | Resources |
+|---:|---|---|---|---|---|---|---|
+| 1 | [MoE-LLaVA](https://arxiv.org/pdf/2406.14565) | 4 | 2 | 3.6B | 5.3B | FFN-MoE | [Paper](https://arxiv.org/pdf/2406.14565) / [Code](https://github.com/PKU-YuanGroup/MoE-LLaVA) |
+| 2 | [MoE-LLaVA-7B](https://arxiv.org/pdf/2406.14565) | 4 | 2 | 9.6B | 15.2B | FFN-MoE | [Paper](https://arxiv.org/pdf/2406.14565) / [Code](https://github.com/PKU-YuanGroup/MoE-LLaVA) |
+| 3 | [MoExtend](https://arxiv.org/pdf/2410.10764) | – | – | 13B | – | New Experts | [Paper](https://arxiv.org/pdf/2410.10764) / [Code](https://github.com/zyx-2000/MoExtend) |
+| 4 | [DeepSeek-VL2](https://arxiv.org/pdf/2409.12191) | – | – | 1.0B / 2.8B / 4.5B | – | DeepSeekMoE LLM | [Paper](https://arxiv.org/pdf/2409.12191) / [Code](https://github.com/deepseek-ai/DeepSeek-VL2) |
+| 5 | [Qwen3-Omni](https://arxiv.org/pdf/2503.10753) | 128 * | 8 * | 3B | 30B | Text-to-Text MoE | [Paper](https://arxiv.org/pdf/2503.10753) / [Code](https://github.com/QwenLM/Qwen3) |
+| 6 | [Qwen3-VL](https://arxiv.org/pdf/2511.21631) | – | – | 3B / 22B | 30B / 235B | VL MoE | [Paper](https://arxiv.org/pdf/2511.21631) / [Code](https://github.com/QwenLM/Qwen3-VL) |
+| 7 | [MiniMax-01](https://arxiv.org/pdf/2412.08142) | 32 | – | 45.9B | 456B | MoE LLM | [Paper](https://arxiv.org/pdf/2412.08142) / [Code](https://github.com/MiniMaxAI/MiniMax-01) |
+| 8 | [Seed1.5-VL](https://arxiv.org/pdf/2505.07062) | – | – | 20B | – | MoE LLM | [Paper](https://arxiv.org/pdf/2505.07062) / [Code](https://github.com/ByteDance-Seed/Seed1.5-VL) / [Project](https://seed.bytedance.com/en/tech/seed1_5_vl) |
+
+\* For Qwen3-Omni, the expert configuration is referenced from the same-scale Qwen3-30B-A3B setting, while the Qwen3-Omni report explicitly identifies the model as 30B-A3B.
 
 <a id="compute-efficient-methods"></a>
 ### Compute-efficient Methods
 
-This subsection covers efficient visual processing, visual token compression, long-context optimization, high-resolution perception, and training or inference strategies designed to reduce computational overhead while preserving multimodal capability.
+Compute-efficient post-training addresses the computational cost of visual encoding, token processing, and long-context modeling in MLLMs. High-resolution images, documents, and videos often produce many visual tokens, raising both training and inference costs. This category is organized into three sub-directions: **Efficient Visual Processing (EVP)** preserves fine-grained perception while controlling token growth; **Token Compression (TC)** directly reduces visual tokens passed to the language model; **Long-Context Optimization (LCO)** handles long videos, multi-image inputs, and extended multimodal conversations.
+
+#### Efficient Visual Processing (EVP)
+
+| # | Method | Input | Granularity | Core Technique | Main Goal | Resources |
+|---:|---|---|---|---|---|---|
+| 1 | [LLaVA-UHD](https://arxiv.org/pdf/2403.11703) | HR Image | Region / Token | Image modularization, token compression, spatial schema | Fine-grained HR perception | [Paper](https://arxiv.org/pdf/2403.11703) / [Code](https://github.com/thunlp/LLaVA-UHD) |
+| 2 | [AdaMLLM / AdaLLaVA](https://arxiv.org/pdf/2407.03104) | Image | Instance / Budget | Dynamic inference reconfiguration | Accuracy–latency trade-off | [Paper](https://arxiv.org/pdf/2407.03104) / [Code](https://github.com/thunlp/AdaMLLM) / [Project](https://adamllm.github.io/) |
+| 3 | [InternVL2](https://arxiv.org/pdf/2404.11703) | HR Image | Tile | Dynamic image tiling | Dense visual perception | [Paper](https://arxiv.org/pdf/2404.11703) / [Code](https://github.com/OpenGVLab/InternVL) |
+| 4 | [UReader](https://arxiv.org/pdf/2406.12837) | Document | Crop | Shape-adaptive cropping | OCR-free document understanding | [Paper](https://arxiv.org/pdf/2406.12837) / [Code](https://github.com/LukcyYuan/UReader) |
+| 5 | [Monkey](https://arxiv.org/pdf/2311.06607) | HR Image | Patch | Patch-wise HR processing | Dense detail recognition | [Paper](https://arxiv.org/pdf/2311.06607) / [Code](https://github.com/Yuliang-Liu/Monkey) |
+
+#### Token Compression (TC)
+
+| # | Method | Input | Granularity | Core Technique | Main Goal | Resources |
+|---:|---|---|---|---|---|---|
+| 1 | [FastV](https://arxiv.org/pdf/2403.06764) | Image / Video | Layer / Token | Attention-guided visual token pruning | Reduce prefilling and attention cost | [Paper](https://arxiv.org/pdf/2403.06764) / [Code](https://github.com/pkuliyi2015/FastV) |
+| 2 | [VisionZip](https://arxiv.org/pdf/2405.13607) | Image / Video | Token | Informative token selection | Remove visual redundancy | [Paper](https://arxiv.org/pdf/2405.13607) / [Code](https://github.com/pykale/VisionZip) |
+| 3 | [SparseVLM](https://arxiv.org/pdf/2406.02260) | Image / Video | Token / Layer | Text-guided sparsification, token recycling | Reduce visual FLOPs | [Paper](https://arxiv.org/pdf/2406.02260) / [Code](https://github.com/linhezheng/SparseVLM) |
+| 4 | [TRIM / VisionTrim](https://arxiv.org/pdf/2406.13435) | Image / Video | Token | Relevance-based selection and merging | Training-free token compression | [Paper](https://arxiv.org/pdf/2406.13435) |
+| 5 | [TokenPacker](https://arxiv.org/pdf/2406.08410) | Image | Projector / Token | Coarse-to-fine token packing | Compress while preserving details | [Paper](https://arxiv.org/pdf/2406.08410) / [Code](https://github.com/richard-peng-xia/TokenPacker) |
+
+#### Long-Context Optimization (LCO)
+
+| # | Method | Input | Granularity | Core Technique | Main Goal | Resources |
+|---:|---|---|---|---|---|---|
+| 1 | [LongVU](https://arxiv.org/pdf/2406.12723) | Video | Frame / Token | Spatiotemporal adaptive compression | Long-video compression | [Paper](https://arxiv.org/pdf/2406.12723) / [Code](https://github.com/long-vu/LongVU) / [Project](https://long-vu.github.io/) |
+| 2 | [LongVILA](https://arxiv.org/pdf/2408.10186) | Video | Sequence / System | Long-context extension, SFT, sequence parallelism | Scalable long-video training | [Paper](https://arxiv.org/pdf/2408.10186) / [Code](https://github.com/NVlabs/LongVILA) |
+| 3 | [LongVA](https://arxiv.org/pdf/2408.09880) | Video | Context | Language-to-vision context transfer | Long-context video understanding | [Paper](https://arxiv.org/pdf/2408.09880) / [Code](https://github.com/EvolvingLMMs-Lab/LongVA) |
+| 4 | [IG-VLM](https://arxiv.org/pdf/2407.05420) | Video | Grid / Frame | Image-grid video representation | Training-free video understanding | [Paper](https://arxiv.org/pdf/2407.05420) |
+| 5 | [VideoChat-Flash](https://arxiv.org/pdf/2410.09313) | Video | Hierarchical Token | HiCo, short-to-long training | Extremely long-video modeling | [Paper](https://arxiv.org/pdf/2410.09313) / [Code](https://github.com/OpenGVLab/VideoChat-Flash) |
 
 ---
 
 <a id="multimodal-benchmarks"></a>
 ## &#128202; Multimodal Benchmarks
 
-This section organizes benchmarks, evaluation protocols, and capability taxonomies for assessing post-trained MLLMs. Relevant evaluation dimensions include instruction following, hallucination, safety, reasoning, grounding, OCR, chart understanding, multi-image interaction, video understanding, agentic behavior, embodied tasks, and domain-specific reliability.
+Datasets and benchmarks play a central role in MLLM post-training because they define what behaviors are learned, calibrated, and evaluated. Existing resources can be organized according to the post-training behavior they support, including instruction following, alignment learning, reasoning enhancement, and domain adaptation. Each entry is annotated by its primary role: **T** indicates datasets mainly used for training, **E** indicates benchmarks primarily designed for evaluation, and **T+E** indicates datasets containing both training and evaluation splits.
+
+### Instruction Tuning Benchmarks
+
+| # | Name | Year | Scale | Role | Origin | Resources |
+|---:|---|---|---|---|---|---|
+| 1 | [LLaVA-Instruct-150K](https://arxiv.org/pdf/2304.08485) | 2023 | ~80K images / 158K instruction samples | T | UW–Madison, Columbia | [Paper](https://arxiv.org/pdf/2304.08485) / [GitHub](https://github.com/haotian-liu/LLaVA) / [Data](https://huggingface.co/datasets/liuhaotian/LLaVA-Instruct-150K) |
+| 2 | [SEED-Bench](https://arxiv.org/pdf/2307.16125) | 2023 | ~19K samples | E | Tencent AI Lab, ARC Lab | [Paper](https://arxiv.org/pdf/2307.16125) / [GitHub](https://github.com/AILab-CVC/SEED-Bench) / [Data](https://huggingface.co/datasets/AILab-CVC/SEED-Bench) |
+| 3 | [MM-Vet](https://arxiv.org/pdf/2308.02497) | 2023 | 200 images / 218 samples | E | ByteDance, MSR | [Paper](https://arxiv.org/pdf/2308.02497) / [GitHub](https://github.com/yuweihao/MM-Vet) / [Data](https://huggingface.co/datasets/zhiqings/MM-Vet) |
+| 4 | [MMBench](https://arxiv.org/pdf/2407.06267) | 2024 | 3,217 data samples | E | SHLAB, ZJU | [Paper](https://arxiv.org/pdf/2407.06267) / [GitHub](https://github.com/open-compass/MMBench) / [Data](https://huggingface.co/datasets/lmms-lab/MMBench) |
+| 5 | [ShareGPT4V](https://arxiv.org/pdf/2311.12793) | 2024 | 1,346K samples | T | USTC, SHLAB | [Paper](https://arxiv.org/pdf/2311.12793) / [GitHub](https://github.com/ShareGPT4Omni/ShareGPT4V) / [Data](https://sharegpt4v.github.io/) |
+| 6 | [MIA-Bench](https://arxiv.org/pdf/2502.03105) | 2025 | 400 samples | E | Apple, HKUST | [Paper](https://arxiv.org/pdf/2502.03105) / [GitHub](https://github.com/apple/ml-mia-bench) / [Data](https://huggingface.co/datasets/apple/MIA-Bench) |
+| 7 | [MM-IFInstruct](https://arxiv.org/pdf/2503.10722) | 2025 | 23K samples | T | FDU, SII | [Paper](https://arxiv.org/pdf/2503.10722) / [GitHub](https://github.com/ZhangYuanhan-AI/MM-IFInstruct) / [Data](https://huggingface.co/datasets/zhangyuanhan/MM-IFInstruct) |
+| 8 | [MME](https://arxiv.org/pdf/2305.13723) | 2026 | 1,187 images / 2,374 samples | E | SKL-NST, CASIA | [Paper](https://arxiv.org/pdf/2305.13723) / [GitHub](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models/tree/Evaluation) / [Data](https://huggingface.co/datasets/lmms-lab/MME) |
+| 9 | [VC-IFInstruct](https://arxiv.org/pdf/2603.01587) | 2026 | 10K samples | T | HKUST, PSU | [Paper](https://arxiv.org/pdf/2603.01587) / [GitHub](https://github.com/Video-LLaVA/VC-IFInstruct) / [Data](https://huggingface.co/datasets/Video-LLaVA/VC-IFInstruct) |
+
+**Others:** VQAv2, GQA, OK-VQA, TextVQA, VizWiz, Visual7W, BLINK, MME-RealWorld, M3IT, ShareGPT4Video, VideoMME
+
+### Alignment Learning Benchmarks
+
+| # | Name | Year | Scale | Role | Origin | Resources |
+|---:|---|---|---|---|---|---|
+| 1 | [POPE](https://arxiv.org/pdf/2305.10355) | 2023 | ~9K question samples | E | RUC, Meituan Group | [Paper](https://arxiv.org/pdf/2305.10355) / [GitHub](https://github.com/RUCAIBox/POPE) / [Data](https://huggingface.co/datasets/rucaibox/pope) |
+| 2 | [MMHal-Bench](https://arxiv.org/pdf/2309.14525) | 2023 | ~96 image-question pairs | E | UCB, MIT-IBM AI Lab | [Paper](https://arxiv.org/pdf/2309.14525) / [GitHub](https://github.com/Shengcao-Cao/MMHal-Bench) / [Data](https://huggingface.co/datasets/Shengcao/MMHal-Bench) |
+| 3 | [AMBER](https://arxiv.org/pdf/2311.10383) | 2023 | ~1K images / ~15K question samples | E | BJTU, Peng Cheng Lab | [Paper](https://arxiv.org/pdf/2311.10383) / [GitHub](https://github.com/jesseor101/AMBER) / [Data](https://huggingface.co/datasets/jesseor101/AMBER) |
+| 4 | [HallusionBench](https://arxiv.org/pdf/2310.14566) | 2024 | ~346 images / ~1.1K question samples | E | UMD | [Paper](https://arxiv.org/pdf/2310.14566) / [GitHub](https://github.com/tianyi-lab/HallusionBench) / [Data](https://huggingface.co/datasets/tianyi-lab/HallusionBench) |
+| 5 | [LLaVA-RLHF](https://arxiv.org/pdf/2309.14525) | 2024 | 10K image-based conversations | E | UCB, MIT-IBM AI Lab | [Paper](https://arxiv.org/pdf/2309.14525) / [GitHub](https://github.com/llava-rlhf/LLaVA-RLHF) / [Data](https://huggingface.co/datasets/zhiqings/LLaVA-RLHF-Data) |
+| 6 | [RLHF-V](https://arxiv.org/pdf/2312.00849) | 2024 | 1.4K image-based conversations | T | THU, NUS | [Paper](https://arxiv.org/pdf/2312.00849) / [GitHub](https://github.com/RLHF-V/RLHF-V) / [Data](https://huggingface.co/datasets/OpenGVLab/RLHF-V-Dataset) |
+| 7 | [VLGuard](https://arxiv.org/pdf/2402.00772) | 2024 | ~3K images / ~4.6K question samples | T + E | Edinburgh, EPFL | [Paper](https://arxiv.org/pdf/2402.00772) / [GitHub](https://github.com/VLGuard/VLGuard) / [Data](https://huggingface.co/datasets/VLGuard/VLGuard) |
+| 8 | [SPA-VL](https://arxiv.org/pdf/2503.01082) | 2025 | ~100K image-question pairs | T + E | USTC, Shanghai AI Lab | [Paper](https://arxiv.org/pdf/2503.01082) / [GitHub](https://github.com/zhiqings/SPA-VL) / [Data](https://huggingface.co/datasets/zhiqings/SPA-VL) |
+| 9 | [Lingua-SafetyBench](https://arxiv.org/pdf/2503.11836) | 2026 | ~100K image-question pairs | E | HKU, ZJU | [Paper](https://arxiv.org/pdf/2503.11836) / [GitHub](https://github.com/yuhuayustc/Lingua-SafetyBench) / [Data](https://huggingface.co/datasets/yuhuayustc/Lingua-SafetyBench) |
+
+**Others:** CHAIR, M-HalDetect, HaELM, MM-SafetyBench, FigStep, JailBreakV-28K, RTVLM
+
+### Reasoning Enhancement Benchmarks
+
+| # | Name | Year | Scale | Role | Origin | Resources |
+|---:|---|---|---|---|---|---|
+| 1 | [ScienceQA](https://arxiv.org/pdf/2209.09513) | 2022 | ~10.3K image-question pairs / ~21.2K questions | T + E | UCLA | [Paper](https://arxiv.org/pdf/2209.09513) / [GitHub](https://github.com/lupantech/ScienceQA) / [Data](https://huggingface.co/datasets/derek-thomas/ScienceQA) |
+| 2 | [GQA](https://arxiv.org/pdf/1902.09506) | 2019 | ~113K images / 22.7M image-question pairs | T + E | Stanford | [Paper](https://arxiv.org/pdf/1902.09506) / [GitHub](https://github.com/stanfordnlp/GQA) / [Data](https://cs.stanford.edu/people/dorarad/gqa/about.html) |
+| 3 | [MMMU](https://arxiv.org/pdf/2311.16502) | 2024 | ~11.5K questions | E | Waterloo, OSU, CMU | [Paper](https://arxiv.org/pdf/2311.16502) / [GitHub](https://github.com/MMMU-Benchmark/MMMU) / [Data](https://huggingface.co/datasets/MMMU/MMMU) |
+| 4 | [MathVista](https://arxiv.org/pdf/2310.02255) | 2024 | 6,141 samples | E | UCLA, MSR | [Paper](https://arxiv.org/pdf/2310.02255) / [GitHub](https://github.com/lupantech/MathVista) / [Data](https://huggingface.co/datasets/AI4Math/MathVista) |
+| 5 | [PuzzleBench](https://arxiv.org/pdf/2503.12381) | 2025 | 11,840 samples | E | SJTU | [Paper](https://arxiv.org/pdf/2503.12381) / [GitHub](https://github.com/lupantech/PuzzleBench) / [Data](https://huggingface.co/datasets/lupantech/PuzzleBench) |
+| 6 | [MME-CoT](https://arxiv.org/pdf/2503.12415) | 2025 | 1,130 questions | E | CUHK, ByteDance, NEU | [Paper](https://arxiv.org/pdf/2503.12415) / [GitHub](https://github.com/BradyFU/MME-CoT) / [Data](https://huggingface.co/datasets/lmms-lab/MME-CoT) |
+| 7 | [MME-Reasoning](https://arxiv.org/pdf/2503.12415) | 2025 | 1,188 questions | E | Fudan, CUHK, Shanghai AI Lab | [Paper](https://arxiv.org/pdf/2503.12415) / [GitHub](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models) / [Data](https://huggingface.co/datasets/lmms-lab/MME-Reasoning) |
+| 8 | [AI2D](https://arxiv.org/pdf/1603.07396) | 2016 | ~5,000 diagrams / ~15,000 questions and answers | T + E | AI2, UW | [Paper](https://arxiv.org/pdf/1603.07396) / [GitHub](https://github.com/allenai/ai2d) / [Data](https://prior.allenai.org/projects/diagram-understanding) |
+
+**Others:** CLEVR, OlympiadBench, MathVision, MMMU-Pro, PuzzleVQA, GPQA
+
+### Domain Adaptation Benchmarks
+
+| # | Name | Year | Scale | Role | Origin | Resources |
+|---:|---|---|---|---|---|---|
+| 1 | [DocVQA](https://arxiv.org/pdf/2007.00398) | 2020 | ~12.8K images + ~50K questions | T + E | UB, CVC | [Paper](https://arxiv.org/pdf/2007.00398) / [GitHub](https://github.com/answer-extraction/DocVQA) / [Data](https://rrc.cvc.uab.es/?ch=17) |
+| 2 | [ChartX](https://arxiv.org/pdf/2406.09610) | 2024 | ~48K images / 6K validation+test samples | T + E | Shanghai AI Lab, SJTU | [Paper](https://arxiv.org/pdf/2406.09610) / [GitHub](https://github.com/ChartReasoning/ChartX) / [Data](https://huggingface.co/datasets/SharkAI/ChartX) |
+| 3 | [OCRBench](https://arxiv.org/pdf/2311.16594) | 2023 | ~1K questions | E | SAIL | [Paper](https://arxiv.org/pdf/2311.16594) / [GitHub](https://github.com/rohitgirdhar/OCRBench) / [Data](https://huggingface.co/datasets/echo840/OCRBench) |
+| 4 | [ScreenSpot](https://arxiv.org/pdf/2402.07312) | 2024 | ~610 screenshots + ~1.3K GUI instructions | E | CUHK, SAIL | [Paper](https://arxiv.org/pdf/2402.07312) / [GitHub](https://github.com/StanfordAI4HI/ScreenSpot) / [Data](https://huggingface.co/datasets/StanfordAI4HI/screenspot) |
+| 5 | [Mind2Web](https://arxiv.org/pdf/2306.06070) | 2023 | ~137 websites + ~2.4K tasks + ~137K annotated steps | T + E | OSU, CMU | [Paper](https://arxiv.org/pdf/2306.06070) / [GitHub](https://github.com/OSU-NLP-Group/Mind2Web) / [Data](https://huggingface.co/datasets/osunlp/Mind2Web) |
+| 6 | [VQA-RAD](https://arxiv.org/pdf/1808.02771) | 2018 | ~315 images + ~3.5K QA pairs | T + E | NLM | [Paper](https://arxiv.org/pdf/1808.02771) / [GitHub](https://github.com/Awenbocc/VQA-Med) / [Data](https://www.nature.com/articles/sdata2018251) |
+| 7 | [PathVQA](https://arxiv.org/pdf/2003.11706) | 2020 | ~5K images + ~32K QA pairs | T + E | Pitt | [Paper](https://arxiv.org/pdf/2003.11706) / [GitHub](https://github.com/UCSD-AI4H/PathVQA) / [Data](https://github.com/UCSD-AI4H/PathVQA) |
+
+**Others:** AndroidControl-Low, AndroidControl-High, GUI-Odyssey, ScreenSpot-Pro, GUI-Act-Web, OmniAct-Web, ChartQA, InfoVQA, TextVQA, ST-VQA
 
 ---
 
@@ -279,12 +402,4 @@ If this repository or the associated survey is useful for your research, please 
 
 ## &#128196; License
 
-This repository is intended for academic research and open-source literature organization. Copyright of the listed papers, codebases, datasets, and models belongs to their respective authors and publishers. Please follow the license terms of each linked resource.
-
-
-
-
-
-
-
-
+This repository is intended for academic research and open-source literature organization. Copyright of the listed papers, codebases, datasets, and benchmarks belongs to their respective authors and organizations.

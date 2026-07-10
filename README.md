@@ -20,7 +20,7 @@ As illustrated in the framework below, the post-training pipeline begins with a 
 | [&#128640; Multimodal Reasoning Enhancement](#multimodal-reasoning-enhancement) | [R1-based Multimodal Reasoning](#r1-based-multimodal-reasoning), [Thinking with Images](#thinking-with-images), [Multimodal Self-Evolving](#multimodal-self-evolving), [Multimodal Distillation](#multimodal-distillation) |
 | [&#129517; Multimodal Domain Adaptation](#multimodal-domain-adaptation) | Domain-oriented post-training for specialized multimodal scenarios |
 | [&#9881;&#65039; Multimodal Scalable Training](#multimodal-scalable-training) | [LoRA-based Methods](#lora-based-methods), [MoE-based Methods](#moe-based-methods), [Compute-efficient Methods](#compute-efficient-methods) |
-| [&#128202; Multimodal Benchmarks](#multimodal-benchmarks) | Benchmarks, evaluation protocols, and capability taxonomies |
+| [&#128202; Multimodal Benchmarks](#multimodal-benchmarks) | [Instruction Tuning Benchmarks](#instruction-tuning-benchmarks), [Alignment Learning Benchmarks](#alignment-learning-benchmarks), [Reasoning Enhancement Benchmarks](#reasoning-enhancement-benchmarks), [Domain Adaptation Benchmarks](#domain-adaptation-benchmarks) |
 
 ---
 
@@ -319,15 +319,15 @@ Datasets and benchmarks play a central role in MLLM post-training because they d
 
 | # | Method | Type | Venue | Resources |
 |---:|---|---|---|---|
-| 1 | [LLaVA-Instruct-150K](https://arxiv.org/pdf/2304.08485) | T | 2023 | [Paper](https://arxiv.org/pdf/2304.08485) / [Code](https://github.com/haotian-liu/LLaVA) / [Data](https://huggingface.co/datasets/liuhaotian/LLaVA-Instruct-150K) |
-| 2 | [SEED-Bench](https://arxiv.org/pdf/2307.16125) | E | 2023 | [Paper](https://arxiv.org/pdf/2307.16125) / [Code](https://github.com/AILab-CVC/SEED-Bench) / [Data](https://huggingface.co/datasets/AILab-CVC/SEED-Bench) |
-| 3 | [MM-Vet](https://arxiv.org/pdf/2308.02497) | E | 2023 | [Paper](https://arxiv.org/pdf/2308.02497) / [Code](https://github.com/yuweihao/MM-Vet) / [Data](https://huggingface.co/datasets/zhiqings/MM-Vet) |
-| 4 | [MMBench](https://arxiv.org/pdf/2407.06267) | E | 2024 | [Paper](https://arxiv.org/pdf/2407.06267) / [Code](https://github.com/open-compass/MMBench) / [Data](https://huggingface.co/datasets/lmms-lab/MMBench) |
-| 5 | [ShareGPT4V](https://arxiv.org/pdf/2311.12793) | T | 2024 | [Paper](https://arxiv.org/pdf/2311.12793) / [Code](https://github.com/ShareGPT4Omni/ShareGPT4V) / [Data](https://sharegpt4v.github.io/) |
-| 6 | [MIA-Bench](https://arxiv.org/pdf/2502.03105) | E | 2025 | [Paper](https://arxiv.org/pdf/2502.03105) / [Code](https://github.com/apple/ml-mia-bench) / [Data](https://huggingface.co/datasets/apple/MIA-Bench) |
-| 7 | [MM-IFInstruct](https://arxiv.org/pdf/2503.10722) | T | 2025 | [Paper](https://arxiv.org/pdf/2503.10722) / [Code](https://github.com/ZhangYuanhan-AI/MM-IFInstruct) / [Data](https://huggingface.co/datasets/zhangyuanhan/MM-IFInstruct) |
-| 8 | [MME](https://arxiv.org/pdf/2305.13723) | E | 2026 | [Paper](https://arxiv.org/pdf/2305.13723) / [Code](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models/tree/Evaluation) / [Data](https://huggingface.co/datasets/lmms-lab/MME) |
-| 9 | [VC-IFInstruct](https://arxiv.org/pdf/2603.01587) | T | 2026 | [Paper](https://arxiv.org/pdf/2603.01587) / [Code](https://github.com/Video-LLaVA/VC-IFInstruct) / [Data](https://huggingface.co/datasets/Video-LLaVA/VC-IFInstruct) |
+| 1 | [LLaVA-Instruct-150K](https://arxiv.org/pdf/2304.08485) | Article | arXiv ![arXiv](https://img.shields.io/badge/arXiv-Paper-red) | [Paper](https://arxiv.org/pdf/2304.08485) / [Code](https://github.com/haotian-liu/LLaVA) / [Data](https://huggingface.co/datasets/liuhaotian/LLaVA-Instruct-150K) |
+| 2 | [SEED-Bench](https://arxiv.org/pdf/2307.16125) | Article | arXiv ![arXiv](https://img.shields.io/badge/arXiv-Paper-red) | [Paper](https://arxiv.org/pdf/2307.16125) / [Code](https://github.com/AILab-CVC/SEED-Bench) / [Data](https://huggingface.co/datasets/AILab-CVC/SEED-Bench) |
+| 3 | [MM-Vet](https://arxiv.org/pdf/2308.02497) | Article | arXiv ![arXiv](https://img.shields.io/badge/arXiv-Paper-red) | [Paper](https://arxiv.org/pdf/2308.02497) / [Code](https://github.com/yuweihao/MM-Vet) / [Data](https://huggingface.co/datasets/zhiqings/MM-Vet) |
+| 4 | [MMBench](https://arxiv.org/pdf/2407.06267) | Article | arXiv ![arXiv](https://img.shields.io/badge/arXiv-Paper-red) | [Paper](https://arxiv.org/pdf/2407.06267) / [Code](https://github.com/open-compass/MMBench) / [Data](https://huggingface.co/datasets/lmms-lab/MMBench) |
+| 5 | [ShareGPT4V](https://arxiv.org/pdf/2311.12793) | Article | arXiv ![arXiv](https://img.shields.io/badge/arXiv-Paper-red) | [Paper](https://arxiv.org/pdf/2311.12793) / [Code](https://github.com/ShareGPT4Omni/ShareGPT4V) / [Data](https://sharegpt4v.github.io/) |
+| 6 | [MIA-Bench](https://arxiv.org/pdf/2502.03105) | Article | arXiv ![arXiv](https://img.shields.io/badge/arXiv-Paper-red) | [Paper](https://arxiv.org/pdf/2502.03105) / [Code](https://github.com/apple/ml-mia-bench) / [Data](https://huggingface.co/datasets/apple/MIA-Bench) |
+| 7 | [MM-IFInstruct](https://arxiv.org/pdf/2503.10722) | Article | arXiv ![arXiv](https://img.shields.io/badge/arXiv-Paper-red) | [Paper](https://arxiv.org/pdf/2503.10722) / [Code](https://github.com/ZhangYuanhan-AI/MM-IFInstruct) / [Data](https://huggingface.co/datasets/zhangyuanhan/MM-IFInstruct) |
+| 8 | [MME](https://arxiv.org/pdf/2305.13723) | Article | arXiv ![arXiv](https://img.shields.io/badge/arXiv-Paper-red) | [Paper](https://arxiv.org/pdf/2305.13723) / [Code](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models/tree/Evaluation) / [Data](https://huggingface.co/datasets/lmms-lab/MME) |
+| 9 | [VC-IFInstruct](https://arxiv.org/pdf/2603.01587) | Article | arXiv ![arXiv](https://img.shields.io/badge/arXiv-Paper-red) | [Paper](https://arxiv.org/pdf/2603.01587) / [Code](https://github.com/Video-LLaVA/VC-IFInstruct) / [Data](https://huggingface.co/datasets/Video-LLaVA/VC-IFInstruct) |
 
 **Others:** VQAv2, GQA, OK-VQA, TextVQA, VizWiz, Visual7W, BLINK, MME-RealWorld, M3IT, ShareGPT4Video, VideoMME
 
@@ -335,15 +335,15 @@ Datasets and benchmarks play a central role in MLLM post-training because they d
 
 | # | Method | Type | Venue | Resources |
 |---:|---|---|---|---|
-| 1 | [POPE](https://arxiv.org/pdf/2305.10355) | E | 2023 | [Paper](https://arxiv.org/pdf/2305.10355) / [Code](https://github.com/RUCAIBox/POPE) / [Data](https://huggingface.co/datasets/rucaibox/pope) |
-| 2 | [MMHal-Bench](https://arxiv.org/pdf/2309.14525) | E | 2023 | [Paper](https://arxiv.org/pdf/2309.14525) / [Code](https://github.com/Shengcao-Cao/MMHal-Bench) / [Data](https://huggingface.co/datasets/Shengcao/MMHal-Bench) |
-| 3 | [AMBER](https://arxiv.org/pdf/2311.10383) | E | 2023 | [Paper](https://arxiv.org/pdf/2311.10383) / [Code](https://github.com/jesseor101/AMBER) / [Data](https://huggingface.co/datasets/jesseor101/AMBER) |
-| 4 | [HallusionBench](https://arxiv.org/pdf/2310.14566) | E | 2024 | [Paper](https://arxiv.org/pdf/2310.14566) / [Code](https://github.com/tianyi-lab/HallusionBench) / [Data](https://huggingface.co/datasets/tianyi-lab/HallusionBench) |
-| 5 | [LLaVA-RLHF](https://arxiv.org/pdf/2309.14525) | E | 2024 | [Paper](https://arxiv.org/pdf/2309.14525) / [Code](https://github.com/llava-rlhf/LLaVA-RLHF) / [Data](https://huggingface.co/datasets/zhiqings/LLaVA-RLHF-Data) |
-| 6 | [RLHF-V](https://arxiv.org/pdf/2312.00849) | T | 2024 | [Paper](https://arxiv.org/pdf/2312.00849) / [Code](https://github.com/RLHF-V/RLHF-V) / [Data](https://huggingface.co/datasets/OpenGVLab/RLHF-V-Dataset) |
-| 7 | [VLGuard](https://arxiv.org/pdf/2402.00772) | T+E | 2024 | [Paper](https://arxiv.org/pdf/2402.00772) / [Code](https://github.com/VLGuard/VLGuard) / [Data](https://huggingface.co/datasets/VLGuard/VLGuard) |
-| 8 | [SPA-VL](https://arxiv.org/pdf/2503.01082) | T+E | 2025 | [Paper](https://arxiv.org/pdf/2503.01082) / [Code](https://github.com/zhiqings/SPA-VL) / [Data](https://huggingface.co/datasets/zhiqings/SPA-VL) |
-| 9 | [Lingua-SafetyBench](https://arxiv.org/pdf/2503.11836) | E | 2026 | [Paper](https://arxiv.org/pdf/2503.11836) / [Code](https://github.com/yuhuayustc/Lingua-SafetyBench) / [Data](https://huggingface.co/datasets/yuhuayustc/Lingua-SafetyBench) |
+| 1 | [POPE](https://arxiv.org/pdf/2305.10355) | Article | arXiv ![arXiv](https://img.shields.io/badge/arXiv-Paper-red) | [Paper](https://arxiv.org/pdf/2305.10355) / [Code](https://github.com/RUCAIBox/POPE) / [Data](https://huggingface.co/datasets/rucaibox/pope) |
+| 2 | [MMHal-Bench](https://arxiv.org/pdf/2309.14525) | Article | arXiv ![arXiv](https://img.shields.io/badge/arXiv-Paper-red) | [Paper](https://arxiv.org/pdf/2309.14525) / [Code](https://github.com/Shengcao-Cao/MMHal-Bench) / [Data](https://huggingface.co/datasets/Shengcao/MMHal-Bench) |
+| 3 | [AMBER](https://arxiv.org/pdf/2311.10383) | Article | arXiv ![arXiv](https://img.shields.io/badge/arXiv-Paper-red) | [Paper](https://arxiv.org/pdf/2311.10383) / [Code](https://github.com/jesseor101/AMBER) / [Data](https://huggingface.co/datasets/jesseor101/AMBER) |
+| 4 | [HallusionBench](https://arxiv.org/pdf/2310.14566) | Article | arXiv ![arXiv](https://img.shields.io/badge/arXiv-Paper-red) | [Paper](https://arxiv.org/pdf/2310.14566) / [Code](https://github.com/tianyi-lab/HallusionBench) / [Data](https://huggingface.co/datasets/tianyi-lab/HallusionBench) |
+| 5 | [LLaVA-RLHF](https://arxiv.org/pdf/2309.14525) | Article | arXiv ![arXiv](https://img.shields.io/badge/arXiv-Paper-red) | [Paper](https://arxiv.org/pdf/2309.14525) / [Code](https://github.com/llava-rlhf/LLaVA-RLHF) / [Data](https://huggingface.co/datasets/zhiqings/LLaVA-RLHF-Data) |
+| 6 | [RLHF-V](https://arxiv.org/pdf/2312.00849) | Article | arXiv ![arXiv](https://img.shields.io/badge/arXiv-Paper-red) | [Paper](https://arxiv.org/pdf/2312.00849) / [Code](https://github.com/RLHF-V/RLHF-V) / [Data](https://huggingface.co/datasets/OpenGVLab/RLHF-V-Dataset) |
+| 7 | [VLGuard](https://arxiv.org/pdf/2402.00772) | Article | arXiv ![arXiv](https://img.shields.io/badge/arXiv-Paper-red) | [Paper](https://arxiv.org/pdf/2402.00772) / [Code](https://github.com/VLGuard/VLGuard) / [Data](https://huggingface.co/datasets/VLGuard/VLGuard) |
+| 8 | [SPA-VL](https://arxiv.org/pdf/2503.01082) | Article | arXiv ![arXiv](https://img.shields.io/badge/arXiv-Paper-red) | [Paper](https://arxiv.org/pdf/2503.01082) / [Code](https://github.com/zhiqings/SPA-VL) / [Data](https://huggingface.co/datasets/zhiqings/SPA-VL) |
+| 9 | [Lingua-SafetyBench](https://arxiv.org/pdf/2503.11836) | Article | arXiv ![arXiv](https://img.shields.io/badge/arXiv-Paper-red) | [Paper](https://arxiv.org/pdf/2503.11836) / [Code](https://github.com/yuhuayustc/Lingua-SafetyBench) / [Data](https://huggingface.co/datasets/yuhuayustc/Lingua-SafetyBench) |
 
 **Others:** CHAIR, M-HalDetect, HaELM, MM-SafetyBench, FigStep, JailBreakV-28K, RTVLM
 
@@ -351,14 +351,14 @@ Datasets and benchmarks play a central role in MLLM post-training because they d
 
 | # | Method | Type | Venue | Resources |
 |---:|---|---|---|---|
-| 1 | [ScienceQA](https://arxiv.org/pdf/2209.09513) | T+E | 2022 | [Paper](https://arxiv.org/pdf/2209.09513) / [Code](https://github.com/lupantech/ScienceQA) / [Data](https://huggingface.co/datasets/derek-thomas/ScienceQA) |
-| 2 | [GQA](https://arxiv.org/pdf/1902.09506) | T+E | 2019 | [Paper](https://arxiv.org/pdf/1902.09506) / [Code](https://github.com/stanfordnlp/GQA) / [Data](https://cs.stanford.edu/people/dorarad/gqa/about.html) |
-| 3 | [MMMU](https://arxiv.org/pdf/2311.16502) | E | 2024 | [Paper](https://arxiv.org/pdf/2311.16502) / [Code](https://github.com/MMMU-Benchmark/MMMU) / [Data](https://huggingface.co/datasets/MMMU/MMMU) |
-| 4 | [MathVista](https://arxiv.org/pdf/2310.02255) | E | 2024 | [Paper](https://arxiv.org/pdf/2310.02255) / [Code](https://github.com/lupantech/MathVista) / [Data](https://huggingface.co/datasets/AI4Math/MathVista) |
-| 5 | [PuzzleBench](https://arxiv.org/pdf/2503.12381) | E | 2025 | [Paper](https://arxiv.org/pdf/2503.12381) / [Code](https://github.com/lupantech/PuzzleBench) / [Data](https://huggingface.co/datasets/lupantech/PuzzleBench) |
-| 6 | [MME-CoT](https://arxiv.org/pdf/2503.12415) | E | 2025 | [Paper](https://arxiv.org/pdf/2503.12415) / [Code](https://github.com/BradyFU/MME-CoT) / [Data](https://huggingface.co/datasets/lmms-lab/MME-CoT) |
-| 7 | [MME-Reasoning](https://arxiv.org/pdf/2503.12415) | E | 2025 | [Paper](https://arxiv.org/pdf/2503.12415) / [Code](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models) / [Data](https://huggingface.co/datasets/lmms-lab/MME-Reasoning) |
-| 8 | [AI2D](https://arxiv.org/pdf/1603.07396) | T+E | 2016 | [Paper](https://arxiv.org/pdf/1603.07396) / [Code](https://github.com/allenai/ai2d) / [Data](https://prior.allenai.org/projects/diagram-understanding) |
+| 1 | [ScienceQA](https://arxiv.org/pdf/2209.09513) | Article | arXiv ![arXiv](https://img.shields.io/badge/arXiv-Paper-red) | [Paper](https://arxiv.org/pdf/2209.09513) / [Code](https://github.com/lupantech/ScienceQA) / [Data](https://huggingface.co/datasets/derek-thomas/ScienceQA) |
+| 2 | [GQA](https://arxiv.org/pdf/1902.09506) | Article | arXiv ![arXiv](https://img.shields.io/badge/arXiv-Paper-red) | [Paper](https://arxiv.org/pdf/1902.09506) / [Code](https://github.com/stanfordnlp/GQA) / [Data](https://cs.stanford.edu/people/dorarad/gqa/about.html) |
+| 3 | [MMMU](https://arxiv.org/pdf/2311.16502) | Article | arXiv ![arXiv](https://img.shields.io/badge/arXiv-Paper-red) | [Paper](https://arxiv.org/pdf/2311.16502) / [Code](https://github.com/MMMU-Benchmark/MMMU) / [Data](https://huggingface.co/datasets/MMMU/MMMU) |
+| 4 | [MathVista](https://arxiv.org/pdf/2310.02255) | Article | arXiv ![arXiv](https://img.shields.io/badge/arXiv-Paper-red) | [Paper](https://arxiv.org/pdf/2310.02255) / [Code](https://github.com/lupantech/MathVista) / [Data](https://huggingface.co/datasets/AI4Math/MathVista) |
+| 5 | [PuzzleBench](https://arxiv.org/pdf/2503.12381) | Article | arXiv ![arXiv](https://img.shields.io/badge/arXiv-Paper-red) | [Paper](https://arxiv.org/pdf/2503.12381) / [Code](https://github.com/lupantech/PuzzleBench) / [Data](https://huggingface.co/datasets/lupantech/PuzzleBench) |
+| 6 | [MME-CoT](https://arxiv.org/pdf/2503.12415) | Article | arXiv ![arXiv](https://img.shields.io/badge/arXiv-Paper-red) | [Paper](https://arxiv.org/pdf/2503.12415) / [Code](https://github.com/BradyFU/MME-CoT) / [Data](https://huggingface.co/datasets/lmms-lab/MME-CoT) |
+| 7 | [MME-Reasoning](https://arxiv.org/pdf/2503.12415) | Article | arXiv ![arXiv](https://img.shields.io/badge/arXiv-Paper-red) | [Paper](https://arxiv.org/pdf/2503.12415) / [Code](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models) / [Data](https://huggingface.co/datasets/lmms-lab/MME-Reasoning) |
+| 8 | [AI2D](https://arxiv.org/pdf/1603.07396) | Article | arXiv ![arXiv](https://img.shields.io/badge/arXiv-Paper-red) | [Paper](https://arxiv.org/pdf/1603.07396) / [Code](https://github.com/allenai/ai2d) / [Data](https://prior.allenai.org/projects/diagram-understanding) |
 
 **Others:** CLEVR, OlympiadBench, MathVision, MMMU-Pro, PuzzleVQA, GPQA
 
@@ -366,13 +366,13 @@ Datasets and benchmarks play a central role in MLLM post-training because they d
 
 | # | Method | Type | Venue | Resources |
 |---:|---|---|---|---|
-| 1 | [DocVQA](https://arxiv.org/pdf/2007.00398) | T+E | 2020 | [Paper](https://arxiv.org/pdf/2007.00398) / [Code](https://github.com/answer-extraction/DocVQA) / [Data](https://rrc.cvc.uab.es/?ch=17) |
-| 2 | [ChartX](https://arxiv.org/pdf/2406.09610) | T+E | 2024 | [Paper](https://arxiv.org/pdf/2406.09610) / [Code](https://github.com/ChartReasoning/ChartX) / [Data](https://huggingface.co/datasets/SharkAI/ChartX) |
-| 3 | [OCRBench](https://arxiv.org/pdf/2311.16594) | E | 2023 | [Paper](https://arxiv.org/pdf/2311.16594) / [Code](https://github.com/rohitgirdhar/OCRBench) / [Data](https://huggingface.co/datasets/echo840/OCRBench) |
-| 4 | [ScreenSpot](https://arxiv.org/pdf/2402.07312) | E | 2024 | [Paper](https://arxiv.org/pdf/2402.07312) / [Code](https://github.com/StanfordAI4HI/ScreenSpot) / [Data](https://huggingface.co/datasets/StanfordAI4HI/screenspot) |
-| 5 | [Mind2Web](https://arxiv.org/pdf/2306.06070) | T+E | 2023 | [Paper](https://arxiv.org/pdf/2306.06070) / [Code](https://github.com/OSU-NLP-Group/Mind2Web) / [Data](https://huggingface.co/datasets/osunlp/Mind2Web) |
-| 6 | [VQA-RAD](https://arxiv.org/pdf/1808.02771) | T+E | 2018 | [Paper](https://arxiv.org/pdf/1808.02771) / [Code](https://github.com/Awenbocc/VQA-Med) / [Data](https://www.nature.com/articles/sdata2018251) |
-| 7 | [PathVQA](https://arxiv.org/pdf/2003.11706) | T+E | 2020 | [Paper](https://arxiv.org/pdf/2003.11706) / [Code](https://github.com/UCSD-AI4H/PathVQA) / [Data](https://github.com/UCSD-AI4H/PathVQA) |
+| 1 | [DocVQA](https://arxiv.org/pdf/2007.00398) | Article | arXiv ![arXiv](https://img.shields.io/badge/arXiv-Paper-red) | [Paper](https://arxiv.org/pdf/2007.00398) / [Code](https://github.com/answer-extraction/DocVQA) / [Data](https://rrc.cvc.uab.es/?ch=17) |
+| 2 | [ChartX](https://arxiv.org/pdf/2406.09610) | Article | arXiv ![arXiv](https://img.shields.io/badge/arXiv-Paper-red) | [Paper](https://arxiv.org/pdf/2406.09610) / [Code](https://github.com/ChartReasoning/ChartX) / [Data](https://huggingface.co/datasets/SharkAI/ChartX) |
+| 3 | [OCRBench](https://arxiv.org/pdf/2311.16594) | Article | arXiv ![arXiv](https://img.shields.io/badge/arXiv-Paper-red) | [Paper](https://arxiv.org/pdf/2311.16594) / [Code](https://github.com/rohitgirdhar/OCRBench) / [Data](https://huggingface.co/datasets/echo840/OCRBench) |
+| 4 | [ScreenSpot](https://arxiv.org/pdf/2402.07312) | Article | arXiv ![arXiv](https://img.shields.io/badge/arXiv-Paper-red) | [Paper](https://arxiv.org/pdf/2402.07312) / [Code](https://github.com/StanfordAI4HI/ScreenSpot) / [Data](https://huggingface.co/datasets/StanfordAI4HI/screenspot) |
+| 5 | [Mind2Web](https://arxiv.org/pdf/2306.06070) | Article | arXiv ![arXiv](https://img.shields.io/badge/arXiv-Paper-red) | [Paper](https://arxiv.org/pdf/2306.06070) / [Code](https://github.com/OSU-NLP-Group/Mind2Web) / [Data](https://huggingface.co/datasets/osunlp/Mind2Web) |
+| 6 | [VQA-RAD](https://arxiv.org/pdf/1808.02771) | Article | arXiv ![arXiv](https://img.shields.io/badge/arXiv-Paper-red) | [Paper](https://arxiv.org/pdf/1808.02771) / [Code](https://github.com/Awenbocc/VQA-Med) / [Data](https://www.nature.com/articles/sdata2018251) |
+| 7 | [PathVQA](https://arxiv.org/pdf/2003.11706) | Article | arXiv ![arXiv](https://img.shields.io/badge/arXiv-Paper-red) | [Paper](https://arxiv.org/pdf/2003.11706) / [Code](https://github.com/UCSD-AI4H/PathVQA) / [Data](https://github.com/UCSD-AI4H/PathVQA) |
 
 **Others:** AndroidControl-Low, AndroidControl-High, GUI-Odyssey, ScreenSpot-Pro, GUI-Act-Web, OmniAct-Web, ChartQA, InfoVQA, TextVQA, ST-VQA
 

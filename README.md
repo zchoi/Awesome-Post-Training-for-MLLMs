@@ -3,10 +3,8 @@
 
 This repository accompanies the survey **A Survey on Post-training of Multimodal Large Language Models** and provides a structured literature map for understanding how post-training transforms pre-trained MLLMs into aligned, capable, and safe multimodal assistants. Following the survey's behavior-shaping perspective, MLLM post-training is not merely a downstream optimization stage; it is a systematic process that calibrates broad cross-modal representations toward reliable instruction following, preference alignment, complex reasoning, domain-aware adaptation, and scalable multimodal learning.
 
-As illustrated in the framework below, the post-training pipeline begins with a pre-trained multimodal substrate composed of a vision encoder and an LLM decoder. It then progressively refines the model through supervised instruction tuning, reasoning-oriented tuning, alignment tuning, and safety-oriented tuning, while being continuously improved through high-quality multimodal data, human or AI feedback, evaluation, and red-teaming loops. This organization reflects the central thesis of the survey: robust MLLMs emerge from an iterative interaction between multimodal data, feedback signals, optimization algorithms, and evaluation protocols.
-
 <p align="center">
-  <img src="assets/framework.png" width="92%" alt="Post-training framework for MLLMs">
+  <img src="assets/framework-z.png" width="100%" alt="Post-training framework for MLLMs">
 </p>
 
 ---

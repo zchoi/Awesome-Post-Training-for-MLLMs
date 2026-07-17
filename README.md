@@ -429,16 +429,17 @@ Domain adaptation studies how pre-trained MLLMs can be specialized to domains wi
 * **Mobile-Agent: Autonomous Multi-Modal Mobile Device Agent with Visual Perception** [ICLR 2024] [[Paper](https://arxiv.org/pdf/2401.16158)] [[Code](https://github.com/X-PLUG/MobileAgent)] <br>
 Beijing Jiaotong University, Alibaba Group
 
-* **GUI-R1** [arXiv 2025] [[Paper](https://arxiv.org/pdf/2503.11664)] [[Code](https://github.com/Showlab/GUI-R1)]
+* **GUI-R1: A Generalist R1-Style Vision-Language Action Model For GUI Agents** [arXiv 2025] [[Paper](https://arxiv.org/abs/2504.10458)] [[Code](https://github.com/Showlab/GUI-R1)]
 
-* **mPLUG-DocOwl1.5** [arXiv 2024] [[Paper](https://arxiv.org/pdf/2406.14832)] [[Code](https://github.com/X-PLUG/mPLUG-DocOwl)]
+* **mPLUG-DocOwl 1.5: Unified Structure Learning for OCR-free Document Understanding** [EMNLP 2024] [[Paper](https://arxiv.org/abs/2403.12895)] [[Code](https://github.com/X-PLUG/mPLUG-DocOwl)] <br>
+Alibaba Group
 
 * **LLaVA-UHD: an LMMPerceiving Any Aspect Ratio and High-Resolution Images** [arXiv 2024] [[Paper](https://arxiv.org/pdf/2403.11703)] [[Code](https://github.com/thunlp/LLaVA-UHD)] <br>
 Ruyi Xu, Yuan Yao, Zonghao Guo, Junbo Cui, Zanlin Ni, Chunjiang Ge, Tat-Seng Chua, Zhiyuan Liu, Maosong Sun, Gao Huang
 
-* **Med-Gemini** [arXiv 2024] [[Paper](https://arxiv.org/pdf/2402.12721)]
+* **Advancing Multimodal Medical Capabilities of Gemini** [arXiv 2024] [[Paper](https://arxiv.org/abs/2405.03162)]
 
-* **AdaMLLM** [arXiv 2024] [[Paper](https://arxiv.org/pdf/2407.03104)] [[Code](https://github.com/thunlp/AdaMLLM)] [[Homepage](https://adamllm.github.io/)]
+* **On Domain-Specific Post-Training for Multimodal Large Language Models** [arXiv 2024] [[Paper](https://arxiv.org/abs/2411.19930)] [[Code](https://github.com/thunlp/AdaMLLM)] [[Homepage](https://adamllm.github.io/)]
 
 ---
 
@@ -452,33 +453,33 @@ This section organizes scalable post-training strategies that improve efficiency
 
 Low-Rank Adaptation (LoRA) provides a simple and widely used strategy for efficient MLLM post-training. Instead of updating the entire LLM backbone, LoRA-style methods freeze most pretrained parameters and insert lightweight trainable low-rank matrices into selected layers. This is especially attractive for MLLMs because visual instruction tuning, video adaptation, and domain-specific tuning often require repeated adaptation over different data sources. Recent extensions further explore mixture-style routing, continual learning, and multimodal-specific low-rank configurations.
 
-* **LLaVA-MoLE** [arXiv 2024] [[Paper](https://arxiv.org/pdf/2406.04329)] [[Code](https://github.com/lingchen03/LLaVA-MoLE)]
+* **LLaVA-MoLE: Sparse Mixture of LoRA Experts for Mitigating Data Conflicts in Instruction Finetuning MLLMs** [arXiv 2024] [[Paper](https://arxiv.org/abs/2401.16160)] [[Code](https://github.com/lingchen03/LLaVA-MoLE)]
 
-* **MixLoRA** [arXiv 2024] [[Paper](https://arxiv.org/pdf/2405.16339)] [[Code](https://github.com/TencentARC/MixLoRA)]
+* **MixLoRA: Enhancing Large Language Models Fine-Tuning with LoRA-based Mixture of Experts** [arXiv 2024] [[Paper](https://arxiv.org/abs/2404.15159)] [[Code](https://github.com/TencentARC/MixLoRA)]
 
-* **MokA** [arXiv 2024] [[Paper](https://arxiv.org/pdf/2406.09610)] [[Code](https://github.com/ZhangYuanhan-AI/MokA)] [[Homepage](https://moka-ml.github.io/)]
+* **MoKA: Mixture of Kronecker Adapters** [arXiv 2025] [[Paper](https://arxiv.org/abs/2508.03527)] [[Code](https://github.com/ZhangYuanhan-AI/MokA)] [[Homepage](https://moka-ml.github.io/)]
 
-* **LiLoRA** [arXiv 2024] [[Paper](https://arxiv.org/pdf/2410.07293)] [[Code](https://github.com/bupt-ai-cv/LiLoRA)]
+* **LiLoRA**] [[Code](https://github.com/bupt-ai-cv/LiLoRA)]
 
 <a id="moe-based-methods"></a>
 ### MoE-based Methods
 
 Mixture-of-Experts (MoE) adaptation improves efficiency by activating only a subset of parameters for each input token or task. For MLLMs, MoE is particularly useful because different modalities, domains, and reasoning patterns may require different expert knowledge, while dense activation of all parameters is often unnecessary. Existing methods follow two directions: sparse expert backbones that expand total capacity while keeping activated computation relatively small, and expert extension that adds new experts to pretrained MoE models for new modalities or tasks while preserving the original backbone.
 
-* **MoE-LLaVA** [arXiv 2024] [[Paper](https://arxiv.org/pdf/2406.14565)] [[Code](https://github.com/PKU-YuanGroup/MoE-LLaVA)]
+* **MoE-LLaVA: Mixture of Experts for Large Vision-Language Models** [arXiv 2024] [[Paper](https://arxiv.org/abs/2401.15947)] [[Code](https://github.com/PKU-YuanGroup/MoE-LLaVA)]
 
-* **MoE-LLaVA-7B** [arXiv 2024] [[Paper](https://arxiv.org/pdf/2406.14565)] [[Code](https://github.com/PKU-YuanGroup/MoE-LLaVA)]
+* **MoE-LLaVA-7B** [arXiv 2024] [[Paper](https://arxiv.org/abs/2401.15947)] [[Code](https://github.com/PKU-YuanGroup/MoE-LLaVA)]
 
-* **MoExtend** [arXiv 2024] [[Paper](https://arxiv.org/pdf/2410.10764)] [[Code](https://github.com/zyx-2000/MoExtend)]
+* **MoExtend: Tuning New Experts for Modality and Task Extension** [arXiv 2024] [[Paper](https://arxiv.org/abs/2408.03511)] [[Code](https://github.com/zyx-2000/MoExtend)]
 
 * **Qwen2-VL: Enhancing Vision-Language Model's Perception of the World at Any Resolution** [arXiv 2024] [[Paper](https://arxiv.org/pdf/2409.12191)] [[Code](https://github.com/deepseek-ai/DeepSeek-VL2)] <br>
 ByteDance, S-Lab, NTU, CUHK, HKUST
 
-* **Qwen3-Omni** [arXiv 2025] [[Paper](https://arxiv.org/pdf/2503.10753)] [[Code](https://github.com/QwenLM/Qwen3)]
+* **Qwen3-Omni Technical Report** [arXiv 2025] [[Paper](https://arxiv.org/abs/2509.17765)] [[Code](https://github.com/QwenLM/Qwen3)]
 
 * **Qwen3-VL Technical Report** [arXiv 2025] [[Paper](https://arxiv.org/pdf/2511.21631)] [[Code](https://github.com/QwenLM/Qwen3-VL)]
 
-* **MiniMax-01** [arXiv 2024] [[Paper](https://arxiv.org/pdf/2412.08142)] [[Code](https://github.com/MiniMaxAI/MiniMax-01)]
+* **MiniMax-01: Scaling Foundation Models with Lightning Attention** [arXiv 2025] [[Paper](https://arxiv.org/abs/2501.08313)] [[Code](https://github.com/MiniMaxAI/MiniMax-01)]
 
 * **Seed1.5-VL Technical Report** [arXiv 2025] [[Paper](https://arxiv.org/pdf/2505.07062)] [[Code](https://github.com/ByteDance-Seed/Seed1.5-VL)] [[Homepage](https://seed.bytedance.com/en/tech/seed1_5_vl)] <br>
 ByteDance Seed
@@ -493,11 +494,12 @@ Compute-efficient post-training addresses the computational cost of visual encod
 * **LLaVA-UHD: an LMMPerceiving Any Aspect Ratio and High-Resolution Images** [arXiv 2024] [[Paper](https://arxiv.org/pdf/2403.11703)] [[Code](https://github.com/thunlp/LLaVA-UHD)] <br>
 Ruyi Xu, Yuan Yao, Zonghao Guo, Junbo Cui, Zanlin Ni, Chunjiang Ge, Tat-Seng Chua, Zhiyuan Liu, Maosong Sun, Gao Huang
 
-* **AdaMLLM / AdaLLaVA** [arXiv 2024] [[Paper](https://arxiv.org/pdf/2407.03104)] [[Code](https://github.com/thunlp/AdaMLLM)] [[Homepage](https://adamllm.github.io/)]
+* **AdaMLLM / AdaLLaVA**] [[Code](https://github.com/thunlp/AdaMLLM)] [[Homepage](https://adamllm.github.io/)]
 
-* **InternVL2** [arXiv 2024] [[Paper](https://arxiv.org/pdf/2404.11703)] [[Code](https://github.com/OpenGVLab/InternVL)]
+* **InternVL2**] [[Code](https://github.com/OpenGVLab/InternVL)]
 
-* **UReader** [arXiv 2024] [[Paper](https://arxiv.org/pdf/2406.12837)] [[Code](https://github.com/LukcyYuan/UReader)]
+* **UReader: Universal OCR-free Visually-situated Language Understanding with Multimodal Large Language Model** [EMNLP 2023] [[Paper](https://arxiv.org/abs/2310.05126)] [[Code](https://github.com/LukcyYuan/UReader)] <br>
+Alibaba Group
 
 * **Monkey :ImageResolutionandText Label Are Important Things for Large Multi-modal Models** [CVPR 2024] [[Paper](https://arxiv.org/pdf/2311.06607)] [[Code](https://github.com/Yuliang-Liu/Monkey)] <br>
 Huazhong University of Science and Technology, Kingsoft Office
@@ -507,26 +509,27 @@ Huazhong University of Science and Technology, Kingsoft Office
 * **An Image is Worth 1/2 Tokens After Layer 2: Plug-and-Play Inference Acceleration for Large Vision-Language Models** [ECCV 2024] [[Paper](https://arxiv.org/pdf/2403.06764)] [[Code](https://github.com/pkuliyi2015/FastV)] <br>
 National Key Laboratory for Multimedia Information Processing, Peking University, Alibaba Group
 
-* **VisionZip** [arXiv 2024] [[Paper](https://arxiv.org/pdf/2405.13607)] [[Code](https://github.com/pykale/VisionZip)]
+* **VisionZip: Longer is Better but Not Necessary in Vision Language Models** [CVPR 2025] [[Paper](https://arxiv.org/abs/2412.04467)] [[Code](https://github.com/pykale/VisionZip)]
 
-* **SparseVLM** [arXiv 2024] [[Paper](https://arxiv.org/pdf/2406.02260)] [[Code](https://github.com/linhezheng/SparseVLM)]
+* **SparseVLM: Visual Token Sparsification for Efficient Vision-Language Model Inference** [ICML 2025] [[Paper](https://arxiv.org/abs/2410.04417)] [[Code](https://github.com/linhezheng/SparseVLM)]
 
-* **TRIM / VisionTrim** [arXiv 2024] [[Paper](https://arxiv.org/pdf/2406.13435)]
+* **TRIM / VisionTrim**]
 
-* **TokenPacker** [arXiv 2024] [[Paper](https://arxiv.org/pdf/2406.08410)] [[Code](https://github.com/richard-peng-xia/TokenPacker)]
+* **TokenPacker: Efficient Visual Projector for Multimodal LLM** [arXiv 2024] [[Paper](https://arxiv.org/abs/2407.02392)] [[Code](https://github.com/richard-peng-xia/TokenPacker)]
 
 #### Long-Context Optimization (LCO)
 
 * **BIOSCAN-5M: A Multimodal Dataset for Insect Biodiversity** [arXiv 2024] [[Paper](https://arxiv.org/pdf/2406.12723)] [[Code](https://github.com/long-vu/LongVU)] [[Homepage](https://long-vu.github.io/)] <br>
 Centre for Biodiversity Genomics, University of Guelph, University of Waterloo, Simon Fraser University, Vector Institute, Institute (Amii), Aalborg University and Pioneer Centre for AI
 
-* **LongVILA** [arXiv 2024] [[Paper](https://arxiv.org/pdf/2408.10186)] [[Code](https://github.com/NVlabs/LongVILA)]
+* **LongVILA: Scaling Long-Context Visual Language Models for Long Videos** [arXiv 2024] [[Paper](https://arxiv.org/abs/2408.10188)] [[Code](https://github.com/NVlabs/LongVILA)] <br>
+NVIDIA, MIT
 
-* **LongVA** [arXiv 2024] [[Paper](https://arxiv.org/pdf/2408.09880)] [[Code](https://github.com/EvolvingLMMs-Lab/LongVA)]
+* **Long Context Transfer from Language to Vision** [arXiv 2024] [[Paper](https://arxiv.org/abs/2406.16852)] [[Code](https://github.com/EvolvingLMMs-Lab/LongVA)]
 
-* **IG-VLM** [arXiv 2024] [[Paper](https://arxiv.org/pdf/2407.05420)]
+* **IG-VLM**]
 
-* **VideoChat-Flash** [arXiv 2024] [[Paper](https://arxiv.org/pdf/2410.09313)] [[Code](https://github.com/OpenGVLab/VideoChat-Flash)]
+* **VideoChat-Flash: Hierarchical Compression for Long-Context Video Modeling** [arXiv 2025] [[Paper](https://arxiv.org/abs/2501.00574)] [[Code](https://github.com/OpenGVLab/VideoChat-Flash)]
 
 ---
 
@@ -543,20 +546,21 @@ University of Wisconsin–Madison, Microsoft Research, Columbia University
 * **SEED-Bench: Benchmarking Multimodal LLMs with Generative Comprehension** [arXiv 2023] [[Paper](https://arxiv.org/pdf/2307.16125)] [[Code](https://github.com/AILab-CVC/SEED-Bench)] [[Data](https://huggingface.co/datasets/AILab-CVC/SEED-Bench)] <br>
 Tencent AI Lab, ARC Lab, Tencent PCG
 
-* **MM-Vet** [arXiv 2023] [[Paper](https://arxiv.org/pdf/2308.02497)] [[Code](https://github.com/yuweihao/MM-Vet)] [[Data](https://huggingface.co/datasets/zhiqings/MM-Vet)]
+* **MM-Vet** [ICML 2024] [[Paper](https://arxiv.org/abs/2308.02490)] [[Code](https://github.com/yuweihao/MM-Vet)] [[Data](https://huggingface.co/datasets/zhiqings/MM-Vet)]
 
-* **MMBench** [arXiv 2024] [[Paper](https://arxiv.org/pdf/2407.06267)] [[Code](https://github.com/open-compass/MMBench)] [[Data](https://huggingface.co/datasets/lmms-lab/MMBench)]
+* **MMBench: Is Your Multi-modal Model an All-around Player?** [ECCV 2024] [[Paper](https://arxiv.org/abs/2307.06281)] [[Code](https://github.com/open-compass/MMBench)] [[Data](https://huggingface.co/datasets/lmms-lab/MMBench)] <br>
+Shanghai AI Laboratory, Nanyang Technological University, The Chinese University of Hong Kong, National University of Singapore, Zhejiang University
 
 * **ShareGPT4V: Improving Large Multi-Modal Models with Better Captions** [arXiv 2023] [[Paper](https://arxiv.org/pdf/2311.12793)] [[Code](https://github.com/ShareGPT4Omni/ShareGPT4V)] [[Data](https://sharegpt4v.github.io/)] <br>
 University of Science and Technology of China, Shanghai AI Laboratory
 
-* **MIA-Bench** [arXiv 2025] [[Paper](https://arxiv.org/pdf/2502.03105)] [[Code](https://github.com/apple/ml-mia-bench)] [[Data](https://huggingface.co/datasets/apple/MIA-Bench)]
+* **MIA-Bench** [ICLR 2025] [[Paper](https://machinelearning.apple.com/research/towards-better-instruction-following)] [[Code](https://github.com/apple/ml-mia-bench)] [[Data](https://huggingface.co/datasets/apple/MIA-Bench)]
 
-* **MM-IFInstruct** [arXiv 2025] [[Paper](https://arxiv.org/pdf/2503.10722)] [[Code](https://github.com/ZhangYuanhan-AI/MM-IFInstruct)] [[Data](https://huggingface.co/datasets/zhangyuanhan/MM-IFInstruct)]
+* **MM-IFInstruct**] [[Code](https://github.com/ZhangYuanhan-AI/MM-IFInstruct)] [[Data](https://huggingface.co/datasets/zhangyuanhan/MM-IFInstruct)]
 
-* **MME** [arXiv 2023] [[Paper](https://arxiv.org/pdf/2305.13723)] [[Code](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models/tree/Evaluation)] [[Data](https://huggingface.co/datasets/lmms-lab/MME)]
+* **MME: A Comprehensive Evaluation Benchmark for Multimodal Large Language Models** [arXiv 2023] [[Paper](https://arxiv.org/abs/2306.13394)] [[Code](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models/tree/Evaluation)] [[Data](https://huggingface.co/datasets/lmms-lab/MME)]
 
-* **VC-IFInstruct** [arXiv 2026] [[Paper](https://arxiv.org/pdf/2603.01587)] [[Code](https://github.com/Video-LLaVA/VC-IFInstruct)] [[Data](https://huggingface.co/datasets/Video-LLaVA/VC-IFInstruct)]
+* **VC-IFInstruct**] [[Code](https://github.com/Video-LLaVA/VC-IFInstruct)] [[Data](https://huggingface.co/datasets/Video-LLaVA/VC-IFInstruct)]
 
 **Others:** VQAv2, GQA, OK-VQA, TextVQA, VizWiz, Visual7W, BLINK, MME-RealWorld, M3IT, ShareGPT4Video, VideoMME
 
@@ -568,7 +572,7 @@ Gaoling School of Artificial Intelligence, Renmin University of China, School of
 * **ALIGNING LARGE MULTIMODAL MODELS WITH FACTUALLY AUGMENTED RLHF** [arXiv 2023] [[Paper](https://arxiv.org/pdf/2309.14525)] [[Code](https://github.com/Shengcao-Cao/MMHal-Bench)] [[Data](https://huggingface.co/datasets/Shengcao/MMHal-Bench)] <br>
 UC Berkeley, Carnegie Mellon University, University of Illinois Urbana-Champaign, University of Wisconsin-Madison, University of Massachusetts Amherst, Microsoft Research, MIT-IBM Watson AI Lab
 
-* **AMBER** [arXiv 2023] [[Paper](https://arxiv.org/pdf/2311.10383)] [[Code](https://github.com/jesseor101/AMBER)] [[Data](https://huggingface.co/datasets/jesseor101/AMBER)]
+* **AMBER: An LLM-free Multi-dimensional Benchmark for MLLMs Hallucination Evaluation** [arXiv 2023] [[Paper](https://arxiv.org/abs/2311.07397)] [[Code](https://github.com/jesseor101/AMBER)] [[Data](https://huggingface.co/datasets/jesseor101/AMBER)]
 
 * **HallusionBench: An Advanced Diagnostic Suite for Entangled Language Hallucination and Visual Illusion in Large Vision-Language Models** [CVPR 2024] [[Paper](https://arxiv.org/pdf/2310.14566)] [[Code](https://github.com/tianyi-lab/HallusionBench)] [[Data](https://huggingface.co/datasets/tianyi-lab/HallusionBench)] <br>
 University of Maryland, College Park
@@ -579,11 +583,11 @@ UC Berkeley, Carnegie Mellon University, University of Illinois Urbana-Champaign
 * **RLHF-V: Towards Trustworthy MLLMs via Behavior Alignment from Fine-grained Correctional Human Feedback** [CVPR 2024] [[Paper](https://arxiv.org/pdf/2312.00849)] [[Code](https://github.com/RLHF-V/RLHF-V)] [[Data](https://huggingface.co/datasets/OpenGVLab/RLHF-V-Dataset)] <br>
 Tsinghua University, National University of Singapore
 
-* **VLGuard** [arXiv 2024] [[Paper](https://arxiv.org/pdf/2402.00772)] [[Code](https://github.com/VLGuard/VLGuard)] [[Data](https://huggingface.co/datasets/VLGuard/VLGuard)]
+* **VLGuard**] [[Code](https://github.com/VLGuard/VLGuard)] [[Data](https://huggingface.co/datasets/VLGuard/VLGuard)]
 
-* **SPA-VL** [arXiv 2025] [[Paper](https://arxiv.org/pdf/2503.01082)] [[Code](https://github.com/zhiqings/SPA-VL)] [[Data](https://huggingface.co/datasets/zhiqings/SPA-VL)]
+* **SPA-VL**] [[Code](https://github.com/zhiqings/SPA-VL)] [[Data](https://huggingface.co/datasets/zhiqings/SPA-VL)]
 
-* **Lingua-SafetyBench** [arXiv 2025] [[Paper](https://arxiv.org/pdf/2503.11836)] [[Code](https://github.com/yuhuayustc/Lingua-SafetyBench)] [[Data](https://huggingface.co/datasets/yuhuayustc/Lingua-SafetyBench)]
+* **Lingua-SafetyBench: A Benchmark for Safety Evaluation of Multilingual Vision-Language Models** [arXiv 2026] [[Paper](https://arxiv.org/abs/2601.22737)] [[Code](https://github.com/yuhuayustc/Lingua-SafetyBench)] [[Data](https://huggingface.co/datasets/yuhuayustc/Lingua-SafetyBench)]
 
 **Others:** CHAIR, M-HalDetect, HaELM, MM-SafetyBench, FigStep, JailBreakV-28K, RTVLM
 
@@ -600,11 +604,11 @@ IN.AI Research, University of Waterloo, The Ohio State University, Carnegie Mell
 * **MathVista: Evaluating Mathematical Reasoning of Foundation Models in Visual Contexts** [ICLR 2024] [[Paper](https://arxiv.org/pdf/2310.02255)] [[Code](https://github.com/lupantech/MathVista)] [[Data](https://huggingface.co/datasets/AI4Math/MathVista)] <br>
 UCLA, University of Washington, Microsoft Research, Redmond
 
-* **PuzzleBench** [arXiv 2025] [[Paper](https://arxiv.org/pdf/2503.12381)] [[Code](https://github.com/lupantech/PuzzleBench)] [[Data](https://huggingface.co/datasets/lupantech/PuzzleBench)]
+* **PuzzleBench**] [[Code](https://github.com/lupantech/PuzzleBench)] [[Data](https://huggingface.co/datasets/lupantech/PuzzleBench)]
 
-* **MME-CoT** [arXiv 2025] [[Paper](https://arxiv.org/pdf/2503.12415)] [[Code](https://github.com/BradyFU/MME-CoT)] [[Data](https://huggingface.co/datasets/lmms-lab/MME-CoT)]
+* **MME-CoT**] [[Code](https://github.com/BradyFU/MME-CoT)] [[Data](https://huggingface.co/datasets/lmms-lab/MME-CoT)]
 
-* **MME-Reasoning** [arXiv 2025] [[Paper](https://arxiv.org/pdf/2503.12415)] [[Code](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models)] [[Data](https://huggingface.co/datasets/lmms-lab/MME-Reasoning)]
+* **MME-Reasoning**] [[Code](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models)] [[Data](https://huggingface.co/datasets/lmms-lab/MME-Reasoning)]
 
 * **A Diagram Is Worth A Dozen Images** [arXiv 2016] [[Paper](https://arxiv.org/pdf/1603.07396)] [[Code](https://github.com/allenai/ai2d)] [[Data](https://prior.allenai.org/projects/diagram-understanding)] <br>
 Allen Institute for Artificial Intelligence, University of Washington
@@ -616,18 +620,18 @@ Allen Institute for Artificial Intelligence, University of Washington
 * **DocVQA: A Dataset for VQA on Document Images** [WACV 2021] [[Paper](https://arxiv.org/pdf/2007.00398)] [[Code](https://github.com/answer-extraction/DocVQA)] [[Data](https://rrc.cvc.uab.es/?ch=17)] <br>
 CVIT, IIIT Hyderabad, India, Computer Vision Center, UAB, Spain
 
-* **ChartX** [arXiv 2024] [[Paper](https://arxiv.org/pdf/2406.09610)] [[Code](https://github.com/ChartReasoning/ChartX)] [[Data](https://huggingface.co/datasets/SharkAI/ChartX)]
+* **ChartX**] [[Code](https://github.com/ChartReasoning/ChartX)] [[Data](https://huggingface.co/datasets/SharkAI/ChartX)]
 
-* **OCRBench** [arXiv 2023] [[Paper](https://arxiv.org/pdf/2311.16594)] [[Code](https://github.com/rohitgirdhar/OCRBench)] [[Data](https://huggingface.co/datasets/echo840/OCRBench)]
+* **OCRBench**] [[Code](https://github.com/rohitgirdhar/OCRBench)] [[Data](https://huggingface.co/datasets/echo840/OCRBench)]
 
-* **ScreenSpot** [arXiv 2024] [[Paper](https://arxiv.org/pdf/2402.07312)] [[Code](https://github.com/StanfordAI4HI/ScreenSpot)] [[Data](https://huggingface.co/datasets/StanfordAI4HI/screenspot)]
+* **ScreenSpot**] [[Code](https://github.com/StanfordAI4HI/ScreenSpot)] [[Data](https://huggingface.co/datasets/StanfordAI4HI/screenspot)]
 
 * **Mind2Web: Towards a Generalist Agent for the Web** [NeurIPS 2023] [[Paper](https://arxiv.org/pdf/2306.06070)] [[Code](https://github.com/OSU-NLP-Group/Mind2Web)] [[Data](https://huggingface.co/datasets/osunlp/Mind2Web)] <br>
 The Ohio State University
 
-* **VQA-RAD** [arXiv 2018] [[Paper](https://arxiv.org/pdf/1808.02771)] [[Code](https://github.com/Awenbocc/VQA-Med)] [[Data](https://www.nature.com/articles/sdata2018251)]
+* **VQA-RAD**] [[Code](https://github.com/Awenbocc/VQA-Med)] [[Data](https://www.nature.com/articles/sdata2018251)]
 
-* **PathVQA** [arXiv 2020] [[Paper](https://arxiv.org/pdf/2003.11706)] [[Code](https://github.com/UCSD-AI4H/PathVQA)] [[Data](https://github.com/UCSD-AI4H/PathVQA)]
+* **PathVQA**] [[Code](https://github.com/UCSD-AI4H/PathVQA)] [[Data](https://github.com/UCSD-AI4H/PathVQA)]
 
 **Others:** AndroidControl-Low, AndroidControl-High, GUI-Odyssey, ScreenSpot-Pro, GUI-Act-Web, OmniAct-Web, ChartQA, InfoVQA, TextVQA, ST-VQA
 

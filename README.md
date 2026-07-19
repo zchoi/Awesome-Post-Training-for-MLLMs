@@ -451,7 +451,8 @@ Ruyi Xu, Yuan Yao, Zonghao Guo, Junbo Cui, Zanlin Ni, Chunjiang Ge, Tat-Seng Chu
 
 * **MoKA: Mixture of Kronecker Adapters** [arXiv 2025] [[Paper](https://arxiv.org/abs/2508.03527)] [[Code](https://github.com/ZhangYuanhan-AI/MokA)] [[Homepage](https://moka-ml.github.io/)]
 
-* **LiLoRA** [[Code](https://github.com/bupt-ai-cv/LiLoRA)]
+* **LoRA in LoRA: Towards Parameter-Efficient Architecture Expansion for Continual Visual Instruction Tuning** [AAAI 2026] [[Paper](https://arxiv.org/abs/2508.06202)] [[Code](https://github.com/chanceche/LiLoRA)] <br>
+Hefei University of Technology, University of Amsterdam, Tsinghua University
 
 ### MoE-based Methods
 
@@ -480,9 +481,11 @@ ByteDance Seed
 * **LLaVA-UHD: an LMMPerceiving Any Aspect Ratio and High-Resolution Images** [arXiv 2024] [[Paper](https://arxiv.org/pdf/2403.11703)] [[Code](https://github.com/thunlp/LLaVA-UHD)] <br>
 Ruyi Xu, Yuan Yao, Zonghao Guo, Junbo Cui, Zanlin Ni, Chunjiang Ge, Tat-Seng Chua, Zhiyuan Liu, Maosong Sun, Gao Huang
 
-* **AdaMLLM / AdaLLaVA**] [[Code](https://github.com/thunlp/AdaMLLM)] [[Homepage](https://adamllm.github.io/)]
+* **Learning to Inference Adaptively for Multimodal Large Language Models** [ICCV 2025] [[Paper](https://arxiv.org/abs/2503.10905)] [[Code](https://github.com/zhuoyan-xu/AdaLLaVA)] [[Homepage](https://zhuoyan-xu.github.io/ada-llava/)] <br>
+University of Wisconsin-Madison, Purdue University, The University of Hong Kong
 
-* **InternVL2**] [[Code](https://github.com/OpenGVLab/InternVL)]
+* **InternVL2: Better than the Best-Expanding Performance Boundaries of Open-Source Multimodal Models with the Progressive Scaling Strategy** [arXiv 2024] [[Code](https://github.com/OpenGVLab/InternVL)] [[Homepage](https://internvl.github.io/blog/2024-07-02-InternVL-2.0/)] <br>
+OpenGVLab, Shanghai AI Laboratory
 
 * **UReader: Universal OCR-free Visually-situated Language Understanding with Multimodal Large Language Model** [EMNLP 2023] [[Paper](https://arxiv.org/abs/2310.05126)] [[Code](https://github.com/LukcyYuan/UReader)] <br>
 Alibaba Group
@@ -511,7 +514,8 @@ NVIDIA, MIT
 
 * **Long Context Transfer from Language to Vision** [TMLR 2025] [[Paper](https://arxiv.org/abs/2406.16852)] [[Code](https://github.com/EvolvingLMMs-Lab/LongVA)]
 
-* **IG-VLM**]
+* **An Image Grid Can Be Worth a Video: Zero-shot Video Question Answering Using a VLM** [IEEE Access 2024] [[Paper](https://arxiv.org/abs/2403.18406)] [[Code](https://github.com/imagegridworth/IG-VLM)] <br>
+Seoul National University
 
 * **VideoChat-Flash: Hierarchical Compression for Long-Context Video Modeling** [arXiv 2025] [[Paper](https://arxiv.org/abs/2501.00574)] [[Code](https://github.com/OpenGVLab/VideoChat-Flash)]
 
@@ -537,11 +541,13 @@ University of Science and Technology of China, Shanghai AI Laboratory
 
 * **MIA-Bench** [ICLR 2025] [[Paper](https://machinelearning.apple.com/research/towards-better-instruction-following)] [[Code](https://github.com/apple/ml-mia-bench)] [[Data](https://huggingface.co/datasets/apple/MIA-Bench)]
 
-* **MM-IFInstruct**] [[Code](https://github.com/ZhangYuanhan-AI/MM-IFInstruct)] [[Data](https://huggingface.co/datasets/zhangyuanhan/MM-IFInstruct)]
+* **MM-IFEngine: Towards Multimodal Instruction Following** [ICCV 2025] [[Paper](https://arxiv.org/abs/2504.07957)] [[Code](https://github.com/SYuan03/MM-IFEngine)] [[Data](https://huggingface.co/datasets/ChrisDing1105/MMIF-23k)] [[Homepage](https://syuan03.github.io/MM-IFEngine/)] <br>
+Fudan University, Shanghai Innovation Institute
 
 * **MME: A Comprehensive Evaluation Benchmark for Multimodal Large Language Models** [NeurIPS 2025] [[Paper](https://arxiv.org/abs/2306.13394)] [[Code](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models/tree/Evaluation)] [[Data](https://huggingface.co/datasets/lmms-lab/MME)]
 
-* **VC-IFInstruct**] [[Code](https://github.com/Video-LLaVA/VC-IFInstruct)] [[Data](https://huggingface.co/datasets/Video-LLaVA/VC-IFInstruct)]
+* **Empowering Reliable Visual-Centric Instruction Following in MLLMs** [ACL Findings 2026] [[Paper](https://arxiv.org/abs/2601.03198)] [[Code](https://github.com/KerenWLHe/VC-IFEval)] [[Data](https://huggingface.co/datasets/KerenStone/VCIF-10k)] <br>
+The Hong Kong University of Science and Technology, Pennsylvania State University
 
 **Others:** VQAv2, GQA, OK-VQA, TextVQA, VizWiz, Visual7W, BLINK, MME-RealWorld, M3IT, ShareGPT4Video, VideoMME
 
@@ -564,9 +570,11 @@ UC Berkeley, Carnegie Mellon University, University of Illinois Urbana-Champaign
 * **RLHF-V: Towards Trustworthy MLLMs via Behavior Alignment from Fine-grained Correctional Human Feedback** [CVPR 2024] [[Paper](https://arxiv.org/pdf/2312.00849)] [[Code](https://github.com/RLHF-V/RLHF-V)] [[Data](https://huggingface.co/datasets/OpenGVLab/RLHF-V-Dataset)] <br>
 Tsinghua University, National University of Singapore
 
-* **VLGuard** [[Code](https://github.com/VLGuard/VLGuard)] [[Data](https://huggingface.co/datasets/VLGuard/VLGuard)]
+* **Safety Fine-Tuning at (Almost) No Cost: A Baseline for Vision Large Language Models** [ICML 2024] [[Paper](https://arxiv.org/abs/2402.02207)] [[Code](https://github.com/ys-zong/VLGuard)] [[Data](https://huggingface.co/datasets/ys-zong/VLGuard)] [[Homepage](https://ys-zong.github.io/VLGuard/)] <br>
+University of Edinburgh, EPFL
 
-* **SPA-VL** [[Code](https://github.com/zhiqings/SPA-VL)] [[Data](https://huggingface.co/datasets/zhiqings/SPA-VL)]
+* **SPA-VL: A Comprehensive Safety Preference Alignment Dataset for Vision Language Models** [CVPR 2025] [[Paper](https://arxiv.org/abs/2406.12030)] [[Code](https://github.com/echosechen/spa-vl-rlhf)] [[Data](https://huggingface.co/datasets/sqrti/SPA-VL)] <br>
+University of Science and Technology of China, Shanghai AI Laboratory
 
 * **Lingua-SafetyBench: A Benchmark for Safety Evaluation of Multilingual Vision-Language Models** [arXiv 2026] [[Paper](https://arxiv.org/abs/2601.22737)] [[Code](https://github.com/yuhuayustc/Lingua-SafetyBench)] [[Data](https://huggingface.co/datasets/yuhuayustc/Lingua-SafetyBench)]
 
@@ -585,11 +593,14 @@ IN.AI Research, University of Waterloo, The Ohio State University, Carnegie Mell
 * **MathVista: Evaluating Mathematical Reasoning of Foundation Models in Visual Contexts** [ICLR 2024] [[Paper](https://arxiv.org/pdf/2310.02255)] [[Code](https://github.com/lupantech/MathVista)] [[Data](https://huggingface.co/datasets/AI4Math/MathVista)] <br>
 UCLA, University of Washington, Microsoft Research, Redmond
 
-* **PuzzleBench** [[Code](https://github.com/lupantech/PuzzleBench)] [[Data](https://huggingface.co/datasets/lupantech/PuzzleBench)]
+* **PuzzleBench: A Fully Dynamic Evaluation Framework for Large Multimodal Models on Puzzle Solving** [arXiv 2025] [[Paper](https://arxiv.org/abs/2504.10885)] <br>
+Shanghai Jiao Tong University
 
-* **MME-CoT** [[Code](https://github.com/BradyFU/MME-CoT)] [[Data](https://huggingface.co/datasets/lmms-lab/MME-CoT)]
+* **MME-CoT: Benchmarking Chain-of-Thought in Large Multimodal Models for Reasoning Quality, Robustness, and Efficiency** [arXiv 2025] [[Paper](https://arxiv.org/abs/2502.09621)] [[Code](https://github.com/MME-Benchmarks/MME-CoT)] [[Data](https://huggingface.co/datasets/CaraJ/MME-CoT)] [[Homepage](https://mmecot.github.io/)] <br>
+The Chinese University of Hong Kong, ByteDance, Northeastern University
 
-* **MME-Reasoning** [[Code](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models)] [[Data](https://huggingface.co/datasets/lmms-lab/MME-Reasoning)]
+* **MME-Reasoning: A Comprehensive Benchmark for Logical Reasoning in MLLMs** [arXiv 2025] [[Paper](https://arxiv.org/abs/2505.21327)] [[Code](https://github.com/InternScience/MME-Reasoning)] [[Data](https://huggingface.co/datasets/InternScience/MME-Reasoning)] [[Homepage](https://alpha-innovator.github.io/mmereasoning.github.io/)] <br>
+Fudan University, The Chinese University of Hong Kong, Shanghai AI Laboratory
 
 * **A Diagram Is Worth A Dozen Images** [ECCV 2016] [[Paper](https://arxiv.org/pdf/1603.07396)] [[Code](https://github.com/allenai/ai2d)] [[Data](https://prior.allenai.org/projects/diagram-understanding)] <br>
 Allen Institute for Artificial Intelligence, University of Washington
@@ -601,18 +612,23 @@ Allen Institute for Artificial Intelligence, University of Washington
 * **DocVQA: A Dataset for VQA on Document Images** [WACV 2021] [[Paper](https://arxiv.org/pdf/2007.00398)] [[Code](https://github.com/answer-extraction/DocVQA)] [[Data](https://rrc.cvc.uab.es/?ch=17)] <br>
 CVIT, IIIT Hyderabad, India, Computer Vision Center, UAB, Spain
 
-* **ChartX** [[Code](https://github.com/ChartReasoning/ChartX)] [[Data](https://huggingface.co/datasets/SharkAI/ChartX)]
+* **ChartX & ChartVLM: A Versatile Benchmark and Foundation Model for Complicated Chart Reasoning** [TIP 2025] [[Paper](https://arxiv.org/abs/2402.12185)] [[Code](https://github.com/InternScience/ChartVLM)] [[Data](https://huggingface.co/datasets/SharkAI/ChartX)] <br>
+Shanghai AI Laboratory, Shanghai Jiao Tong University
 
-* **OCRBench** [[Code](https://github.com/rohitgirdhar/OCRBench)] [[Data](https://huggingface.co/datasets/echo840/OCRBench)]
+* **OCRBench: On the Hidden Mystery of OCR in Large Multimodal Models** [Science China Information Sciences 2024] [[Paper](https://arxiv.org/abs/2305.07895)] [[Code](https://github.com/Yuliang-Liu/MultimodalOCR)] [[Data](https://huggingface.co/datasets/echo840/OCRBench)] <br>
+Shanghai AI Laboratory
 
-* **ScreenSpot** [[Code](https://github.com/StanfordAI4HI/ScreenSpot)] [[Data](https://huggingface.co/datasets/StanfordAI4HI/screenspot)]
+* **SeeClick: Harnessing GUI Grounding for Advanced Visual GUI Agents** [ACL 2024] [[Paper](https://arxiv.org/abs/2401.10935)] [[Code](https://github.com/njucckevin/SeeClick)] [[Data](https://huggingface.co/datasets/rootsautomation/ScreenSpot)] <br>
+The Chinese University of Hong Kong, Shanghai AI Laboratory
 
 * **Mind2Web: Towards a Generalist Agent for the Web** [NeurIPS 2023] [[Paper](https://arxiv.org/pdf/2306.06070)] [[Code](https://github.com/OSU-NLP-Group/Mind2Web)] [[Data](https://huggingface.co/datasets/osunlp/Mind2Web)] <br>
 The Ohio State University
 
-* **VQA-RAD** [[Code](https://github.com/Awenbocc/VQA-Med)] [[Data](https://www.nature.com/articles/sdata2018251)]
+* **A Dataset of Clinically Generated Visual Questions and Answers about Radiology Images** [Scientific Data 2018] [[Paper](https://www.nature.com/articles/sdata2018251)] [[Code](https://github.com/Awenbocc/VQA-Med)] [[Data](https://osf.io/89kps/)] <br>
+National Library of Medicine, National Institutes of Health
 
-* **PathVQA** [[Code](https://github.com/UCSD-AI4H/PathVQA)] [[Data](https://github.com/UCSD-AI4H/PathVQA)]
+* **PathVQA: 30000+ Questions for Medical Visual Question Answering** [arXiv 2020] [[Paper](https://arxiv.org/abs/2003.10286)] [[Code](https://github.com/UCSD-AI4H/PathVQA)] [[Data](https://github.com/UCSD-AI4H/PathVQA)] <br>
+University of California San Diego, Carnegie Mellon University
 
 **Others:** AndroidControl-Low, AndroidControl-High, GUI-Odyssey, ScreenSpot-Pro, GUI-Act-Web, OmniAct-Web, ChartQA, InfoVQA, TextVQA, ST-VQA
 

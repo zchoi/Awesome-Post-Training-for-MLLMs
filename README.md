@@ -28,7 +28,7 @@ Multimodal Large Language Models (MLLMs) have reshaped AI by enabling perception
 
 ## &#128204; Contents
 
-- [Multimodal Instruction Tuning](#multimodal-instruction-tuning-papers)
+- [Multimodal Instruction Tuning](#multimodal-instruction-tuning)
 
 - [Multimodal Alignment Learning](#multimodal-alignment-learning)
   - [Multimodal RLHF](#multimodal-rlhf)
@@ -54,12 +54,15 @@ Multimodal Large Language Models (MLLMs) have reshaped AI by enabling perception
   - [Alignment Learning Benchmarks](#alignment-learning-benchmarks)
   - [Reasoning Enhancement Benchmarks](#reasoning-enhancement-benchmarks)
   - [Domain Adaptation Benchmarks](#domain-adaptation-benchmarks)
+
+<p align="center">
+  <img src="assets/timelinev4_01.png" width="100%" alt="timeline">
+  <span><b>Figure 2. A timeline of MLLMs post-training research.</b></span>
+</p>
+
 ---
 
-# &#128214; Papers
-
-<a id="multimodal-instruction-tuning"></a>
-## &#129302; Multimodal Instruction Tuning
+## Multimodal Instruction Tuning
 
 Multimodal instruction tuning constitutes one of the earliest and most fundamental post-training paradigms for MLLMs. Its primary objective is to transform broad visual-language representations into instruction-following behavior by training on multimodal instruction-response data. This paradigm establishes the interface between user intent, multimodal input, and model output, thereby enabling MLLMs to respond to image-, video-, audio-, or interleaved multimodal prompts in a task-oriented manner.
 

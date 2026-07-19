@@ -631,5 +631,4 @@ If this repository or the associated survey is useful for your research, please 
           Heng Tao Shen and Jieping Ye},
   year={2026}
 }
-}
 ```

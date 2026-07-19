@@ -62,7 +62,7 @@ Multimodal Large Language Models (MLLMs) have reshaped AI by enabling perception
 
 ---
 
-## Multimodal Instruction Tuning
+## <img src="assets/icon4.png" height="30" align="top"/> Multimodal Instruction Tuning
 
 * **Visual Instruction Tuning** [NeurIPS 2023] [[Paper](https://arxiv.org/pdf/2304.08485)] [[Code](https://github.com/haotian-liu/LLaVA)] [[Homepage](https://llava-vl.github.io/)] <br>
 University of Wisconsin–Madison, Microsoft Research, Columbia University
@@ -222,7 +222,7 @@ Shanghai AI Laboratory；MMLab, CUHK；ShanghaiTech University
 
 ---
 
-## Multimodal Alignment Learning
+## <img src="assets/icon5.png" height="30" align="top"/> Multimodal Preference Calibration
 
 ### Multimodal RLHF
 

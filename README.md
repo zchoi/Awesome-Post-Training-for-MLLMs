@@ -11,12 +11,12 @@
 
 </div>
 
-## <img src="assets/icon1.png" height="60" align="center"/> News
+## <img src="assets/icon1.png" height="50" align="center"/> News
 [2026/07/19] 🎉 We release our curation list of MLLMs Post-Training methods！<br>
 
 ---
 
-## <img src="assets/icon2.png" height="60" align="center"/> Introduction
+## <img src="assets/icon2.png" height="50" align="center"/> Introduction
 Multimodal Large Language Models (MLLMs) have reshaped AI by enabling perception, reasoning, and interaction across digital and physical environments. While multimodal pretraining establishes broad perceptual capabilities, translating them into behaviors aligned with human intent and real-world demands remains challenging. Multimodal Post-Training (MMPoT) addresses this gap by refining pretrained MLLMs toward reliable, task-oriented behavior. This survey reviews MMPoT from a behavior-shaping perspective and organizes existing methods into five families: instruction following, preference calibration, reasoning enhancement, domain adaptation, and scalable training. We further examine benchmarks and evaluation protocols, identify current limitations, and outline future directions toward general and reliable multimodal intelligence.
 
 <p align="center">
@@ -26,7 +26,7 @@ Multimodal Large Language Models (MLLMs) have reshaped AI by enabling perception
 
 ---
 
-## <img src="assets/icon3.png" height="60" align="center"/> Contents
+## <img src="assets/icon3.png" height="50" align="center"/> Contents
 
 - [Multimodal Instruction Tuning](#multimodal-instruction-tuning)
 
@@ -62,7 +62,7 @@ Multimodal Large Language Models (MLLMs) have reshaped AI by enabling perception
 
 ---
 
-## <img src="assets/icon4.png" height="60" align="center"/> Multimodal Instruction Tuning
+## <img src="assets/icon4.png" height="50" align="center"/> Multimodal Instruction Tuning
 
 * **Visual Instruction Tuning** [NeurIPS 2023] [[Paper](https://arxiv.org/pdf/2304.08485)] [[Code](https://github.com/haotian-liu/LLaVA)] [[Homepage](https://llava-vl.github.io/)] <br>
 University of Wisconsin–Madison, Microsoft Research, Columbia University
@@ -222,7 +222,7 @@ Shanghai AI Laboratory；MMLab, CUHK；ShanghaiTech University
 
 ---
 
-## <img src="assets/icon5.png" height="60" align="center"/> Multimodal Preference Calibration
+## <img src="assets/icon5.png" height="50" align="center"/> Multimodal Preference Calibration
 
 ### Multimodal RLHF
 
@@ -306,7 +306,7 @@ Seoul National University
 
 ---
 
-## <img src="assets/icon6.png" height="60" align="center"/> Multimodal Reason Enhancement
+## <img src="assets/icon6.png" height="50" align="center"/> Multimodal Reason Enhancement
 
 ### R1-based Multimodal Reasoning
 
@@ -422,7 +422,7 @@ Institute of Automation, Chinese Academy of Sciences, Meituan
 
 ---
 
-## <img src="assets/icon7.png" height="60" align="center"/> Multimodal Domain Adaptation
+## <img src="assets/icon7.png" height="50" align="center"/> Multimodal Domain Adaptation
 
 * **Mobile-Agent: Autonomous Multi-Modal Mobile Device Agent with Visual Perception** [ICLR 2024 Workshop] [[Paper](https://arxiv.org/pdf/2401.16158)] [[Code](https://github.com/X-PLUG/MobileAgent)] <br>
 Beijing Jiaotong University, Alibaba Group
@@ -441,7 +441,7 @@ Ruyi Xu, Yuan Yao, Zonghao Guo, Junbo Cui, Zanlin Ni, Chunjiang Ge, Tat-Seng Chu
 
 ---
 
-## <img src="assets/icon8.png" height="60" align="center"/> Multimodal Scalable Training
+## <img src="assets/icon8.png" height="50" align="center"/> Multimodal Scalable Training
 
 ### LoRA-based Methods
 
@@ -521,7 +521,7 @@ Seoul National University
 
 ---
 
-## <img src="assets/icon9.png" height="60" align="center"/> Multimodal Benchmarks
+## <img src="assets/icon9.png" height="50" align="center"/> Multimodal Benchmarks
 
 ### Instruction Tuning Benchmarks
 

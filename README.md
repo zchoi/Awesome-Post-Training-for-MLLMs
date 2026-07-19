@@ -11,26 +11,49 @@
 
 </div>
 
-## News🔥
-[2026/07/11] 🎉 We release our curation list of MLLMs Post-Training methods<br>
+## 🔥 News
+[2026/07/19] 🎉 We release our curation list of MLLMs Post-Training methods！<br>
+
+---
+
+## 🎤 Introduction
+Multimodal Large Language Models (MLLMs) have reshaped AI by enabling perception, reasoning, and interaction across digital and physical environments. While multimodal pretraining establishes broad perceptual capabilities, translating them into behaviors aligned with human intent and real-world demands remains challenging. Multimodal Post-Training (MMPoT) addresses this gap by refining pretrained MLLMs toward reliable, task-oriented behavior. This survey reviews MMPoT from a behavior-shaping perspective and organizes existing methods into five families: instruction following, preference calibration, reasoning enhancement, domain adaptation, and scalable training. We further examine benchmarks and evaluation protocols, identify current limitations, and outline future directions toward general and reliable multimodal intelligence.
 
 <p align="center">
   <img src="assets/framework-z.png" width="100%" alt="Post-training framework for MLLMs">
+  <span><b>Figure 1. Overview of multimodal behavior shaping for MLLMs post-training.</b> Post-training algorithms can be viewed as behavior-shaping mechanisms that steer pretrained MLLMs toward desired behaviors, while multimodal data and benchmarks provide learning signals and evaluative feedback for iterative refinement.</span>
 </p>
 
 ---
 
 ## &#128204; Contents
 
-| Section | Subsection |
-| --- | --- |
-| [&#129302; Multimodal Instruction Tuning](#multimodal-instruction-tuning) | [Representative Papers](#multimodal-instruction-tuning-papers) |
-| [&#127942; Multimodal Alignment Learning](#multimodal-alignment-learning) | [Multimodal RLHF](#multimodal-rlhf), [Multimodal RLAIF](#multimodal-rlaif), [Multimodal Direct Preference Optimization](#multimodal-direct-preference-optimization) |
-| [&#128640; Multimodal Reasoning Enhancement](#multimodal-reasoning-enhancement) | [R1-based Multimodal Reasoning](#r1-based-multimodal-reasoning), [Thinking with Images](#thinking-with-images), [Multimodal Self-Evolving](#multimodal-self-evolving), [Multimodal Distillation](#multimodal-distillation) |
-| [&#129517; Multimodal Domain Adaptation](#multimodal-domain-adaptation) | [Domain-oriented post-training for specialized multimodal scenarios](#multimodal-domain-adaptation) |
-| [&#9881;&#65039; Multimodal Scalable Training](#multimodal-scalable-training) | [LoRA-based Methods](#lora-based-methods), [MoE-based Methods](#moe-based-methods), [Compute-efficient Methods](#compute-efficient-methods) |
-| [&#128202; Multimodal Benchmarks](#multimodal-benchmarks) | [Instruction Tuning Benchmarks](#instruction-tuning-benchmarks), [Alignment Learning Benchmarks](#alignment-learning-benchmarks), [Reasoning Enhancement Benchmarks](#reasoning-enhancement-benchmarks), [Domain Adaptation Benchmarks](#domain-adaptation-benchmarks) |
+- [Multimodal Instruction Tuning](#multimodal-instruction-tuning-papers)
 
+- [Multimodal Alignment Learning](#multimodal-alignment-learning)
+  - [Multimodal RLHF](#multimodal-rlhf)
+  - [Multimodal RLAIF](#multimodal-rlaif)
+  - [Multimodal Direct Preference Optimization](#multimodal-direct-preference-optimization)
+
+- [Multimodal Reasoning Enhancement](#multimodal-reasoning-enhancement)
+  - [R1-based Multimodal Reasoning](#r1-based-multimodal-reasoning)
+  - [Thinking with Images](#thinking-with-images)
+  - [Multimodal Self-Evolving](#multimodal-self-evolving)
+  - [Multimodal Distillation](#multimodal-distillation)
+
+- [Multimodal Domain Adaptation](#multimodal-domain-adaptation)
+  - [Domain-oriented Post-Training for Specialized Multimodal Scenarios](#multimodal-domain-adaptation)
+
+- [Multimodal Scalable Training](#multimodal-scalable-training)
+  - [LoRA-based Methods](#lora-based-methods)
+  - [MoE-based Methods](#moe-based-methods)
+  - [Compute-efficient Methods](#compute-efficient-methods)
+
+- [Multimodal Benchmarks](#multimodal-benchmarks)
+  - [Instruction Tuning Benchmarks](#instruction-tuning-benchmarks)
+  - [Alignment Learning Benchmarks](#alignment-learning-benchmarks)
+  - [Reasoning Enhancement Benchmarks](#reasoning-enhancement-benchmarks)
+  - [Domain Adaptation Benchmarks](#domain-adaptation-benchmarks)
 ---
 
 # &#128214; Papers

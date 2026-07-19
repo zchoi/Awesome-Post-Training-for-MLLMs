@@ -1,7 +1,7 @@
-<img src="assets/banner.png" alt="Toward Long-Horizon AI Agents — Foundations, Evolution, Harnesses, Optimization, Applications, and Frontiers"/>
+<img src="assets/banner.png" alt="MMPoT"/>
 
+> A rigorous and systematically organized survey repository on post-training methodologies for **Multimodal Large Language Models (MLLMs)**, covering instruction tuning, preference calibration, reason enhancement, domain adaptation, scalable training, and datasets&benchmarks.
 
-> A rigorous and systematically organized survey repository on post-training methodologies for **Multimodal Large Language Models (MLLMs)**, covering instruction tuning, alignment learning, reasoning enhancement, domain adaptation, scalable training, and multimodal evaluation.
 
 This repository accompanies the survey **A Survey on Post-training of Multimodal Large Language Models** and provides a structured literature map for understanding how post-training transforms pre-trained MLLMs into aligned, capable, and safe multimodal assistants. Following the survey's behavior-shaping perspective, MLLM post-training is not merely a downstream optimization stage; it is a systematic process that calibrates broad cross-modal representations toward reliable instruction following, preference alignment, complex reasoning, domain-aware adaptation, and scalable multimodal learning.
 

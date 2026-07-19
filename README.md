@@ -1,6 +1,6 @@
 <div align="center">
-<img src="assets/banner-2.png" alt="MMPoT"/><br>
-  
+<img src="assets/banner-2.png" alt="MMPoT"/>
+
 [![Paper Preprint](https://img.shields.io/badge/Paper-Preprint-b31b1b.svg?logo=arXiv)]()
 [![Website](https://img.shields.io/badge/Website-blue.svg?logo=googlechrome&logoColor=white)]()
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -91,7 +91,8 @@ Tsinghua University, Zhipu AI
 * **InternVL: Scaling up Vision Foundation Models and Aligning for Generic Visual-Linguistic Tasks** [CVPR 2024] [[Paper](https://arxiv.org/pdf/2312.14238)] [[Code](https://github.com/OpenGVLab/InternVL)] <br>
 OpenGVLab, Shanghai AI Laboratory, Nanjing University, The University of Hong Kong, The Chinese University of Hong Kong, Tsinghua University, University of Science and Technology of China, SenseTime Research
 
-* **LLaVA-NeXT** [[Code](https://github.com/LLaVA-VL/LLaVA-NeXT)] [[Homepage](https://llava-vl.github.io/blog/2024-01-30-llava-next/)]
+* **LLaVA-NeXT: Improved Reasoning, OCR, and World Knowledge** [arXiv 2024] [[Code](https://github.com/LLaVA-VL/LLaVA-NeXT)] [[Homepage](https://llava-vl.github.io/blog/2024-01-30-llava-next/)] <br>
+University of Wisconsin-Madison, Microsoft Research
 
 * **What matters when building vision-language models?** [NeurIPS 2024] [[Paper](https://arxiv.org/pdf/2405.02246)] [[HF](https://huggingface.co/blog/idefics2)] <br>
 Hugging Face, Sorbonne Université
@@ -129,7 +130,8 @@ OpenBMB
 * **Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone** [arXiv 2024] [[Paper](https://arxiv.org/pdf/2404.14219)] [[HF](https://huggingface.co/microsoft/Phi-3.5-vision-instruct)] <br>
 Microsoft
 
-* **Llama-3.2-Vision-Instruct** [[HF](https://huggingface.co/meta-llama/Llama-3.2-11B-Vision-Instruct)]
+* **Llama-3.2-Vision-Instruct** [arXiv 2024] [[HF](https://huggingface.co/meta-llama/Llama-3.2-11B-Vision-Instruct)] [[Homepage](https://www.llama.com/)] <br>
+Meta
 
 * **Molmo and PixMo: Open Weights and Open Data for State-of-the-Art Vision-Language Models** [CVPR 2025] [[Paper](https://arxiv.org/pdf/2409.17146)] [[Code](https://github.com/allenai/molmo)] [[Homepage](https://molmo.allenai.org/)] <br>
 Allen Institute for AI, University of Washington
@@ -215,7 +217,8 @@ Huazhong University of Science and Technology, Kingsoft Office
 * **Mini-Gemini: Mining the Potential of Multi-modality Vision Language Models** [TPAMI 2026] [[Paper](https://arxiv.org/pdf/2403.18814v1)] [[Code](https://github.com/JIA-Lab-research/MGM)] <br>
 The Chinese University of Hong Kong；SmartMore
 
-* **Feast Your Eyes: Mixture-of-Resolution Adaptation for Multimodal Large Language Models** [ICLR 2025] [[Paper](https://arxiv.org/pdf/2403.03003)] [[Code](https://github.com/luogen1996/LLaVA-HR)]
+* **Feast Your Eyes: Mixture-of-Resolution Adaptation for Multimodal Large Language Models** [ICLR 2025] [[Paper](https://arxiv.org/pdf/2403.03003)] [[Code](https://github.com/luogen1996/LLaVA-HR)] <br>
+Xiamen University
 
 * **SPHINX: The Joint Mixing of Weights, Tasks, and Visual Embeddings for Multi-modal Large Language Models** [arXiv 2023] [[Paper](https://arxiv.org/pdf/2311.07575)] [[Code](https://github.com/Alpha-VLLM/LLaMA2-Accessory)] <br>
 Shanghai AI Laboratory；MMLab, CUHK；ShanghaiTech University
@@ -284,7 +287,8 @@ University of Modena and Reggio Emilia
 * **MDPO: Conditional Preference Optimization for Multimodal Large Language Models** [EMNLP 2024] [[Paper](https://arxiv.org/pdf/2406.11839)] [[Code](https://github.com/luka-group/mDPO)] [[Homepage](https://feiwang96.github.io/mDPO/)] <br>
 University of Southern California, Microsoft Research, University of California, Davis
 
-* **PEA-DPO** [[Homepage](https://openreview.net/forum?id=uZ5AmOJKqV)]
+* **PEA-DPO: Perception-Enhanced Alignment Direct Preference Optimization for MLLMs Alignment** [OpenReview 2026] [[Homepage](https://openreview.net/forum?id=uZ5AmOJKqV)] <br>
+University of Science and Technology of China
 
 * **MoD-DPO: Towards Mitigating Cross-modal Hallucinations in Omni LLMs using Modality Decoupled Preference Optimization** [CVPR 2026] [[Paper](https://arxiv.org/pdf/2603.03192)] [[Homepage](https://mod-dpo.github.io/)] <br>
 University of Southern California
@@ -310,7 +314,8 @@ Seoul National University
 
 ### R1-based Multimodal Reasoning
 
-* **LMM-R1** [arXiv 2025] [[Paper](https://arxiv.org/abs/2503.07536)]
+* **LMM-R1: Empowering 3B LMMs with Strong Reasoning Abilities Through Two-Stage Rule-Based RL** [arXiv 2025] [[Paper](https://arxiv.org/abs/2503.07536)] [[Code](https://github.com/GlowLED/lmm-r1-ascend)] [[Homepage](https://forjadeforest.github.io/LMM-R1-ProjectPage/)] <br>
+Southeast University, The Chinese University of Hong Kong, Fudan University, Ant Group
 
 * **VLM-R1: A Stable and Generalizable R1-style Large Vision-Language Model** [arXiv 2025] [[Paper](https://arxiv.org/abs/2504.07615)] [[Code](https://github.com/om-ai-lab/VLM-R1)] <br>
 OM AI Lab
@@ -548,7 +553,8 @@ University of Wisconsin–Madison, Microsoft Research, Columbia University
 * **SEED-Bench: Benchmarking Multimodal LLMs with Generative Comprehension** [CVPR 2024] [[Paper](https://arxiv.org/pdf/2307.16125)] [[Code](https://github.com/AILab-CVC/SEED-Bench)] [[Data](https://huggingface.co/datasets/AILab-CVC/SEED-Bench)] <br>
 Tencent AI Lab, ARC Lab, Tencent PCG
 
-* **MM-Vet** [ICML 2024] [[Paper](https://arxiv.org/abs/2308.02490)] [[Code](https://github.com/yuweihao/MM-Vet)] [[Data](https://huggingface.co/datasets/zhiqings/MM-Vet)]
+* **MM-Vet** [ICML 2024] [[Paper](https://arxiv.org/abs/2308.02490)] [[Code](https://github.com/yuweihao/MM-Vet)] [[Data](https://huggingface.co/datasets/zhiqings/MM-Vet)] <br>
+National University of Singapore, Microsoft Azure AI
 
 * **MMBench: Is Your Multi-modal Model an All-around Player?** [ECCV 2024] [[Paper](https://arxiv.org/abs/2307.06281)] [[Code](https://github.com/open-compass/MMBench)] [[Data](https://huggingface.co/datasets/lmms-lab/MMBench)] <br>
 Shanghai AI Laboratory, Nanyang Technological University, The Chinese University of Hong Kong, National University of Singapore, Zhejiang University
@@ -556,12 +562,14 @@ Shanghai AI Laboratory, Nanyang Technological University, The Chinese University
 * **ShareGPT4V: Improving Large Multi-Modal Models with Better Captions** [ECCV 2024] [[Paper](https://arxiv.org/pdf/2311.12793)] [[Code](https://github.com/ShareGPT4Omni/ShareGPT4V)] [[Data](https://sharegpt4v.github.io/)] <br>
 University of Science and Technology of China, Shanghai AI Laboratory
 
-* **MIA-Bench** [ICLR 2025] [[Paper](https://machinelearning.apple.com/research/towards-better-instruction-following)] [[Code](https://github.com/apple/ml-mia-bench)] [[Data](https://huggingface.co/datasets/apple/MIA-Bench)]
+* **MIA-Bench** [ICLR 2025] [[Paper](https://machinelearning.apple.com/research/towards-better-instruction-following)] [[Code](https://github.com/apple/ml-mia-bench)] [[Data](https://huggingface.co/datasets/apple/MIA-Bench)] <br>
+Apple, The Hong Kong University of Science and Technology
 
 * **MM-IFEngine: Towards Multimodal Instruction Following** [ICCV 2025] [[Paper](https://arxiv.org/abs/2504.07957)] [[Code](https://github.com/SYuan03/MM-IFEngine)] [[Data](https://huggingface.co/datasets/ChrisDing1105/MMIF-23k)] [[Homepage](https://syuan03.github.io/MM-IFEngine/)] <br>
 Fudan University, Shanghai Innovation Institute
 
-* **MME: A Comprehensive Evaluation Benchmark for Multimodal Large Language Models** [NeurIPS 2025] [[Paper](https://arxiv.org/abs/2306.13394)] [[Code](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models/tree/Evaluation)] [[Data](https://huggingface.co/datasets/lmms-lab/MME)]
+* **MME: A Comprehensive Evaluation Benchmark for Multimodal Large Language Models** [NeurIPS 2025] [[Paper](https://arxiv.org/abs/2306.13394)] [[Code](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models/tree/Evaluation)] [[Data](https://huggingface.co/datasets/lmms-lab/MME)] <br>
+Nanjing University, Tencent Youtu Lab, Xiamen University, CASIA
 
 * **Empowering Reliable Visual-Centric Instruction Following in MLLMs** [ACL Findings 2026] [[Paper](https://arxiv.org/abs/2601.03198)] [[Code](https://github.com/KerenWLHe/VC-IFEval)] [[Data](https://huggingface.co/datasets/KerenStone/VCIF-10k)] <br>
 The Hong Kong University of Science and Technology, Pennsylvania State University
@@ -576,7 +584,8 @@ Gaoling School of Artificial Intelligence, Renmin University of China, School of
 * **ALIGNING LARGE MULTIMODAL MODELS WITH FACTUALLY AUGMENTED RLHF** [ACL Findings 2024] [[Paper](https://arxiv.org/pdf/2309.14525)] [[Code](https://github.com/Shengcao-Cao/MMHal-Bench)] [[Data](https://huggingface.co/datasets/Shengcao/MMHal-Bench)] <br>
 UC Berkeley, Carnegie Mellon University, University of Illinois Urbana-Champaign, University of Wisconsin-Madison, University of Massachusetts Amherst, Microsoft Research, MIT-IBM Watson AI Lab
 
-* **AMBER: An LLM-free Multi-dimensional Benchmark for MLLMs Hallucination Evaluation** [arXiv 2023] [[Paper](https://arxiv.org/abs/2311.07397)] [[Code](https://github.com/jesseor101/AMBER)] [[Data](https://huggingface.co/datasets/jesseor101/AMBER)]
+* **AMBER: An LLM-free Multi-dimensional Benchmark for MLLMs Hallucination Evaluation** [arXiv 2023] [[Paper](https://arxiv.org/abs/2311.07397)] [[Code](https://github.com/junyangwang0410/AMBER)] [[Data](https://huggingface.co/datasets/junyangwang0410/AMBER)] <br>
+Beijing Jiaotong University, Alibaba Group, Peng Cheng Laboratory
 
 * **HallusionBench: An Advanced Diagnostic Suite for Entangled Language Hallucination and Visual Illusion in Large Vision-Language Models** [CVPR 2024] [[Paper](https://arxiv.org/pdf/2310.14566)] [[Code](https://github.com/tianyi-lab/HallusionBench)] [[Data](https://huggingface.co/datasets/tianyi-lab/HallusionBench)] <br>
 University of Maryland, College Park
@@ -593,7 +602,8 @@ University of Edinburgh, EPFL
 * **SPA-VL: A Comprehensive Safety Preference Alignment Dataset for Vision Language Models** [CVPR 2025] [[Paper](https://arxiv.org/abs/2406.12030)] [[Code](https://github.com/echosechen/spa-vl-rlhf)] [[Data](https://huggingface.co/datasets/sqrti/SPA-VL)] <br>
 University of Science and Technology of China, Shanghai AI Laboratory
 
-* **Lingua-SafetyBench: A Benchmark for Safety Evaluation of Multilingual Vision-Language Models** [arXiv 2026] [[Paper](https://arxiv.org/abs/2601.22737)] [[Code](https://github.com/yuhuayustc/Lingua-SafetyBench)] [[Data](https://huggingface.co/datasets/yuhuayustc/Lingua-SafetyBench)]
+* **Lingua-SafetyBench: A Benchmark for Safety Evaluation of Multilingual Vision-Language Models** [arXiv 2026] [[Paper](https://arxiv.org/abs/2601.22737)] [[Code](https://github.com/zsxr15/Lingua-SafetyBench)] [[Data](https://huggingface.co/datasets/yuhuayustc/Lingua-SafetyBench)] <br>
+Nanjing University of Science and Technology, University of Wisconsin-Madison, University of Chinese Academy of Sciences, National University of Singapore
 
 **Others:** CHAIR, M-HalDetect, HaELM, MM-SafetyBench, FigStep, JailBreakV-28K, RTVLM
 
@@ -602,7 +612,8 @@ University of Science and Technology of China, Shanghai AI Laboratory
 * **Learn to Explain: Multimodal Reasoning via Thought Chains for Science Question Answering** [NeurIPS 2022] [[Paper](https://arxiv.org/pdf/2209.09513)] [[Code](https://github.com/lupantech/ScienceQA)] [[Data](https://huggingface.co/datasets/derek-thomas/ScienceQA)] <br>
 University of California, Los Angeles, Arizona State University, Allen Institute for AI
 
-* **GQA** [CVPR 2019] [[Paper](https://arxiv.org/pdf/1902.09506)] [[Code](https://github.com/stanfordnlp/GQA)] [[Data](https://cs.stanford.edu/people/dorarad/gqa/about.html)]
+* **GQA** [CVPR 2019] [[Paper](https://arxiv.org/pdf/1902.09506)] [[Code](https://github.com/stanfordnlp/GQA)] [[Data](https://cs.stanford.edu/people/dorarad/gqa/about.html)] <br>
+Stanford University
 
 * **MMMU: A Massive Multi-discipline Multimodal Understanding and Reasoning Benchmark for Expert AGI** [CVPR 2024] [[Paper](https://arxiv.org/pdf/2311.16502)] [[Code](https://github.com/MMMU-Benchmark/MMMU)] [[Data](https://huggingface.co/datasets/MMMU/MMMU)] <br>
 IN.AI Research, University of Waterloo, The Ohio State University, Carnegie Mellon University, University of Victoria, Princeton University

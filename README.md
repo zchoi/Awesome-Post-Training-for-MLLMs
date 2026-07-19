@@ -1,4 +1,4 @@
-<img src="assets/banner.png" alt="MMPoT"/>
+<img src="assets/banner-2.png" alt="MMPoT"/>
 
 > A rigorous and systematically organized survey repository on post-training methodologies for **Multimodal Large Language Models (MLLMs)**, covering instruction tuning, preference calibration, reason enhancement, domain adaptation, scalable training, and datasets&benchmarks.
 

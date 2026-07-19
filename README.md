@@ -1,6 +1,6 @@
 <div align="center">
-<img src="assets/banner-2.png" alt="MMPoT"/>
-
+<img src="assets/banner-2.png" alt="MMPoT"/><br>
+  
 [![Paper Preprint](https://img.shields.io/badge/Paper-Preprint-b31b1b.svg?logo=arXiv)]()
 [![Website](https://img.shields.io/badge/Website-blue.svg?logo=googlechrome&logoColor=white)]()
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)

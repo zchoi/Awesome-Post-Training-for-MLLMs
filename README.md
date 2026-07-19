@@ -1,9 +1,18 @@
+<div align="center">
 <img src="assets/banner-2.png" alt="MMPoT"/>
 
-> A rigorous and systematically organized survey repository on post-training methodologies for **Multimodal Large Language Models (MLLMs)**, covering instruction tuning, preference calibration, reason enhancement, domain adaptation, scalable training, and datasets&benchmarks.
+[![Paper Preprint](https://img.shields.io/badge/Paper-Preprint-b31b1b.svg?logo=arXiv)]()
+[![Website](https://img.shields.io/badge/Website-blue.svg?logo=googlechrome&logoColor=white)]()
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
+**Watch this repository for the latest updates**
 
-This repository accompanies the survey **A Survey on Post-training of Multimodal Large Language Models** and provides a structured literature map for understanding how post-training transforms pre-trained MLLMs into aligned, capable, and safe multimodal assistants. Following the survey's behavior-shaping perspective, MLLM post-training is not merely a downstream optimization stage; it is a systematic process that calibrates broad cross-modal representations toward reliable instruction following, preference alignment, complex reasoning, domain-aware adaptation, and scalable multimodal learning.
+**Feel free to raise pull requests if you find some interesting papers!** 🌟
+
+</div>
+
+## News🔥
+[2026/07/11] 🎉 We release our curation list of MLLMs Post-Training methods<br>
 
 <p align="center">
   <img src="assets/framework-z.png" width="100%" alt="Post-training framework for MLLMs">

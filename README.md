@@ -16,7 +16,7 @@
 
 ---
 
-## 🎤 Introduction
+## <img src="assets/icon2.png" height="30" align="top"/> Introduction
 Multimodal Large Language Models (MLLMs) have reshaped AI by enabling perception, reasoning, and interaction across digital and physical environments. While multimodal pretraining establishes broad perceptual capabilities, translating them into behaviors aligned with human intent and real-world demands remains challenging. Multimodal Post-Training (MMPoT) addresses this gap by refining pretrained MLLMs toward reliable, task-oriented behavior. This survey reviews MMPoT from a behavior-shaping perspective and organizes existing methods into five families: instruction following, preference calibration, reasoning enhancement, domain adaptation, and scalable training. We further examine benchmarks and evaluation protocols, identify current limitations, and outline future directions toward general and reliable multimodal intelligence.
 
 <p align="center">
@@ -26,7 +26,7 @@ Multimodal Large Language Models (MLLMs) have reshaped AI by enabling perception
 
 ---
 
-## &#128204; Contents
+## <img src="assets/icon3.png" height="30" align="top"/> Contents
 
 - [Multimodal Instruction Tuning](#multimodal-instruction-tuning)
 

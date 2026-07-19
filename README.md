@@ -306,7 +306,7 @@ Seoul National University
 
 ---
 
-## Multimodal Reasoning Enhancement
+## <img src="assets/icon6.png" height="30" align="top"/> Multimodal Reason Enhancement
 
 ### R1-based Multimodal Reasoning
 

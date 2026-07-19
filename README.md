@@ -11,12 +11,12 @@
 
 </div>
 
-## <img src="assets/icon1.png" height="50" align="center"/> News
+## <img src="assets/icon1.png" height="30" align="top"/> News
 [2026/07/19] 🎉 We release our curation list of MLLMs Post-Training methods！<br>
 
 ---
 
-## <img src="assets/icon2.png" height="50" align="center"/> Introduction
+## <img src="assets/icon2.png" height="30" align="top"/> Introduction
 Multimodal Large Language Models (MLLMs) have reshaped AI by enabling perception, reasoning, and interaction across digital and physical environments. While multimodal pretraining establishes broad perceptual capabilities, translating them into behaviors aligned with human intent and real-world demands remains challenging. Multimodal Post-Training (MMPoT) addresses this gap by refining pretrained MLLMs toward reliable, task-oriented behavior. This survey reviews MMPoT from a behavior-shaping perspective and organizes existing methods into five families: instruction following, preference calibration, reasoning enhancement, domain adaptation, and scalable training. We further examine benchmarks and evaluation protocols, identify current limitations, and outline future directions toward general and reliable multimodal intelligence.
 
 <p align="center">
@@ -26,7 +26,7 @@ Multimodal Large Language Models (MLLMs) have reshaped AI by enabling perception
 
 ---
 
-## <img src="assets/icon3.png" height="50" align="center"/> Contents
+## <img src="assets/icon3.png" height="30" align="top"/> Contents
 
 - [Multimodal Instruction Tuning](#multimodal-instruction-tuning)
 
@@ -62,7 +62,7 @@ Multimodal Large Language Models (MLLMs) have reshaped AI by enabling perception
 
 ---
 
-## <img src="assets/icon4.png" height="50" align="center"/> Multimodal Instruction Tuning
+## <img src="assets/icon4.png" height="30" align="top"/> Multimodal Instruction Tuning
 
 * **Visual Instruction Tuning** [NeurIPS 2023] [[Paper](https://arxiv.org/pdf/2304.08485)] [[Code](https://github.com/haotian-liu/LLaVA)] [[Homepage](https://llava-vl.github.io/)] <br>
 University of Wisconsin–Madison, Microsoft Research, Columbia University
@@ -222,7 +222,7 @@ Shanghai AI Laboratory；MMLab, CUHK；ShanghaiTech University
 
 ---
 
-## <img src="assets/icon5.png" height="50" align="center"/> Multimodal Preference Calibration
+## <img src="assets/icon5.png" height="30" align="top"/> Multimodal Preference Calibration
 
 ### Multimodal RLHF
 
@@ -306,7 +306,7 @@ Seoul National University
 
 ---
 
-## <img src="assets/icon6.png" height="50" align="center"/> Multimodal Reason Enhancement
+## <img src="assets/icon6.png" height="30" align="top"/> Multimodal Reason Enhancement
 
 ### R1-based Multimodal Reasoning
 
@@ -422,12 +422,13 @@ Institute of Automation, Chinese Academy of Sciences, Meituan
 
 ---
 
-## <img src="assets/icon7.png" height="50" align="center"/> Multimodal Domain Adaptation
+## Multimodal Domain Adaptation
 
 * **Mobile-Agent: Autonomous Multi-Modal Mobile Device Agent with Visual Perception** [ICLR 2024 Workshop] [[Paper](https://arxiv.org/pdf/2401.16158)] [[Code](https://github.com/X-PLUG/MobileAgent)] <br>
 Beijing Jiaotong University, Alibaba Group
 
-* **GUI-R1: A Generalist R1-Style Vision-Language Action Model For GUI Agents** [arXiv 2025] [[Paper](https://arxiv.org/abs/2504.10458)] [[Code](https://github.com/Showlab/GUI-R1)]
+* **GUI-R1: A Generalist R1-Style Vision-Language Action Model For GUI Agents** [arXiv 2025] [[Paper](https://arxiv.org/abs/2504.10458)] [[Code](https://github.com/ritzz-ai/GUI-R1)] <br>
+National University of Singapore, Chinese Academy of Sciences, University of Chinese Academy of Sciences
 
 * **mPLUG-DocOwl 1.5: Unified Structure Learning for OCR-free Document Understanding** [EMNLP 2024] [[Paper](https://arxiv.org/abs/2403.12895)] [[Code](https://github.com/X-PLUG/mPLUG-DocOwl)] <br>
 Alibaba Group
@@ -435,41 +436,52 @@ Alibaba Group
 * **LLaVA-UHD: an LMMPerceiving Any Aspect Ratio and High-Resolution Images** [arXiv 2024] [[Paper](https://arxiv.org/pdf/2403.11703)] [[Code](https://github.com/thunlp/LLaVA-UHD)] <br>
 Ruyi Xu, Yuan Yao, Zonghao Guo, Junbo Cui, Zanlin Ni, Chunjiang Ge, Tat-Seng Chua, Zhiyuan Liu, Maosong Sun, Gao Huang
 
-* **Advancing Multimodal Medical Capabilities of Gemini** [arXiv 2024] [[Paper](https://arxiv.org/abs/2405.03162)]
+* **Advancing Multimodal Medical Capabilities of Gemini** [arXiv 2024] [[Paper](https://arxiv.org/abs/2405.03162)] [[Homepage](https://research.google/blog/advancing-medical-ai-with-med-gemini/)] <br>
+Google Research, Google DeepMind, Verily Life Sciences, Apollo Radiology International, Northwestern Medicine, EyePACS, DeepHealth/RadNet
 
-* **On Domain-Specific Post-Training for Multimodal Large Language Models** [EMNLP 2025 Findings] [[Paper](https://arxiv.org/abs/2411.19930)] [[Code](https://github.com/thunlp/AdaMLLM)] [[Homepage](https://adamllm.github.io/)]
+* **On Domain-Specific Post-Training for Multimodal Large Language Models** [EMNLP 2025 Findings] [[Paper](https://arxiv.org/abs/2411.19930)] [[Code](https://github.com/thunlp/AdaMLLM)] [[Homepage](https://adamllm.github.io/)] <br>
+BIGAI, Beihang University, Tsinghua University, Beijing Institute of Technology, Renmin University of China
 
 ---
 
-## <img src="assets/icon8.png" height="50" align="center"/> Multimodal Scalable Training
+## Multimodal Scalable Training
 
 ### LoRA-based Methods
 
-* **LLaVA-MoLE: Sparse Mixture of LoRA Experts for Mitigating Data Conflicts in Instruction Finetuning MLLMs** [arXiv 2024] [[Paper](https://arxiv.org/abs/2401.16160)] [[Code](https://github.com/lingchen03/LLaVA-MoLE)]
+* **LLaVA-MoLE: Sparse Mixture of LoRA Experts for Mitigating Data Conflicts in Instruction Finetuning MLLMs** [arXiv 2024] [[Paper](https://arxiv.org/abs/2401.16160)] [[Code](https://github.com/forwchen/LLaVA-MoLE)] <br>
+Meituan Inc.
 
-* **MixLoRA: Enhancing Large Language Models Fine-Tuning with LoRA-based Mixture of Experts** [arXiv 2024] [[Paper](https://arxiv.org/abs/2404.15159)] [[Code](https://github.com/TencentARC/MixLoRA)]
+* **MixLoRA: Enhancing Large Language Models Fine-Tuning with LoRA-based Mixture of Experts** [arXiv 2024] [[Paper](https://arxiv.org/abs/2404.15159)] [[Code](https://github.com/TUDB-Labs/MixLoRA)] <br>
+Sichuan University, Purdue University, Nanyang Technological University, Emory University
 
-* **MoKA: Mixture of Kronecker Adapters** [arXiv 2025] [[Paper](https://arxiv.org/abs/2508.03527)] [[Code](https://github.com/ZhangYuanhan-AI/MokA)] [[Homepage](https://moka-ml.github.io/)]
+* **MoKA: Mixture of Kronecker Adapters** [arXiv 2025] [[Paper](https://arxiv.org/abs/2506.05191)] [[Code](https://github.com/GeWu-Lab/MokA)] [[Homepage](https://gewu-lab.github.io/MokA/)] <br>
+Renmin University of China, Beijing Key Laboratory of Research on Large Models and Intelligent Governance, Engineering Research Center of Next-Generation Intelligent Search and Recommendation, Shanghai AI Laboratory
 
 * **LoRA in LoRA: Towards Parameter-Efficient Architecture Expansion for Continual Visual Instruction Tuning** [AAAI 2026] [[Paper](https://arxiv.org/abs/2508.06202)] [[Code](https://github.com/chanceche/LiLoRA)] <br>
 Hefei University of Technology, University of Amsterdam, Tsinghua University
 
 ### MoE-based Methods
 
-* **MoE-LLaVA: Mixture of Experts for Large Vision-Language Models** [TMM 2025] [[Paper](https://arxiv.org/abs/2401.15947)] [[Code](https://github.com/PKU-YuanGroup/MoE-LLaVA)]
+* **MoE-LLaVA: Mixture of Experts for Large Vision-Language Models** [TMM 2025] [[Paper](https://arxiv.org/abs/2401.15947)] [[Code](https://github.com/PKU-YuanGroup/MoE-LLaVA)] <br>
+Peking University
 
-* **MoE-LLaVA-7B** [TMM 2025] [[Paper](https://arxiv.org/abs/2401.15947)] [[Code](https://github.com/PKU-YuanGroup/MoE-LLaVA)]
+* **MoE-LLaVA-7B** [TMM 2025] [[Paper](https://arxiv.org/abs/2401.15947)] [[Code](https://github.com/PKU-YuanGroup/MoE-LLaVA)] <br>
+Peking University
 
-* **MoExtend: Tuning New Experts for Modality and Task Extension** [ACL SRW 2024] [[Paper](https://arxiv.org/abs/2408.03511)] [[Code](https://github.com/zyx-2000/MoExtend)]
+* **MoExtend: Tuning New Experts for Modality and Task Extension** [ACL SRW 2024] [[Paper](https://arxiv.org/abs/2408.03511)] [[Code](https://github.com/zhongshsh/MoExtend)] <br>
+Sun Yat-sen University, Harvard University, Singapore Management University
 
 * **Qwen2-VL: Enhancing Vision-Language Model's Perception of the World at Any Resolution** [arXiv 2024] [[Paper](https://arxiv.org/pdf/2409.12191)] [[Code](https://github.com/deepseek-ai/DeepSeek-VL2)] <br>
 ByteDance, S-Lab, NTU, CUHK, HKUST
 
-* **Qwen3-Omni Technical Report** [arXiv 2025] [[Paper](https://arxiv.org/abs/2509.17765)] [[Code](https://github.com/QwenLM/Qwen3)]
+* **Qwen3-Omni Technical Report** [arXiv 2025] [[Paper](https://arxiv.org/abs/2509.17765)] [[Code](https://github.com/QwenLM/Qwen3-Omni)] <br>
+Qwen Team, Alibaba Cloud
 
-* **Qwen3-VL Technical Report** [arXiv 2025] [[Paper](https://arxiv.org/pdf/2511.21631)] [[Code](https://github.com/QwenLM/Qwen3-VL)]
+* **Qwen3-VL Technical Report** [arXiv 2025] [[Paper](https://arxiv.org/pdf/2511.21631)] [[Code](https://github.com/QwenLM/Qwen3-VL)] <br>
+Qwen Team, Alibaba Cloud
 
-* **MiniMax-01: Scaling Foundation Models with Lightning Attention** [arXiv 2025] [[Paper](https://arxiv.org/abs/2501.08313)] [[Code](https://github.com/MiniMaxAI/MiniMax-01)]
+* **MiniMax-01: Scaling Foundation Models with Lightning Attention** [arXiv 2025] [[Paper](https://arxiv.org/abs/2501.08313)] [[Code](https://github.com/MiniMax-AI/MiniMax-01)] <br>
+MiniMax
 
 * **Seed1.5-VL Technical Report** [arXiv 2025] [[Paper](https://arxiv.org/pdf/2505.07062)] [[Code](https://github.com/ByteDance-Seed/Seed1.5-VL)] [[Homepage](https://seed.bytedance.com/en/tech/seed1_5_vl)] <br>
 ByteDance Seed
@@ -498,11 +510,14 @@ Huazhong University of Science and Technology, Kingsoft Office
 * **An Image is Worth 1/2 Tokens After Layer 2: Plug-and-Play Inference Acceleration for Large Vision-Language Models** [ECCV 2024] [[Paper](https://arxiv.org/pdf/2403.06764)] [[Code](https://github.com/pkuliyi2015/FastV)] <br>
 National Key Laboratory for Multimedia Information Processing, Peking University, Alibaba Group
 
-* **VisionZip: Longer is Better but Not Necessary in Vision Language Models** [CVPR 2025] [[Paper](https://arxiv.org/abs/2412.04467)] [[Code](https://github.com/pykale/VisionZip)]
+* **VisionZip: Longer is Better but Not Necessary in Vision Language Models** [CVPR 2025] [[Paper](https://arxiv.org/abs/2412.04467)] [[Code](https://github.com/dvlab-research/VisionZip)] <br>
+The Chinese University of Hong Kong, The Hong Kong University of Science and Technology, Harbin Institute of Technology, Shenzhen
 
-* **SparseVLM: Visual Token Sparsification for Efficient Vision-Language Model Inference** [ICML 2025] [[Paper](https://arxiv.org/abs/2410.04417)] [[Code](https://github.com/linhezheng/SparseVLM)]
+* **SparseVLM: Visual Token Sparsification for Efficient Vision-Language Model Inference** [ICML 2025] [[Paper](https://arxiv.org/abs/2410.04417)] [[Code](https://github.com/Gumpest/SparseVLMs)] [[Homepage](https://leofan90.github.io/SparseVLMs.github.io/)] <br>
+Peking University, Fudan University, University of California Berkeley, Panasonic Holdings Corporation
 
-* **TokenPacker: Efficient Visual Projector for Multimodal LLM** [IJCV 2025] [[Paper](https://arxiv.org/abs/2407.02392)] [[Code](https://github.com/richard-peng-xia/TokenPacker)]
+* **TokenPacker: Efficient Visual Projector for Multimodal LLM** [IJCV 2025] [[Paper](https://arxiv.org/abs/2407.02392)] [[Code](https://github.com/CircleRadon/TokenPacker)] <br>
+Zhejiang University, Ant Group, Nanjing University of Aeronautics and Astronautics, The Hong Kong Polytechnic University
 
 #### Long-Context Optimization (LCO)
 
@@ -512,16 +527,18 @@ Centre for Biodiversity Genomics, University of Guelph, University of Waterloo, 
 * **LongVILA: Scaling Long-Context Visual Language Models for Long Videos** [ICLR 2025] [[Paper](https://arxiv.org/abs/2408.10188)] [[Code](https://github.com/NVlabs/LongVILA)] <br>
 NVIDIA, MIT
 
-* **Long Context Transfer from Language to Vision** [TMLR 2025] [[Paper](https://arxiv.org/abs/2406.16852)] [[Code](https://github.com/EvolvingLMMs-Lab/LongVA)]
+* **Long Context Transfer from Language to Vision** [TMLR 2025] [[Paper](https://arxiv.org/abs/2406.16852)] [[Code](https://github.com/EvolvingLMMs-Lab/LongVA)] <br>
+LMMs-Lab, S-Lab, Nanyang Technological University, Singapore University of Technology and Design
 
 * **An Image Grid Can Be Worth a Video: Zero-shot Video Question Answering Using a VLM** [IEEE Access 2024] [[Paper](https://arxiv.org/abs/2403.18406)] [[Code](https://github.com/imagegridworth/IG-VLM)] <br>
 Seoul National University
 
-* **VideoChat-Flash: Hierarchical Compression for Long-Context Video Modeling** [arXiv 2025] [[Paper](https://arxiv.org/abs/2501.00574)] [[Code](https://github.com/OpenGVLab/VideoChat-Flash)]
+* **VideoChat-Flash: Hierarchical Compression for Long-Context Video Modeling** [arXiv 2025] [[Paper](https://arxiv.org/abs/2501.00574)] [[Code](https://github.com/OpenGVLab/VideoChat-Flash)] <br>
+Shanghai AI Laboratory, Nanjing University, Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences, Shanghai Innovation Institute
 
 ---
 
-## <img src="assets/icon9.png" height="50" align="center"/> Multimodal Benchmarks
+## Multimodal Benchmarks
 
 ### Instruction Tuning Benchmarks
 

@@ -222,15 +222,9 @@ Shanghai AI Laboratory；MMLab, CUHK；ShanghaiTech University
 
 ---
 
-<a id="multimodal-alignment-learning"></a>
-## &#127942; Multimodal Alignment Learning
+## Multimodal Alignment Learning
 
-Multimodal alignment learning aims to make MLLM outputs consistent with human preferences, factual evidence, safety requirements, and cross-modal semantic constraints. Compared with text-only alignment, multimodal alignment must additionally address visual hallucination, fine-grained localization errors, temporal inconsistency in videos, modality conflicts, and heterogeneous feedback granularity. The literature can be organized into three major paradigms: reinforcement learning from human feedback, reinforcement learning from AI feedback, and direct preference optimization.
-
-<a id="multimodal-rlhf"></a>
 ### Multimodal RLHF
-
-Multimodal RLHF introduces human feedback or human-derived reward signals to guide MLLMs toward more factual, helpful, and preference-aligned behavior. Existing methods construct reward models at different levels of granularity, including pair-level, span-level, step-level, and mixed-level feedback. Optimization procedures such as PPO, DDPO, process reward modeling, best-of-N sampling, reject sampling, and multi-objective reinforcement learning are used to improve alignment over image and video contexts.
 
 * **ALIGNING LARGE MULTIMODAL MODELS WITH FACTUALLY AUGMENTED RLHF** [ACL Findings 2024] [[Paper](https://arxiv.org/pdf/2309.14525)] [[Code](https://github.com/llava-rlhf/LLaVA-RLHF)] [[Homepage](https://llava-rlhf.github.io/)] <br>
 UC Berkeley, Carnegie Mellon University, University of Illinois Urbana-Champaign, University of Wisconsin-Madison, University of Massachusetts Amherst, Microsoft Research, MIT-IBM Watson AI Lab
@@ -250,10 +244,7 @@ ByteDance Seed
 * **MiMo-VL Technical Report** [arXiv 2025] [[Paper](https://arxiv.org/pdf/2506.03569)] [[Code](https://github.com/XiaomiMiMo/MiMo-VL)] <br>
 LLM-Core Xiaomi
 
-<a id="multimodal-rlaif"></a>
 ### Multimodal RLAIF
-
-Multimodal RLAIF reduces the cost and scalability limitations of human feedback by using stronger models, automatic evaluators, or structured AI feedback as supervisory signals. This paradigm is particularly valuable for video understanding, large-scale preference construction, and iterative alignment settings. Representative work explores context-aware reward modeling, open-source AI feedback, preference distillation, and iterative refinement for improving trustworthiness and alignment quality.
 
 * **Tuning Large Multimodal Models for Videos using Reinforcement Learning from AI Feedback** [ACL 2024] [[Paper](https://arxiv.org/pdf/2402.03746)] [[Code](https://github.com/yonseivnl/vlm-rlaif)] [[Homepage](https://dcahn12.github.io/projects/vlm-rlaif/)] <br>
 Yonsei University, University of Minnesota, Seoul National University
@@ -264,10 +255,7 @@ Tsinghua University, Shanghai Qi Zhi Institute, Harbin Institute of Technology, 
 * **Oracle-RLAIF: An Improved Fine-Tuning Framework for Multi-modal Video Models using Reinforcement Learning from Ranking Feedback** [arXiv 2025] [[Paper](https://arxiv.org/abs/2510.02561)] <br>
 Stanford University, xAI, Microsoft
 
-<a id="multimodal-direct-preference-optimization"></a>
 ### Multimodal Direct Preference Optimization
-
-Multimodal Direct Preference Optimization directly optimizes model policies from preference data without relying on an explicitly trained reward model. This family of methods is especially useful for mitigating multimodal hallucination, object-level inconsistency, modality-level conflict, and response-level preference errors. Recent work further extends DPO toward conditional preference objectives, vision-guided preference construction, difficulty-aware sampling, uncertainty-aware exploration, and on-policy data generation.
 
 * **Silkie: Preference Distillation for Large Visual Language Models** [arXiv 2023] [[Paper](https://arxiv.org/pdf/2312.10665)] [[Code](https://github.com/vlf-silkie/VLFeedback)] [[Homepage](https://vlf-silkie.github.io/)] <br>
 University of Hong Kong, The Chinese University of Hong Kong, Shenzhen, Peng Cheng Laboratory
@@ -318,15 +306,9 @@ Seoul National University
 
 ---
 
-<a id="multimodal-reasoning-enhancement"></a>
-## &#128640; Multimodal Reasoning Enhancement
+## Multimodal Reasoning Enhancement
 
-Multimodal reasoning enhancement focuses on strengthening the ability of MLLMs to solve complex tasks that require visual evidence, symbolic reasoning, spatial-temporal understanding, tool use, grounding, and multi-step inference. This research direction has rapidly expanded with the emergence of R1-style reinforcement learning, visually grounded reasoning, self-evolving training loops, and distillation-based capability transfer.
-
-<a id="r1-based-multimodal-reasoning"></a>
 ### R1-based Multimodal Reasoning
-
-R1-based multimodal reasoning adapts reinforcement learning strategies inspired by R1-style reasoning models to vision-language and omni-modal settings. These methods typically optimize verifiable objectives such as answer correctness, reasoning format, visual grounding, or process-level reward. By reducing dependence on manually annotated reasoning traces, they provide a scalable route for improving mathematical reasoning, chart understanding, video reasoning, retrieval, and general multimodal problem solving.
 
 * **LMM-R1** [arXiv 2025] [[Paper](https://arxiv.org/abs/2503.07536)]
 
@@ -366,10 +348,7 @@ Alibaba Group, Tongji University
 * **Retrv-R1: A Reasoning-Driven MLLM Framework for Universal and Efficient Multimodal Retrieval** [NeurIPS 2025] [[Paper](https://arxiv.org/abs/2510.02745)] [[Code](https://lanyunzhu.site/RetrvR1/)] [[Homepage](https://lanyunzhu.site/RetrvR1/)] <br>
 City University of Hong Kong
 
-<a id="thinking-with-images"></a>
 ### Thinking with Images
-
-Thinking with Images emphasizes explicit use of visual evidence during the reasoning process. Instead of compressing images into implicit context alone, these methods encourage models to reason over regions, points, crops, visual tools, latent visual structures, or grounded intermediate representations. This paradigm is crucial for tasks that require localization, visual planning, fine-grained perception, and tool-augmented multimodal reasoning.
 
 * **GRIT: Teaching MLLMs to Think with Images** [NeurIPS 2025] [[Paper](https://arxiv.org/abs/2505.15879)] [[Code](https://github.com/eric-ai-lab/GRIT)] [[Homepage](https://grounded-reasoning.github.io/)] <br>
 University of California, Santa Cruz (UCSC)
@@ -395,10 +374,7 @@ University of Cambridge
 * **LanteRn: Latent Visual Structured Reasoning** [arXiv 2026] [[Paper](https://arxiv.org/abs/2603.25629)] [[Code](https://github.com/GuilhermeViveiros/LantErn)] [[HF](https://huggingface.co/AGViveiros/LanteRn-3B-RL)] <br>
 Instituto Superior Técnico, TU Darmstadt
 
-<a id="multimodal-self-evolving"></a>
 ### Multimodal Self-Evolving
-
-Multimodal self-evolving methods study how MLLMs can improve through iterative loops of self-generated data, self-correction, critique, reflection, or unsupervised post-training. Rather than relying exclusively on static supervised datasets, these methods treat the model as both a learner and a data or feedback generator. This closed-loop formulation is particularly relevant for data-scarce, dynamically changing, or open-ended multimodal tasks.
 
 * **VIGC: Visual Instruction Generation and Correction** [AAAI 2024] [[Paper](https://arxiv.org/abs/2308.12714)] [[Code](https://github.com/opendatalab/VIGC)] [[Homepage](https://opendatalab.github.io/VIGC)] <br>
 Shanghai AI Laboratory, SenseTime
@@ -418,10 +394,7 @@ Shanghai Jiao Tong University, Lehigh University
 * **LLaVA-Critic-R1: Your Critic Model is Secretly a Strong Policy Model** [arXiv 2025] [[Paper](https://arxiv.org/abs/2509.00676)] [[Code](https://github.com/LLaVA-VL/LLaVA-NeXT)] <br>
 University of Maryland, Microsoft Research
 
-<a id="multimodal-distillation"></a>
 ### Multimodal Distillation
-
-Multimodal distillation transfers capabilities from stronger teacher models, preference models, or on-policy trajectories into smaller, more efficient, or more specialized student models. Beyond conventional compression, this paradigm also supports capability alignment: the student model is expected to preserve fine-grained visual perception, temporal grounding, multimodal reasoning, and cross-modal response quality. Recent work highlights on-policy distillation as an important mechanism for combining efficiency with robust multimodal capability transfer.
 
 * **LLaVA-KD: A Framework of Distilling Multimodal Large Language Models** [ICCV 2025] [[Paper](https://arxiv.org/abs/2410.16236)] [[Code](https://github.com/Fantasyele/LLaVA-KD)] <br>
 Huazhong University of Science and Technology, Tencent Youtu Lab
@@ -449,10 +422,7 @@ Institute of Automation, Chinese Academy of Sciences, Meituan
 
 ---
 
-<a id="multimodal-domain-adaptation"></a>
-## &#129517; Multimodal Domain Adaptation
-
-Domain adaptation studies how pre-trained MLLMs can be specialized to domains with distinct input distributions, task protocols, and reliability requirements. Unlike general instruction tuning or alignment, domain adaptation often requires the model to absorb domain-specific evidence formats, output structures, action spaces, and evaluation criteria. Representative application domains include graphical user interfaces (GUI), document and chart understanding, high-resolution vision (HRV), medical imaging and clinical reasoning, remote sensing, and food analysis. These methods show that domain adaptation for MLLMs must jointly consider data distribution, visual granularity, task interface, and domain-specific reliability.
+## Multimodal Domain Adaptation
 
 * **Mobile-Agent: Autonomous Multi-Modal Mobile Device Agent with Visual Perception** [ICLR 2024 Workshop] [[Paper](https://arxiv.org/pdf/2401.16158)] [[Code](https://github.com/X-PLUG/MobileAgent)] <br>
 Beijing Jiaotong University, Alibaba Group
@@ -471,15 +441,9 @@ Ruyi Xu, Yuan Yao, Zonghao Guo, Junbo Cui, Zanlin Ni, Chunjiang Ge, Tat-Seng Chu
 
 ---
 
-<a id="multimodal-scalable-training"></a>
-## &#9881;&#65039; Multimodal Scalable Training
+## Multimodal Scalable Training
 
-This section organizes scalable post-training strategies that improve efficiency, modularity, and computational feasibility when adapting MLLMs across model scales, modalities, data regimes, and deployment constraints. Scalable training encompasses three complementary directions: parameter-efficient adaptation via low-rank updates (LoRA-based), capacity expansion via sparse mixture-of-experts architectures (MoE-based), and compute-efficient visual processing including token compression and long-context optimization.
-
-<a id="lora-based-methods"></a>
 ### LoRA-based Methods
-
-Low-Rank Adaptation (LoRA) provides a simple and widely used strategy for efficient MLLM post-training. Instead of updating the entire LLM backbone, LoRA-style methods freeze most pretrained parameters and insert lightweight trainable low-rank matrices into selected layers. This is especially attractive for MLLMs because visual instruction tuning, video adaptation, and domain-specific tuning often require repeated adaptation over different data sources. Recent extensions further explore mixture-style routing, continual learning, and multimodal-specific low-rank configurations.
 
 * **LLaVA-MoLE: Sparse Mixture of LoRA Experts for Mitigating Data Conflicts in Instruction Finetuning MLLMs** [arXiv 2024] [[Paper](https://arxiv.org/abs/2401.16160)] [[Code](https://github.com/lingchen03/LLaVA-MoLE)]
 
@@ -487,12 +451,9 @@ Low-Rank Adaptation (LoRA) provides a simple and widely used strategy for effici
 
 * **MoKA: Mixture of Kronecker Adapters** [arXiv 2025] [[Paper](https://arxiv.org/abs/2508.03527)] [[Code](https://github.com/ZhangYuanhan-AI/MokA)] [[Homepage](https://moka-ml.github.io/)]
 
-* **LiLoRA**] [[Code](https://github.com/bupt-ai-cv/LiLoRA)]
+* **LiLoRA** [[Code](https://github.com/bupt-ai-cv/LiLoRA)]
 
-<a id="moe-based-methods"></a>
 ### MoE-based Methods
-
-Mixture-of-Experts (MoE) adaptation improves efficiency by activating only a subset of parameters for each input token or task. For MLLMs, MoE is particularly useful because different modalities, domains, and reasoning patterns may require different expert knowledge, while dense activation of all parameters is often unnecessary. Existing methods follow two directions: sparse expert backbones that expand total capacity while keeping activated computation relatively small, and expert extension that adds new experts to pretrained MoE models for new modalities or tasks while preserving the original backbone.
 
 * **MoE-LLaVA: Mixture of Experts for Large Vision-Language Models** [TMM 2025] [[Paper](https://arxiv.org/abs/2401.15947)] [[Code](https://github.com/PKU-YuanGroup/MoE-LLaVA)]
 
@@ -512,10 +473,7 @@ ByteDance, S-Lab, NTU, CUHK, HKUST
 * **Seed1.5-VL Technical Report** [arXiv 2025] [[Paper](https://arxiv.org/pdf/2505.07062)] [[Code](https://github.com/ByteDance-Seed/Seed1.5-VL)] [[Homepage](https://seed.bytedance.com/en/tech/seed1_5_vl)] <br>
 ByteDance Seed
 
-<a id="compute-efficient-methods"></a>
 ### Compute-efficient Methods
-
-Compute-efficient post-training addresses the computational cost of visual encoding, token processing, and long-context modeling in MLLMs. High-resolution images, documents, and videos often produce many visual tokens, raising both training and inference costs. This category is organized into three sub-directions: **Efficient Visual Processing (EVP)** preserves fine-grained perception while controlling token growth; **Token Compression (TC)** directly reduces visual tokens passed to the language model; **Long-Context Optimization (LCO)** handles long videos, multi-image inputs, and extended multimodal conversations.
 
 #### Efficient Visual Processing (EVP)
 
@@ -529,7 +487,7 @@ Ruyi Xu, Yuan Yao, Zonghao Guo, Junbo Cui, Zanlin Ni, Chunjiang Ge, Tat-Seng Chu
 * **UReader: Universal OCR-free Visually-situated Language Understanding with Multimodal Large Language Model** [EMNLP 2023] [[Paper](https://arxiv.org/abs/2310.05126)] [[Code](https://github.com/LukcyYuan/UReader)] <br>
 Alibaba Group
 
-* **Monkey :ImageResolutionandText Label Are Important Things for Large Multi-modal Models** [CVPR 2024] [[Paper](https://arxiv.org/pdf/2311.06607)] [[Code](https://github.com/Yuliang-Liu/Monkey)] <br>
+* **Monkey:ImageResolutionandText Label Are Important Things for Large Multi-modal Models** [CVPR 2024] [[Paper](https://arxiv.org/pdf/2311.06607)] [[Code](https://github.com/Yuliang-Liu/Monkey)] <br>
 Huazhong University of Science and Technology, Kingsoft Office
 
 #### Token Compression (TC)
@@ -540,8 +498,6 @@ National Key Laboratory for Multimedia Information Processing, Peking University
 * **VisionZip: Longer is Better but Not Necessary in Vision Language Models** [CVPR 2025] [[Paper](https://arxiv.org/abs/2412.04467)] [[Code](https://github.com/pykale/VisionZip)]
 
 * **SparseVLM: Visual Token Sparsification for Efficient Vision-Language Model Inference** [ICML 2025] [[Paper](https://arxiv.org/abs/2410.04417)] [[Code](https://github.com/linhezheng/SparseVLM)]
-
-* **TRIM / VisionTrim**]
 
 * **TokenPacker: Efficient Visual Projector for Multimodal LLM** [IJCV 2025] [[Paper](https://arxiv.org/abs/2407.02392)] [[Code](https://github.com/richard-peng-xia/TokenPacker)]
 
@@ -561,10 +517,7 @@ NVIDIA, MIT
 
 ---
 
-<a id="multimodal-benchmarks"></a>
-## &#128202; Multimodal Benchmarks
-
-Datasets and benchmarks play a central role in MLLM post-training because they define what behaviors are learned, calibrated, and evaluated. Existing resources can be organized according to the post-training behavior they support, including instruction following, alignment learning, reasoning enhancement, and domain adaptation. Each entry is annotated by its primary role: **T** indicates datasets mainly used for training, **E** indicates benchmarks primarily designed for evaluation, and **T+E** indicates datasets containing both training and evaluation splits.
+## Multimodal Benchmarks
 
 ### Instruction Tuning Benchmarks
 
@@ -611,9 +564,9 @@ UC Berkeley, Carnegie Mellon University, University of Illinois Urbana-Champaign
 * **RLHF-V: Towards Trustworthy MLLMs via Behavior Alignment from Fine-grained Correctional Human Feedback** [CVPR 2024] [[Paper](https://arxiv.org/pdf/2312.00849)] [[Code](https://github.com/RLHF-V/RLHF-V)] [[Data](https://huggingface.co/datasets/OpenGVLab/RLHF-V-Dataset)] <br>
 Tsinghua University, National University of Singapore
 
-* **VLGuard**] [[Code](https://github.com/VLGuard/VLGuard)] [[Data](https://huggingface.co/datasets/VLGuard/VLGuard)]
+* **VLGuard** [[Code](https://github.com/VLGuard/VLGuard)] [[Data](https://huggingface.co/datasets/VLGuard/VLGuard)]
 
-* **SPA-VL**] [[Code](https://github.com/zhiqings/SPA-VL)] [[Data](https://huggingface.co/datasets/zhiqings/SPA-VL)]
+* **SPA-VL** [[Code](https://github.com/zhiqings/SPA-VL)] [[Data](https://huggingface.co/datasets/zhiqings/SPA-VL)]
 
 * **Lingua-SafetyBench: A Benchmark for Safety Evaluation of Multilingual Vision-Language Models** [arXiv 2026] [[Paper](https://arxiv.org/abs/2601.22737)] [[Code](https://github.com/yuhuayustc/Lingua-SafetyBench)] [[Data](https://huggingface.co/datasets/yuhuayustc/Lingua-SafetyBench)]
 
@@ -632,11 +585,11 @@ IN.AI Research, University of Waterloo, The Ohio State University, Carnegie Mell
 * **MathVista: Evaluating Mathematical Reasoning of Foundation Models in Visual Contexts** [ICLR 2024] [[Paper](https://arxiv.org/pdf/2310.02255)] [[Code](https://github.com/lupantech/MathVista)] [[Data](https://huggingface.co/datasets/AI4Math/MathVista)] <br>
 UCLA, University of Washington, Microsoft Research, Redmond
 
-* **PuzzleBench**] [[Code](https://github.com/lupantech/PuzzleBench)] [[Data](https://huggingface.co/datasets/lupantech/PuzzleBench)]
+* **PuzzleBench** [[Code](https://github.com/lupantech/PuzzleBench)] [[Data](https://huggingface.co/datasets/lupantech/PuzzleBench)]
 
-* **MME-CoT**] [[Code](https://github.com/BradyFU/MME-CoT)] [[Data](https://huggingface.co/datasets/lmms-lab/MME-CoT)]
+* **MME-CoT** [[Code](https://github.com/BradyFU/MME-CoT)] [[Data](https://huggingface.co/datasets/lmms-lab/MME-CoT)]
 
-* **MME-Reasoning**] [[Code](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models)] [[Data](https://huggingface.co/datasets/lmms-lab/MME-Reasoning)]
+* **MME-Reasoning** [[Code](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models)] [[Data](https://huggingface.co/datasets/lmms-lab/MME-Reasoning)]
 
 * **A Diagram Is Worth A Dozen Images** [ECCV 2016] [[Paper](https://arxiv.org/pdf/1603.07396)] [[Code](https://github.com/allenai/ai2d)] [[Data](https://prior.allenai.org/projects/diagram-understanding)] <br>
 Allen Institute for Artificial Intelligence, University of Washington
@@ -648,26 +601,22 @@ Allen Institute for Artificial Intelligence, University of Washington
 * **DocVQA: A Dataset for VQA on Document Images** [WACV 2021] [[Paper](https://arxiv.org/pdf/2007.00398)] [[Code](https://github.com/answer-extraction/DocVQA)] [[Data](https://rrc.cvc.uab.es/?ch=17)] <br>
 CVIT, IIIT Hyderabad, India, Computer Vision Center, UAB, Spain
 
-* **ChartX**] [[Code](https://github.com/ChartReasoning/ChartX)] [[Data](https://huggingface.co/datasets/SharkAI/ChartX)]
+* **ChartX** [[Code](https://github.com/ChartReasoning/ChartX)] [[Data](https://huggingface.co/datasets/SharkAI/ChartX)]
 
-* **OCRBench**] [[Code](https://github.com/rohitgirdhar/OCRBench)] [[Data](https://huggingface.co/datasets/echo840/OCRBench)]
+* **OCRBench** [[Code](https://github.com/rohitgirdhar/OCRBench)] [[Data](https://huggingface.co/datasets/echo840/OCRBench)]
 
-* **ScreenSpot**] [[Code](https://github.com/StanfordAI4HI/ScreenSpot)] [[Data](https://huggingface.co/datasets/StanfordAI4HI/screenspot)]
+* **ScreenSpot** [[Code](https://github.com/StanfordAI4HI/ScreenSpot)] [[Data](https://huggingface.co/datasets/StanfordAI4HI/screenspot)]
 
 * **Mind2Web: Towards a Generalist Agent for the Web** [NeurIPS 2023] [[Paper](https://arxiv.org/pdf/2306.06070)] [[Code](https://github.com/OSU-NLP-Group/Mind2Web)] [[Data](https://huggingface.co/datasets/osunlp/Mind2Web)] <br>
 The Ohio State University
 
-* **VQA-RAD**] [[Code](https://github.com/Awenbocc/VQA-Med)] [[Data](https://www.nature.com/articles/sdata2018251)]
+* **VQA-RAD** [[Code](https://github.com/Awenbocc/VQA-Med)] [[Data](https://www.nature.com/articles/sdata2018251)]
 
-* **PathVQA**] [[Code](https://github.com/UCSD-AI4H/PathVQA)] [[Data](https://github.com/UCSD-AI4H/PathVQA)]
+* **PathVQA** [[Code](https://github.com/UCSD-AI4H/PathVQA)] [[Data](https://github.com/UCSD-AI4H/PathVQA)]
 
 **Others:** AndroidControl-Low, AndroidControl-High, GUI-Odyssey, ScreenSpot-Pro, GUI-Act-Web, OmniAct-Web, ChartQA, InfoVQA, TextVQA, ST-VQA
 
 ---
-
-## &#129309; Contributing
-
-Contributions are welcome. Please feel free to submit pull requests that add new papers, code repositories, project pages, model checkpoints, datasets, or benchmark resources. To maintain consistency, each entry should include the paper title, paper link, resource links, venue information, and the most appropriate methodological category.
 
 ## &#128204; Citation
 
@@ -675,12 +624,12 @@ If this repository or the associated survey is useful for your research, please 
 
 ```bibtex
 @article{zhang2026survey,
-  title={A Survey on Post-training of Multimodal Large Language Models},
-  author={Zhang, Haonan and Cao, Libin and Lai, Wenrui and Yu, Zhaoshu and Zhang, Sihan},
+  title={A Survey on Post-Training of Multimodal Large Language Models},
+  author={Haonan Zhang and Pengpeng Zeng and Libin Cao and Wenrui Lai and
+          Jinlong Li and Duo Peng and Yi Bin and Xuanhan Wang and Ji Zhang and
+          Jingkuan Song and Nicu Sebe and Yuchuan Wu and Yongbin Li and
+          Heng Tao Shen and Jieping Ye},
   year={2026}
 }
+}
 ```
-
-## &#128196; License
-
-This repository is intended for academic research and open-source literature organization. Copyright of the listed papers, codebases, datasets, and benchmarks belongs to their respective authors and organizations.

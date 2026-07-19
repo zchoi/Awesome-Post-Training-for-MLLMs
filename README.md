@@ -64,13 +64,6 @@ Multimodal Large Language Models (MLLMs) have reshaped AI by enabling perception
 
 ## Multimodal Instruction Tuning
 
-Multimodal instruction tuning constitutes one of the earliest and most fundamental post-training paradigms for MLLMs. Its primary objective is to transform broad visual-language representations into instruction-following behavior by training on multimodal instruction-response data. This paradigm establishes the interface between user intent, multimodal input, and model output, thereby enabling MLLMs to respond to image-, video-, audio-, or interleaved multimodal prompts in a task-oriented manner.
-
-The development of this line of research begins with representative systems such as LLaVA, MiniGPT-4, InstructBLIP, and mPLUG-Owl, which demonstrate the effectiveness of combining a visual encoder, a large language model, and curated instruction data. Subsequent studies extend this recipe toward higher-resolution perception, multi-image and video understanding, mobile deployment, visual prompt comprehension, data selection, mixture-of-experts adaptation, and generalized multimodal task transfer.
-
-<a id="multimodal-instruction-tuning-papers"></a>
-### Multimodal Instruction Tuning Papers
-
 * **Visual Instruction Tuning** [NeurIPS 2023] [[Paper](https://arxiv.org/pdf/2304.08485)] [[Code](https://github.com/haotian-liu/LLaVA)] [[Homepage](https://llava-vl.github.io/)] <br>
 University of Wisconsin–Madison, Microsoft Research, Columbia University
 

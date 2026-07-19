@@ -422,7 +422,7 @@ Institute of Automation, Chinese Academy of Sciences, Meituan
 
 ---
 
-## Multimodal Domain Adaptation
+## <img src="assets/icon7.png" height="30" align="top"/> Multimodal Domain Adaptation
 
 * **Mobile-Agent: Autonomous Multi-Modal Mobile Device Agent with Visual Perception** [ICLR 2024 Workshop] [[Paper](https://arxiv.org/pdf/2401.16158)] [[Code](https://github.com/X-PLUG/MobileAgent)] <br>
 Beijing Jiaotong University, Alibaba Group
@@ -441,7 +441,7 @@ Ruyi Xu, Yuan Yao, Zonghao Guo, Junbo Cui, Zanlin Ni, Chunjiang Ge, Tat-Seng Chu
 
 ---
 
-## Multimodal Scalable Training
+## <img src="assets/icon8.png" height="30" align="top"/> Multimodal Scalable Training
 
 ### LoRA-based Methods
 
@@ -521,7 +521,7 @@ Seoul National University
 
 ---
 
-## Multimodal Benchmarks
+## <img src="assets/icon9.png" height="30" align="top"/> Multimodal Benchmarks
 
 ### Instruction Tuning Benchmarks
 

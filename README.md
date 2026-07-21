@@ -5,7 +5,7 @@
 [![Website](https://img.shields.io/badge/Website-blue.svg?logo=googlechrome&logoColor=white)](https://zchoi.github.io/MMPoT-Survey/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-**Watch this repository for the latest updates**
+**Watch this repository for the latest updates！**
 
 **Feel free to raise pull requests if you find some interesting papers!** 🌟
 

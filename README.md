@@ -673,6 +673,7 @@ If this repository or the associated survey is useful for your research, please 
           Jinlong Li and Duo Peng and Yi Bin and Xuanhan Wang and Ji Zhang and
           Jingkuan Song and Nicu Sebe and Yuchuan Wu and Yongbin Li and
           Heng Tao Shen and Jieping Ye},
-  year={2026}
+  year={2026},
+  publisher={Preprints}
 }
 ```

@@ -1,7 +1,7 @@
 <div align="center">
 <img src="assets/banner-2.png" alt="MMPoT"/>
 
-[![Paper Preprint](https://img.shields.io/badge/Paper-Preprint-b31b1b.svg?logo=arXiv)]()
+[![Paper Preprint](https://img.shields.io/badge/Paper-Preprint-b31b1b.svg?logo=arXiv)](https://zchoi.github.io/MMPoT-Survey/preprint.pdf)
 [![Website](https://img.shields.io/badge/Website-blue.svg?logo=googlechrome&logoColor=white)](https://zchoi.github.io/MMPoT-Survey/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 

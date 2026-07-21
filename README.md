@@ -1,4 +1,4 @@
-、<div align="center">
+<div align="center">
 <img src="assets/banner-2.png" alt="MMPoT"/>
 
 [![Paper Preprint](https://img.shields.io/badge/Paper-Preprint-b31b1b.svg?logo=arXiv)]()

@@ -12,6 +12,7 @@
 </div>
 
 ## <img src="assets/icon1.png" height="30" align="top"/> News
+[2026/07/22] 🎉 We release our Paper and Project Page! <br>
 [2026/07/19] 🎉 We release our curation list of MLLMs Post-Training methods！<br>
 
 ---

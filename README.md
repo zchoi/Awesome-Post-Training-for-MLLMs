@@ -426,6 +426,9 @@ Institute of Software, Chinese Academy of Sciences
 * **VA-OPD: Visual-Advantage On-Policy Distillation for Vision-Language Models** [arXiv 2026] [[Paper](https://arxiv.org/abs/2605.21924)] <br>
 Institute of Automation, Chinese Academy of Sciences, Meituan
 
+* **Spatial-Interactor: Learning Spatial Reasoning through Interaction with the Observable Physical World** [arXiv 2026] [[Paper](https://arxiv.org/abs/2609.23038)] [[Code](https://github.com/ZJU-OmniAI/Spatial-Interactor)] <br>
+Zhejiang University, SAP
+
 ---
 
 ## Multimodal Domain Adaptation

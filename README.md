@@ -433,6 +433,12 @@ Zhejiang University, SAP
 
 ## Multimodal Domain Adaptation
 
+* **DepthAgent: Towards Better Universal Depth Estimation via Sample-wise Expert Selection** [arXiv 2026] [[Paper](https://arxiv.org/abs/2605.23281)] <br>
+Michigan State University, University of North Carolina at Chapel Hill
+
+* **FusionAgent: A Multimodal Agent with Dynamic Model Selection for Human Recognition** [CVPR 2026] [[Paper](https://arxiv.org/abs/2603.26908)] [[Code](https://github.com/jiezhu23/FusionAgent_CVPR26)] [[Homepage](https://fusionagent.github.io/)] <br>
+Michigan State University, University of North Carolina at Chapel Hill
+
 * **Mobile-Agent: Autonomous Multi-Modal Mobile Device Agent with Visual Perception** [ICLR 2024 Workshop] [[Paper](https://arxiv.org/pdf/2401.16158)] [[Code](https://github.com/X-PLUG/MobileAgent)] <br>
 Beijing Jiaotong University, Alibaba Group
 

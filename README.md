@@ -354,6 +354,9 @@ Alibaba Group, Tongji University
 * **Retrv-R1: A Reasoning-Driven MLLM Framework for Universal and Efficient Multimodal Retrieval** [NeurIPS 2025] [[Paper](https://arxiv.org/abs/2510.02745)] [[Code](https://lanyunzhu.site/RetrvR1/)] [[Homepage](https://lanyunzhu.site/RetrvR1/)] <br>
 City University of Hong Kong
 
+* **Watch Before You Answer: Learning from Visually Grounded Post-Training** [arXiv 2026] [[Paper](https://arxiv.org/abs/2604.05117)] [[Code](https://github.com/reacher-z/vidground)] <br>
+University of British Columbia, Vector Institute, Etude AI, Kuaishou Technology, University of Toronto, University of Waterloo, University of Illinois Urbana-Champaign
+
 ### Thinking with Images
 
 * **GRIT: Teaching MLLMs to Think with Images** [NeurIPS 2025] [[Paper](https://arxiv.org/abs/2505.15879)] [[Code](https://github.com/eric-ai-lab/GRIT)] [[Homepage](https://grounded-reasoning.github.io/)] <br>

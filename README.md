@@ -12,8 +12,10 @@
 </div>
 
 ## <img src="assets/icon1.png" height="30" align="top"/> News
-[2026/07/22] 🎉 We release our Paper and Project Page! <br>
-[2026/07/19] 🎉 We release our curation list of MLLMs Post-Training methods！<br>
+
+[2026/10/09] 🎉 We expand our collection with four new papers: **VidGround**, **FusionAgent**, **DepthAgent**, and **Spatial-Interactor**. Thanks to our community contributors!\
+[2026/07/22] 🎉 Our survey paper and project page are now available!\
+[2026/07/19] 🎉 We launch our curated list of MLLM post-training methods!
 
 ---
 

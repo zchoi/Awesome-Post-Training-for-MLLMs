@@ -10,7 +10,7 @@ A curated reading list accompanying **A Survey on Post-Training of Multimodal La
 [![Website](https://img.shields.io/badge/Website-blue.svg?logo=googlechrome&logoColor=white)](https://zchoi.github.io/MMPoT-Survey/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-[Browse papers](#contents) · [Benchmarks](#multimodal-benchmarks) · [Project website](https://zchoi.github.io/MMPoT-Survey/) · [Citation](#citation)
+[Browse papers](#contents) · [Benchmarks](#multimodal-benchmarks) · [Project website](https://zchoi.github.io/MMPoT-Survey/) · [Contributors](#contributors) · [Citation](#citation)
 
 Watch this repository for updates. Contributions and paper suggestions are welcome!
 
@@ -372,6 +372,10 @@ Multimodal Large Language Models (MLLMs) have reshaped AI by enabling perception
 ---
 
 [Back to contents](#contents)
+
+## Contributors
+
+- **[Codex](https://openai.com/codex/)** (OpenAI) — AI-assisted literature discovery and source verification, paper deduplication and cross-references, and README layout maintenance.
 
 ## Citation
 

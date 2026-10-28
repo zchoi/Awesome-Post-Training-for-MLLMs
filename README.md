@@ -238,6 +238,12 @@ UC Berkeley, Carnegie Mellon University, University of Illinois Urbana-Champaign
 * **RLHF-V: Towards Trustworthy MLLMs via Behavior Alignment from Fine-grained Correctional Human Feedback** [CVPR 2024] [[Paper](https://arxiv.org/pdf/2312.00849)] [[Code](https://github.com/RLHF-V/RLHF-V)] [[Homepage](https://rlhf-v.github.io/)] <br>
 Tsinghua University, National University of Singapore
 
+* **MM-RLHF: The Next Step Forward in Multimodal LLM Alignment** [ICML 2025] [[Paper](https://proceedings.mlr.press/v267/zhang25cs.html)] [[Code](https://github.com/Kwai-YuanQi/MM-RLHF)] [[Homepage](https://mm-rlhf.github.io/)] <br>
+Institute of Automation, Chinese Academy of Sciences, Nanjing University, Kuaishou
+
+* **R1-Reward: Training Multimodal Reward Model Through Stable Reinforcement Learning** [ICLR 2026] [[Paper](https://proceedings.iclr.cc/paper_files/paper/2026/file/3469a586c2e8ebdf59ee66381fd87454-Paper-Conference.pdf)] [[Code](https://github.com/yfzhang114/r1_reward)] <br>
+Institute of Automation, Chinese Academy of Sciences, Tsinghua University, Nanjing University, Kuaishou
+
 * **VisualPRM: An Effective Process Reward Model for Multimodal Reasoning** [arXiv 2025] [[Paper](https://arxiv.org/pdf/2503.10291)] [[Homepage](https://internvl.github.io/blog/2025-03-13-VisualPRM/)] <br>
 Shanghai AI Laboratory, SenseTime Research, Zhejiang University
 

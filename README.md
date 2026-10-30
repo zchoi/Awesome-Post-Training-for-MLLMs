@@ -35,6 +35,7 @@ Multimodal Large Language Models (MLLMs) have reshaped AI by enabling perception
 
 ## News
 
+- **2026-10-30** — Added **MMFineReason** and **ROMA**, two papers listed in the NeurIPS 2026 program, covering data-centric reasoning distillation and robust reinforcement fine-tuning.
 - **2026-10-09** — 🎉 We expand our collection with four new papers: **VidGround**, **FusionAgent**, **DepthAgent**, and **Spatial-Interactor**. Thanks to our community contributors!
 - **2026-07-22** — 🎉 Our survey paper and project page are now available!
 - **2026-07-19** — 🎉 We launch our curated list of MLLM post-training methods!
@@ -112,6 +113,7 @@ Multimodal Large Language Models (MLLMs) have reshaped AI by enabling perception
 | <a id="paper-2403-18814"></a>**Mini-Gemini: Mining the Potential of Multi-modality Vision Language Models**<br><sub>The Chinese University of Hong Kong；SmartMore</sub> | TPAMI 2026 | [Paper](https://arxiv.org/pdf/2403.18814v1) · [Code](https://github.com/JIA-Lab-research/MGM) |
 | <a id="paper-2403-03003"></a>**Feast Your Eyes: Mixture-of-Resolution Adaptation for Multimodal Large Language Models**<br><sub>Xiamen University</sub> | ICLR 2025 | [Paper](https://arxiv.org/pdf/2403.03003) · [Code](https://github.com/luogen1996/LLaVA-HR) |
 | <a id="paper-2311-07575"></a>**SPHINX: The Joint Mixing of Weights, Tasks, and Visual Embeddings for Multi-modal Large Language Models**<br><sub>Shanghai AI Laboratory；MMLab, CUHK；ShanghaiTech University</sub> | arXiv 2023 | [Paper](https://arxiv.org/pdf/2311.07575) · [Code](https://github.com/Alpha-VLLM/LLaMA2-Accessory) |
+| [↗ MMFineReason: Closing the Multimodal Reasoning Gap via Open Data-Centric Methods](#paper-2601-21821) | NeurIPS 2026 | — |
 
 ---
 
@@ -189,6 +191,7 @@ Multimodal Large Language Models (MLLMs) have reshaped AI by enabling perception
 | <a id="paper-2503-05379"></a>**R1-Omni: Explainable Omni-Multimodal Emotion Recognition with Reinforcement Learning**<br><sub>Alibaba Group, Tongji University</sub> | arXiv 2025 | [Paper](https://arxiv.org/abs/2503.05379) · [Code](https://github.com/HumanMLLM/R1-Omni) |
 | <a id="paper-2510-02745"></a>**Retrv-R1: A Reasoning-Driven MLLM Framework for Universal and Efficient Multimodal Retrieval**<br><sub>City University of Hong Kong</sub> | NeurIPS 2025 | [Paper](https://arxiv.org/abs/2510.02745) · [Code](https://lanyunzhu.site/RetrvR1/) · [Project](https://lanyunzhu.site/RetrvR1/) |
 | <a id="paper-2604-05117"></a>**Watch Before You Answer: Learning from Visually Grounded Post-Training**<br><sub>University of British Columbia, Vector Institute, Etude AI, Kuaishou Technology, University of Toronto, University of Waterloo, University of Illinois Urbana-Champaign</sub> | arXiv 2026 | [Paper](https://arxiv.org/abs/2604.05117) · [Code](https://github.com/reacher-z/vidground) |
+| <a id="paper-2605-09262"></a>**Reinforcing Multimodal Reasoning Against Visual Degradation**<br><sub>Tencent Hunyuan, University of Maryland, College Park, University of Virginia, University of North Carolina, Chapel Hill</sub> | NeurIPS 2026 | [Paper](https://arxiv.org/abs/2605.09262) |
 
 ### Thinking with Images
 
@@ -227,6 +230,7 @@ Multimodal Large Language Models (MLLMs) have reshaped AI by enabling perception
 | <a id="paper-2605-18740"></a>**Vision-OPD: Learning to See Fine Details for Multimodal LLMs via On-Policy Self-Distillation**<br><sub>Institute of Software, Chinese Academy of Sciences</sub> | arXiv 2026 | [Paper](https://arxiv.org/abs/2605.18740) · [Code](https://github.com/VisionOPD/Vision-OPD) |
 | <a id="paper-2605-21924"></a>**VA-OPD: Visual-Advantage On-Policy Distillation for Vision-Language Models**<br><sub>Institute of Automation, Chinese Academy of Sciences, Meituan</sub> | arXiv 2026 | [Paper](https://arxiv.org/abs/2605.21924) |
 | <a id="paper-2609-23038"></a>**Spatial-Interactor: Learning Spatial Reasoning through Interaction with the Observable Physical World**<br><sub>Zhejiang University, SAP</sub> | arXiv 2026 | [Paper](https://arxiv.org/abs/2609.23038) · [Code](https://github.com/ZJU-OmniAI/Spatial-Interactor) |
+| <a id="paper-2601-21821"></a>**MMFineReason: Closing the Multimodal Reasoning Gap via Open Data-Centric Methods**<br><sub>Shanghai Artificial Intelligence Laboratory, OpenDataLab, Shanghai Jiao Tong University, Peking University, The University of Hong Kong</sub> | NeurIPS 2026 | [Paper](https://arxiv.org/abs/2601.21821) · [Project](https://mmfinereason.github.io/) · [Data](https://huggingface.co/datasets/OpenDataArena/MMFineReason-1.8M-Qwen3-VL-235B-Thinking) · [Hugging Face](https://huggingface.co/collections/OpenDataArena/mmfinereason) |
 
 ---
 

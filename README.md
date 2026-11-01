@@ -35,6 +35,7 @@ Multimodal Large Language Models (MLLMs) have reshaped AI by enabling perception
 
 ## News
 
+- **2026-11-01** — Added **EVAN** (NeurIPS 2026), which uses evidence-ablated negatives to reduce language-prior shortcuts in multimodal reinforcement learning.
 - **2026-10-30** — Added **MMFineReason** and **ROMA**, two papers listed in the NeurIPS 2026 program, covering data-centric reasoning distillation and robust reinforcement fine-tuning.
 - **2026-10-09** — 🎉 We expand our collection with four new papers: **VidGround**, **FusionAgent**, **DepthAgent**, and **Spatial-Interactor**. Thanks to our community contributors!
 - **2026-07-22** — 🎉 Our survey paper and project page are now available!
@@ -192,6 +193,7 @@ Multimodal Large Language Models (MLLMs) have reshaped AI by enabling perception
 | <a id="paper-2510-02745"></a>**Retrv-R1: A Reasoning-Driven MLLM Framework for Universal and Efficient Multimodal Retrieval**<br><sub>City University of Hong Kong</sub> | NeurIPS 2025 | [Paper](https://arxiv.org/abs/2510.02745) · [Code](https://lanyunzhu.site/RetrvR1/) · [Project](https://lanyunzhu.site/RetrvR1/) |
 | <a id="paper-2604-05117"></a>**Watch Before You Answer: Learning from Visually Grounded Post-Training**<br><sub>University of British Columbia, Vector Institute, Etude AI, Kuaishou Technology, University of Toronto, University of Waterloo, University of Illinois Urbana-Champaign</sub> | arXiv 2026 | [Paper](https://arxiv.org/abs/2604.05117) · [Code](https://github.com/reacher-z/vidground) |
 | <a id="paper-2605-09262"></a>**Reinforcing Multimodal Reasoning Against Visual Degradation**<br><sub>Tencent Hunyuan, University of Maryland, College Park, University of Virginia, University of North Carolina, Chapel Hill</sub> | NeurIPS 2026 | [Paper](https://arxiv.org/abs/2605.09262) |
+| <a id="paper-2610-39237"></a>**Grounding Multimodal Reasoning with Evidence-Ablated Negatives**<br><sub>University of Maryland, College Park</sub> | NeurIPS 2026 | [Paper](https://arxiv.org/abs/2610.39237) · [Code](https://github.com/DawnLIU35/EVAN) |
 
 ### Thinking with Images
 

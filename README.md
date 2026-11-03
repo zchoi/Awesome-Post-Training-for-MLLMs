@@ -35,6 +35,7 @@ Multimodal Large Language Models (MLLMs) have reshaped AI by enabling perception
 
 ## News
 
+- **2026-11-03** — Added **AffectGPT-RL** (NeurIPS 2026), which uses emotion-wheel rewards for open-vocabulary multimodal emotion recognition.
 - **2026-11-01** — Added **EVAN** (NeurIPS 2026), which uses evidence-ablated negatives to reduce language-prior shortcuts in multimodal reinforcement learning.
 - **2026-10-30** — Added **MMFineReason** and **ROMA**, two papers listed in the NeurIPS 2026 program, covering data-centric reasoning distillation and robust reinforcement fine-tuning.
 - **2026-10-09** — 🎉 We expand our collection with four new papers: **VidGround**, **FusionAgent**, **DepthAgent**, and **Spatial-Interactor**. Thanks to our community contributors!
@@ -250,6 +251,7 @@ Multimodal Large Language Models (MLLMs) have reshaped AI by enabling perception
 | <a id="paper-2403-11703"></a>**LLaVA-UHD: an LMMPerceiving Any Aspect Ratio and High-Resolution Images**<br><sub>Ruyi Xu, Yuan Yao, Zonghao Guo, Junbo Cui, Zanlin Ni, Chunjiang Ge, Tat-Seng Chua, Zhiyuan Liu, Maosong Sun, Gao Huang</sub> | arXiv 2024 | [Paper](https://arxiv.org/pdf/2403.11703) · [Code](https://github.com/thunlp/LLaVA-UHD) |
 | <a id="paper-2404-18416"></a>**Capabilities of Gemini Models in Medicine**<br><sub>Google Research, Google DeepMind, Verily Life Sciences, Apollo Radiology International, Northwestern Medicine, EyePACS, DeepHealth/RadNet</sub> | arXiv 2024 | [Paper](https://arxiv.org/abs/2404.18416) |
 | <a id="paper-2411-19930"></a>**On Domain-Specific Post-Training for Multimodal Large Language Models**<br><sub>BIGAI, Beihang University, Tsinghua University, Beijing Institute of Technology, Renmin University of China</sub> | EMNLP 2025 Findings | [Paper](https://arxiv.org/abs/2411.19930) · [Code](https://github.com/thunlp/AdaMLLM) · [Project](https://adamllm.github.io/) |
+| <a id="paper-2605-06126"></a>**AffectGPT-RL: Revealing Roles of Reinforcement Learning in Open-Vocabulary Emotion Recognition**<br><sub>Tongji University, The Chinese University of Hong Kong, Tianjin University, Inner Mongolia University, Tsinghua University, University of Oulu, Zhejiang University, Shenzhen Technology University</sub> | NeurIPS 2026 | [Paper](https://arxiv.org/abs/2605.06126) · [Code](https://github.com/zeroQiaoba/AffectGPT/tree/master/AffectGPT-RL) |
 
 ---
 

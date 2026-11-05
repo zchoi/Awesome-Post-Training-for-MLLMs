@@ -35,6 +35,7 @@ Multimodal Large Language Models (MLLMs) have reshaped AI by enabling perception
 
 ## News
 
+- **2026-11-05** — Added **MIRA** (NeurIPS 2026), which combines deceptive contextual augmentation with reinforcement learning for multimodal reasoning.
 - **2026-11-03** — Added **AffectGPT-RL** (NeurIPS 2026), which uses emotion-wheel rewards for open-vocabulary multimodal emotion recognition.
 - **2026-11-01** — Added **EVAN** (NeurIPS 2026), which uses evidence-ablated negatives to reduce language-prior shortcuts in multimodal reinforcement learning.
 - **2026-10-30** — Added **MMFineReason** and **ROMA**, two papers listed in the NeurIPS 2026 program, covering data-centric reasoning distillation and robust reinforcement fine-tuning.
@@ -195,6 +196,7 @@ Multimodal Large Language Models (MLLMs) have reshaped AI by enabling perception
 | <a id="paper-2604-05117"></a>**Watch Before You Answer: Learning from Visually Grounded Post-Training**<br><sub>University of British Columbia, Vector Institute, Etude AI, Kuaishou Technology, University of Toronto, University of Waterloo, University of Illinois Urbana-Champaign</sub> | arXiv 2026 | [Paper](https://arxiv.org/abs/2604.05117) · [Code](https://github.com/reacher-z/vidground) |
 | <a id="paper-2605-09262"></a>**Reinforcing Multimodal Reasoning Against Visual Degradation**<br><sub>Tencent Hunyuan, University of Maryland, College Park, University of Virginia, University of North Carolina, Chapel Hill</sub> | NeurIPS 2026 | [Paper](https://arxiv.org/abs/2605.09262) |
 | <a id="paper-2610-39237"></a>**Grounding Multimodal Reasoning with Evidence-Ablated Negatives**<br><sub>University of Maryland, College Park</sub> | NeurIPS 2026 | [Paper](https://arxiv.org/abs/2610.39237) · [Code](https://github.com/DawnLIU35/EVAN) |
+| <a id="paper-2611-03087"></a>**MIRA: Reinforcing Multimodal Reasoning via Deceptive Contextual Augmentation**<br><sub>Peking University, ByteDance</sub> | NeurIPS 2026 | [Paper](https://arxiv.org/abs/2611.03087) · [Code](https://github.com/Hans-M-Yin/mira-neurips26) · [Data](https://huggingface.co/datasets/hansQAQ/MIRA-RL-Dataset) · [Hugging Face](https://huggingface.co/hansQAQ/MIRA-7B) |
 
 ### Thinking with Images
 

@@ -35,6 +35,7 @@ Multimodal Large Language Models (MLLMs) have reshaped AI by enabling perception
 
 ## News
 
+- **2026-11-10** — Added **Perceval**, **MSRL**, **Safe RLHF-V**, **Hide to See**, and **Agent0-VL** as representative conference backfills, plus the **RAFT** preprint; updated **Vision-OPD** to NeurIPS 2026.
 - **2026-11-08** — Added **GO-SSL** (NeurIPS 2026), which uses cross-instance grouping and ordering tasks for self-supervised multimodal reinforcement learning.
 - **2026-11-05** — Added **MIRA** (NeurIPS 2026), which combines deceptive contextual augmentation with reinforcement learning for multimodal reasoning.
 - **2026-11-03** — Added **AffectGPT-RL** (NeurIPS 2026), which uses emotion-wheel rewards for open-vocabulary multimodal emotion recognition.
@@ -139,6 +140,8 @@ Multimodal Large Language Models (MLLMs) have reshaped AI by enabling perception
 | <a id="paper-2312-11805"></a>**Gemini: A Family of Highly Capable Multimodal Models**<br><sub>Google</sub> | arXiv 2023 | [Paper](https://arxiv.org/pdf/2312.11805) · [Project](https://deepmind.google/technologies/gemini/) |
 | <a id="paper-2505-07062"></a>**Seed1.5-VL Technical Report**<br><sub>ByteDance Seed</sub> | arXiv 2025 | [Paper](https://arxiv.org/pdf/2505.07062) · [Code](https://github.com/ByteDance-Seed/Seed1.5-VL) · [Project](https://seed.bytedance.com/en/tech/seed1_5_vl) |
 | <a id="paper-2506-03569"></a>**MiMo-VL Technical Report**<br><sub>LLM-Core Xiaomi</sub> | arXiv 2025 | [Paper](https://arxiv.org/pdf/2506.03569) · [Code](https://github.com/XiaomiMiMo/MiMo-VL) |
+| <a id="paper-2603-25108"></a>**MSRL: Scaling Generative Multimodal Reward Modeling via Multi-Stage Reinforcement Learning**<br><sub>Northeastern University, ByteDance</sub> | CVPR 2026 | [Paper](https://arxiv.org/abs/2603.25108) · [Code](https://github.com/wangclnlp/MSRL) |
+| <a id="paper-2503-17682"></a>**Safe RLHF-V: Safe Reinforcement Learning from Multi-modal Human Feedback**<br><sub>Peking University, The Hong Kong University of Science and Technology</sub> | NeurIPS 2025 | [Paper](https://arxiv.org/abs/2503.17682) · [Code](https://github.com/saferlhf-v/saferlhf-v) · [Data](https://huggingface.co/datasets/saferlhf-v/BeaverTails-V) |
 
 ### Multimodal RLAIF
 
@@ -199,6 +202,7 @@ Multimodal Large Language Models (MLLMs) have reshaped AI by enabling perception
 | <a id="paper-2610-39237"></a>**Grounding Multimodal Reasoning with Evidence-Ablated Negatives**<br><sub>University of Maryland, College Park</sub> | NeurIPS 2026 | [Paper](https://arxiv.org/abs/2610.39237) · [Code](https://github.com/DawnLIU35/EVAN) |
 | <a id="paper-2611-03087"></a>**MIRA: Reinforcing Multimodal Reasoning via Deceptive Contextual Augmentation**<br><sub>Peking University, ByteDance</sub> | NeurIPS 2026 | [Paper](https://arxiv.org/abs/2611.03087) · [Code](https://github.com/Hans-M-Yin/mira-neurips26) · [Data](https://huggingface.co/datasets/hansQAQ/MIRA-RL-Dataset) · [Hugging Face](https://huggingface.co/hansQAQ/MIRA-7B) |
 | <a id="paper-2611-00892"></a>**Learning to Group and Order: Cross-Instance Self-Supervised RL for Vision-Centric MLLMs**<br><sub>Southeast University</sub> | NeurIPS 2026 | [Paper](https://arxiv.org/abs/2611.00892) · [Code](https://github.com/SEU-VIPGroup/GO-SSL) |
+| <a id="paper-2604-24583"></a>**Improving Vision-language Models with Perception-centric Process Reward Models**<br><sub>Renmin University of China, ByteDance, University of California San Diego, The Hong Kong University of Science and Technology</sub> | CVPR 2026 | [Paper](https://arxiv.org/abs/2604.24583) · [Code](https://github.com/RUCAIBox/Perceval) · [Reward model](https://huggingface.co/RUC-AIBOX/Perceval-3B-reward) · [Policy model](https://huggingface.co/RUC-AIBOX/Perceval-3B-policy) |
 
 ### Thinking with Images
 
@@ -223,6 +227,7 @@ Multimodal Large Language Models (MLLMs) have reshaped AI by enabling perception
 | <a id="paper-2410-02712"></a>**LLaVA-Critic: Learning to Evaluate Multimodal Models**<br><sub>University of Maryland, ByteDance</sub> | CVPR 2025 | [Paper](https://arxiv.org/pdf/2410.02712) · [Code](https://github.com/LLaVA-VL/LLaVA-NeXT) · [Project](https://llava-vl.github.io/blog/2024-10-03-llava-critic/) |
 | <a id="paper-2505-22453"></a>**MM-UPT: Unsupervised Post-Training for Multi-Modal LLM Reasoning via GRPO**<br><sub>Shanghai Jiao Tong University, Lehigh University</sub> | NeurIPS 2025 | [Paper](https://arxiv.org/abs/2505.22453) · [Code](https://github.com/waltonfuture/MM-UPT) · [Hugging Face](https://huggingface.co/WaltonFuture/Qwen2.5-VL-7B-MM-UPT-MMR1) |
 | <a id="paper-2509-00676"></a>**LLaVA-Critic-R1: Your Critic Model is Secretly a Strong Policy Model**<br><sub>University of Maryland, Microsoft Research</sub> | arXiv 2025 | [Paper](https://arxiv.org/abs/2509.00676) · [Code](https://github.com/LLaVA-VL/LLaVA-NeXT) |
+| <a id="paper-2511-19900"></a>**Agent0-VL: Exploring Self-Evolving Agent for Tool-Integrated Vision-Language Reasoning**<br><sub>University of North Carolina at Chapel Hill</sub> | ICML 2026 | [Paper](https://arxiv.org/abs/2511.19900) · [Code](https://github.com/aiming-lab/Agent0/tree/main/Agent0-VL) · [Project](https://aiming-lab.github.io/Agent0/) |
 
 ### Multimodal Distillation
 
@@ -234,10 +239,11 @@ Multimodal Large Language Models (MLLMs) have reshaped AI by enabling perception
 | <a id="paper-2602-02994"></a>**Video-OPD: Efficient Post-Training of Multimodal Large Language Models for Temporal Video Grounding via On-Policy Distillation**<br><sub>Tencent AI Lab</sub> | arXiv 2026 | [Paper](https://arxiv.org/abs/2602.02994) |
 | <a id="paper-2603-24596"></a>**X-OPD: Cross-Modal On-Policy Distillation for Capability Alignment in Speech LLMs**<br><sub>Kuaishou, Microsoft Research Asia</sub> | arXiv 2026 | [Paper](https://arxiv.org/abs/2603.24596) |
 | <a id="paper-2605-03677"></a>**Uni-OPD: Unifying On-Policy Distillation with a Dual-Perspective Recipe**<br><sub>Zhejiang University, Alibaba Group</sub> | arXiv 2026 | [Paper](https://arxiv.org/abs/2605.03677) · [Code](https://github.com/WenjinHou/Uni-OPD) |
-| <a id="paper-2605-18740"></a>**Vision-OPD: Learning to See Fine Details for Multimodal LLMs via On-Policy Self-Distillation**<br><sub>Institute of Software, Chinese Academy of Sciences</sub> | arXiv 2026 | [Paper](https://arxiv.org/abs/2605.18740) · [Code](https://github.com/VisionOPD/Vision-OPD) |
+| <a id="paper-2605-18740"></a>**Vision-OPD: Learning to See Fine Details for Multimodal LLMs via On-Policy Self-Distillation**<br><sub>Institute of Software, Chinese Academy of Sciences, University of Chinese Academy of Sciences, Xiaohongshu</sub> | NeurIPS 2026 | [Paper](https://arxiv.org/abs/2605.18740) · [Code](https://github.com/VisionOPD/Vision-OPD) |
 | <a id="paper-2605-21924"></a>**VA-OPD: Visual-Advantage On-Policy Distillation for Vision-Language Models**<br><sub>Institute of Automation, Chinese Academy of Sciences, Meituan</sub> | arXiv 2026 | [Paper](https://arxiv.org/abs/2605.21924) |
 | <a id="paper-2609-23038"></a>**Spatial-Interactor: Learning Spatial Reasoning through Interaction with the Observable Physical World**<br><sub>Zhejiang University, SAP</sub> | arXiv 2026 | [Paper](https://arxiv.org/abs/2609.23038) · [Code](https://github.com/ZJU-OmniAI/Spatial-Interactor) |
 | <a id="paper-2601-21821"></a>**MMFineReason: Closing the Multimodal Reasoning Gap via Open Data-Centric Methods**<br><sub>Shanghai Artificial Intelligence Laboratory, OpenDataLab, Shanghai Jiao Tong University, Peking University, The University of Hong Kong</sub> | NeurIPS 2026 | [Paper](https://arxiv.org/abs/2601.21821) · [Project](https://mmfinereason.github.io/) · [Data](https://huggingface.co/datasets/OpenDataArena/MMFineReason-1.8M-Qwen3-VL-235B-Thinking) · [Hugging Face](https://huggingface.co/collections/OpenDataArena/mmfinereason) |
+| <a id="paper-2605-11651"></a>**Hide to See: Reasoning-prefix Masking for Visual-anchored Thinking in VLM Distillation**<br><sub>KAIST, POSTECH, NVIDIA</sub> | NeurIPS 2026 | [Paper](https://arxiv.org/abs/2605.11651) · [Code](https://github.com/Seonghoon-Yu/Masking-KD) · [Data](https://huggingface.co/datasets/SeonghoonYu/Masking-KD-Rollouts) · [Hugging Face](https://huggingface.co/SeonghoonYu/Masking-KD) |
 
 ---
 
@@ -256,6 +262,7 @@ Multimodal Large Language Models (MLLMs) have reshaped AI by enabling perception
 | <a id="paper-2404-18416"></a>**Capabilities of Gemini Models in Medicine**<br><sub>Google Research, Google DeepMind, Verily Life Sciences, Apollo Radiology International, Northwestern Medicine, EyePACS, DeepHealth/RadNet</sub> | arXiv 2024 | [Paper](https://arxiv.org/abs/2404.18416) |
 | <a id="paper-2411-19930"></a>**On Domain-Specific Post-Training for Multimodal Large Language Models**<br><sub>BIGAI, Beihang University, Tsinghua University, Beijing Institute of Technology, Renmin University of China</sub> | EMNLP 2025 Findings | [Paper](https://arxiv.org/abs/2411.19930) · [Code](https://github.com/thunlp/AdaMLLM) · [Project](https://adamllm.github.io/) |
 | <a id="paper-2605-06126"></a>**AffectGPT-RL: Revealing Roles of Reinforcement Learning in Open-Vocabulary Emotion Recognition**<br><sub>Tongji University, The Chinese University of Hong Kong, Tianjin University, Inner Mongolia University, Tsinghua University, University of Oulu, Zhejiang University, Shenzhen Technology University</sub> | NeurIPS 2026 | [Paper](https://arxiv.org/abs/2605.06126) · [Code](https://github.com/zeroQiaoba/AffectGPT/tree/master/AffectGPT-RL) |
+| <a id="paper-2611-04368"></a>**RAFT: Reasoning-Aligned Fine-Tuning Improves Robustness of VLA Post-Training**<br><sub>Princeton University, Microsoft Research</sub> | arXiv 2026 | [Paper](https://arxiv.org/abs/2611.04368) · [Code](https://github.com/princeton-prism/RAFT) |
 
 ---
 

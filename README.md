@@ -35,6 +35,7 @@ Multimodal Large Language Models (MLLMs) have reshaped AI by enabling perception
 
 ## News
 
+- **2026-11-21** — Added **Omni-Reward** and **MISP-DPO** (ICLR 2026), **RLSF-V** (ICML 2026), and the **Gaze-RL** and **AVTR** preprints. These additions are retrospective backfills; Omni-RewardBench links to its shared paper record.
 - **2026-11-20** — Added **IRIS** and **SCPO** (ICML 2026), **Multimodal RewardBench 2** (CVPR 2026), and the **M3OPD-Reasoner**, **LEGO-OPD**, and **Video-as-Experience** preprints. M3OPD-Reasoner was released in the latest search window; the other additions are retrospective backfills.
 - **2026-11-18** — Added **IC-VCO** (ICML 2026) and five curated preprints covering visual credit, omni-modal reasoning, self-teaching, document agents, and hallucination mitigation; verified **VisionReasoner** (ICLR 2026) and its author resources. Older works are retrospective backfills.
 - **2026-11-15** — Added five representative conference papers and the **Reframe** and **Generalized CycleGRPO** preprints; verified the publication records of **Video-OPD** and **VisualPRM400K**, and corrected the **Lingua-SafetyBench** paper link. Conference additions are historical backfills.
@@ -145,6 +146,7 @@ Multimodal Large Language Models (MLLMs) have reshaped AI by enabling perception
 | <a id="paper-2506-03569"></a>**MiMo-VL Technical Report**<br><sub>LLM-Core Xiaomi</sub> | arXiv 2025 | [Paper](https://arxiv.org/pdf/2506.03569) · [Code](https://github.com/XiaomiMiMo/MiMo-VL) |
 | <a id="paper-2603-25108"></a>**MSRL: Scaling Generative Multimodal Reward Modeling via Multi-Stage Reinforcement Learning**<br><sub>Northeastern University, ByteDance</sub> | CVPR 2026 | [Paper](https://arxiv.org/abs/2603.25108) · [Code](https://github.com/wangclnlp/MSRL) |
 | <a id="paper-2503-17682"></a>**Safe RLHF-V: Safe Reinforcement Learning from Multi-modal Human Feedback**<br><sub>Peking University, The Hong Kong University of Science and Technology</sub> | NeurIPS 2025 | [Paper](https://arxiv.org/abs/2503.17682) · [Code](https://github.com/saferlhf-v/saferlhf-v) · [Data](https://huggingface.co/datasets/saferlhf-v/BeaverTails-V) |
+| <a id="paper-2510-23451"></a>**Omni-Reward: Towards Generalist Omni-Modal Reward Modeling with Free-Form Preferences**<br><sub>Institute of Automation, Chinese Academy of Sciences, University of Chinese Academy of Sciences</sub> | ICLR 2026 | [Paper](https://arxiv.org/abs/2510.23451) · [Code](https://github.com/HongbangYuan/OmniReward) · [Project](https://omnireward.github.io/) · [Training data](https://huggingface.co/datasets/jinzhuoran/OmniRewardData) · [Hugging Face](https://huggingface.co/jinzhuoran/OmniRewardModel) |
 
 ### Multimodal RLAIF
 
@@ -155,6 +157,7 @@ Multimodal Large Language Models (MLLMs) have reshaped AI by enabling perception
 | <a id="paper-2510-02561"></a>**Oracle-RLAIF: An Improved Fine-Tuning Framework for Multi-modal Video Models using Reinforcement Learning from Ranking Feedback**<br><sub>Stanford University, xAI, Microsoft</sub> | arXiv 2025 | [Paper](https://arxiv.org/abs/2510.02561) |
 | <a id="paper-2611-19388"></a>**SARGO: Agreement-Gated Reinforcement and Suppression via On-Policy Self-Guidance for Visual Hallucination Mitigation**<br><sub>Tsinghua Shenzhen International Graduate School, Tsinghua University, Harbin Institute of Technology, Shenzhen</sub> | arXiv 2026 | [Paper](https://arxiv.org/abs/2611.19388) |
 | <a id="paper-2602-01769"></a>**IRIS: Implicit Reward-Guided Internal Sifting for Mitigating Multimodal Hallucination**<br><sub>Westlake University, Sony Research</sub> | ICML 2026 | [Paper](https://arxiv.org/abs/2602.01769) · [Code](https://github.com/TAGI-AISafety/IRIS_ICML26) |
+| <a id="paper-rlsf-v-mitigating-hallucinations-in-mllms-via-fuzzy-semantic-self-feedback"></a>**RLSF-V: Mitigating Hallucinations in MLLMs via Fuzzy Semantic Self-Feedback**<br><sub>Sichuan University, Tianfu Jincheng Laboratory</sub> | ICML 2026 | [Paper](https://proceedings.mlr.press/v306/he26ap.html) · [Code](https://github.com/XLearning-SCU/RLSF-V) · [Hugging Face](https://huggingface.co/collections/XLearning-SCU/rlsf-v) |
 
 ### Multimodal Direct Preference Optimization
 
@@ -180,6 +183,7 @@ Multimodal Large Language Models (MLLMs) have reshaped AI by enabling perception
 | <a id="paper-cat-po-cross-modal-adaptive-token-rewards-for-preference-optimization-in-truthful-multimodal-llms"></a>**Cat-PO: Cross-modal Adaptive Token-rewards for Preference Optimization in Truthful Multimodal LLMs**<br><sub>University of Science and Technology of China, People’s Daily Online</sub> | ICLR 2026 | [Paper](https://proceedings.iclr.cc/paper_files/paper/2026/file/b8bad5b0cc42e1ca0d47760e0d9f9449-Paper-Conference.pdf) · [Code](https://github.com/gavinzzx/CatPO) |
 | <a id="paper-2605-31312"></a>**Learning from Fine-Grained Visual Discrepancies: Mitigating Multimodal Hallucinations via In-Context Visual Contrastive Optimization**<br><sub>The Hong Kong University of Science and Technology (Guangzhou), OPPO AI Center, The Hong Kong University of Science and Technology</sub> | ICML 2026 | [Paper](https://arxiv.org/abs/2605.31312) · [Code](https://github.com/OPPO-Mente-Lab/IC-VCO) · [Data](https://huggingface.co/datasets/OPPOer/IC-VCO-Dataset) |
 | <a id="paper-2509-24491"></a>**Mitigating Visual Hallucinations via Semantic Curriculum Preference Optimization in MLLMs**<br><sub>Westlake University</sub> | ICML 2026 | [Paper](https://arxiv.org/abs/2509.24491) · [Code](https://github.com/TAGI-AISafety/SCPO_ICML26) |
+| <a id="paper-2509-25717"></a>**Importance Sampling for Multi-Negative Multimodal Direct Preference Optimization**<br><sub>University of California San Diego, Adobe Research</sub> | ICLR 2026 | [Paper](https://arxiv.org/abs/2509.25717) · [Proceedings](https://proceedings.iclr.cc/paper_files/paper/2026/hash/9c96dc3dec4c634c608b1cb4d6eeeae0-Abstract-Conference.html) |
 
 ---
 
@@ -216,6 +220,7 @@ Multimodal Large Language Models (MLLMs) have reshaped AI by enabling perception
 | <a id="paper-2610-29552"></a>**Generalized CycleGRPO for Fine-Grained Multimodal Understanding and Grounding**<br><sub>National University of Singapore, University of Chinese Academy of Sciences, Nanyang Technological University</sub> | arXiv 2026 | [Paper](https://arxiv.org/abs/2610.29552) · [Code](https://github.com/devinxzhang/CycleGRPO/tree/main/generalized) · [Training annotations](https://github.com/devinxzhang/CycleGRPO/releases/tag/generalized-data-v1) |
 | <a id="paper-2610-32324"></a>**From Visual Affinity to Learning Credit in Multimodal Reinforcement Learning**<br><sub>The Hong Kong University of Science and Technology (Guangzhou), Shanghai Jiao Tong University, Shadoweave, University of Electronic Science and Technology of China, The Hong Kong University of Science and Technology</sub> | arXiv 2026 | [Paper](https://arxiv.org/abs/2610.32324) · [Code](https://github.com/kawhiiiileo/OVC) |
 | <a id="paper-2610-02819"></a>**Text-Centric Post-Training for Omni-Modal Reasoning**<br><sub>Shanghai Jiao Tong University</sub> | arXiv 2026 | [Paper](https://arxiv.org/abs/2610.02819) |
+| <a id="paper-2611-22438"></a>**Eyes in the Update? Learning Where Rewards Land in Multimodal Reasoning**<br><sub>The University of Hong Kong, Nanyang Technological University, TranscEngram</sub> | arXiv 2026 | [Paper](https://arxiv.org/abs/2611.22438) · [Code](https://github.com/lixuan27/Gaze-RL-main) |
 
 ### Thinking with Images
 
@@ -229,6 +234,7 @@ Multimodal Large Language Models (MLLMs) have reshaped AI by enabling perception
 | <a id="paper-2505-19255"></a>**VTool-R1: VLMs Learn to Think with Images via Reinforcement Learning on Multimodal Tool Use**<br><sub>University of Illinois Urbana-Champaign (UIUC), University of Michigan</sub> | ICLR 2026 | [Paper](https://arxiv.org/abs/2505.19255) · [Code](https://github.com/VTOOL-R1/vtool-r1) · [Project](https://vtool-r1.github.io/) |
 | <a id="paper-2505-11409"></a>**Visual Planning: Let's Think Only with Images**<br><sub>University of Cambridge</sub> | ICLR 2026 | [Paper](https://arxiv.org/abs/2505.11409) · [Code](https://github.com/yix8/VisualPlanning) |
 | <a id="paper-2603-25629"></a>**LanteRn: Latent Visual Structured Reasoning**<br><sub>Instituto Superior Técnico, TU Darmstadt</sub> | arXiv 2026 | [Paper](https://arxiv.org/abs/2603.25629) · [Code](https://github.com/GuilhermeViveiros/LantErn) · [Hugging Face](https://huggingface.co/AGViveiros/LanteRn-3B-RL) |
+| <a id="paper-2611-24161"></a>**AVTR: Adaptive Multimodal Reasoning with Visual Imagination**<br><sub>Meta AI, KAUST, Princeton University</sub> | arXiv 2026 | [Paper](https://arxiv.org/abs/2611.24161) · [Code](https://github.com/xiaoqian-shen/AVTR) · [Project](https://xiaoqian-shen.github.io/AVTR/) · [Hugging Face](https://huggingface.co/collections/shenxq/avtr) |
 
 ### Multimodal Self-Evolving
 
@@ -378,6 +384,7 @@ Multimodal Large Language Models (MLLMs) have reshaped AI by enabling perception
 | <a id="paper-2406-12030"></a>**SPA-VL: A Comprehensive Safety Preference Alignment Dataset for Vision Language Models**<br><sub>University of Science and Technology of China, Shanghai AI Laboratory</sub> | CVPR 2025 | [Paper](https://arxiv.org/abs/2406.12030) · [Code](https://github.com/echosechen/spa-vl-rlhf) · [Data](https://huggingface.co/datasets/sqrti/SPA-VL) |
 | <a id="paper-2311-05608"></a>**Lingua-SafetyBench: A Benchmark for Safety Evaluation of Multilingual Vision-Language Models**<br><sub>Nanjing University of Science and Technology, University of Wisconsin-Madison, University of Chinese Academy of Sciences, National University of Singapore</sub> | arXiv 2026 | [Paper](https://arxiv.org/abs/2601.22737) · [Code](https://github.com/zsxr15/Lingua-SafetyBench) · [Data](https://huggingface.co/datasets/leaf-pear/Lingua-SafetyBench) |
 | <a id="paper-2512-16899"></a>**Multimodal RewardBench 2: Evaluating Omni Reward Models for Interleaved Text and Image**<br><sub>FAIR at Meta Superintelligence Labs</sub> | CVPR 2026 | [Paper](https://arxiv.org/abs/2512.16899) · [Code](https://github.com/facebookresearch/MMRB2) · [Data](https://huggingface.co/datasets/rl-research/multimodal-rewardbench-2) |
+| [↗ Omni-Reward: Towards Generalist Omni-Modal Reward Modeling with Free-Form Preferences](#paper-2510-23451) | ICLR 2026 | [Benchmark data](https://huggingface.co/datasets/HongbangYuan/OmniRewardBench) |
 
 **Others:** CHAIR, M-HalDetect, HaELM, MM-SafetyBench, FigStep, JailBreakV-28K, RTVLM
 
